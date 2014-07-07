@@ -120,7 +120,7 @@
             this.pivoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pivoBindingNavigator.Name = "pivoBindingNavigator";
             this.pivoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pivoBindingNavigator.Size = new System.Drawing.Size(955, 25);
+            this.pivoBindingNavigator.Size = new System.Drawing.Size(1031, 25);
             this.pivoBindingNavigator.TabIndex = 0;
             this.pivoBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -245,11 +245,11 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.pivoDataGridViewView.DataSource = this.pivoBindingSource;
-            this.pivoDataGridViewView.Location = new System.Drawing.Point(12, 28);
+            this.pivoDataGridViewView.Location = new System.Drawing.Point(12, 29);
             this.pivoDataGridViewView.Name = "pivoDataGridViewView";
             this.pivoDataGridViewView.ReadOnly = true;
             this.pivoDataGridViewView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.pivoDataGridViewView.Size = new System.Drawing.Size(935, 220);
+            this.pivoDataGridViewView.Size = new System.Drawing.Size(1011, 220);
             this.pivoDataGridViewView.TabIndex = 1;
             this.pivoDataGridViewView.SelectionChanged += new System.EventHandler(this.pivoDataGridView_SelectionChanged);
             // 
@@ -273,7 +273,7 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Ime_piva";
             this.dataGridViewTextBoxColumn2.HeaderText = "Ime";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
@@ -355,7 +355,7 @@
             // 
             // dataGridViewTextBoxColumn11
             // 
-            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn11.DataPropertyName = "Proizvodac";
             this.dataGridViewTextBoxColumn11.HeaderText = "Proizvođač";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
@@ -385,7 +385,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 424);
+            this.ClientSize = new System.Drawing.Size(1031, 424);
             this.Controls.Add(this.pictureBoxView);
             this.Controls.Add(this.pivoDataGridViewView);
             this.Controls.Add(this.pivoBindingNavigator);

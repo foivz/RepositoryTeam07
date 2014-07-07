@@ -29,7 +29,7 @@ namespace GrimmBee___RateBeer
         {
             // TODO: This line of code loads data into the 't07_DBDataSet11.Pivo' table. You can move, or remove it, as needed.
             this.pivoTableAdapter.Fill(this.t07_DBDataSet11.Pivo);
-            pictureBoxUpdate.ImageLocation = pivoDataGridViewUpdate.CurrentRow.Cells[10].Value.ToString();
+            pictureBoxUpdate.ImageLocation = pivoDataGridViewUpdate.CurrentRow.Cells[12].Value.ToString();
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -38,6 +38,15 @@ namespace GrimmBee___RateBeer
             this.pivoBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.t07_DBDataSet11);
             MessageBox.Show("Enty updated");
+        }
+
+        private void pivoDataGridViewUpdate_SelectionChanged(object sender, EventArgs e)
+        {
+            if (pivoDataGridViewUpdate.RowCount > 0)
+            {
+                String img_loc = pivoDataGridViewUpdate.CurrentRow.Cells[12].Value.ToString();
+                pictureBoxUpdate.ImageLocation = img_loc;
+            }
         }
     }
 }
