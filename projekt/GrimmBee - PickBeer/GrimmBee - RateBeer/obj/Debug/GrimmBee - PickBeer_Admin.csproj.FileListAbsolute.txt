@@ -22,3 +22,15 @@ C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\Grimm
 C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
 C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
 C:\Users\Gabriel\Documents\Visual Studio 2012\Projects\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe.config
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.exe
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\bin\Debug\GrimmBee - RateBeer.pdb
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csprojResolveAssemblyReference.cache
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormAdd.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormMain.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormUpdate.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.FormView.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee___RateBeer.Properties.Resources.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\GrimmBee - RateBeer\obj\Debug\GrimmBee - PickBeer_Admin.csproj.GenerateResource.Cache

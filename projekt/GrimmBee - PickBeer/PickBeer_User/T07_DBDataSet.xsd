@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="T07_DBDataSet11" targetNamespace="http://tempuri.org/T07_DBDataSet11.xsd" xmlns:mstns="http://tempuri.org/T07_DBDataSet11.xsd" xmlns="http://tempuri.org/T07_DBDataSet11.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="T07_DBDataSet" targetNamespace="http://tempuri.org/T07_DBDataSet.xsd" xmlns:mstns="http://tempuri.org/T07_DBDataSet.xsd" xmlns="http://tempuri.org/T07_DBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="T07_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="T07_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GrimmBee___RateBeer.Properties.Settings.GlobalReference.Default.T07_DBConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="T07_DBConnectionString_User" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="T07_DBConnectionString_User (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PickBeer_User.Properties.Settings.GlobalReference.Default.T07_DBConnectionString_User" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="KosaricaTableAdapter" GeneratorDataComponentClassName="KosaricaTableAdapter" Name="Kosarica" UserDataComponentName="KosaricaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Kosarica] WHERE (([ID_kosarica] = @Original_ID_kosarica) AND ([Broj stola] = @Original_Broj_stola))</CommandText>
@@ -56,7 +56,7 @@ SELECT ID_kosarica, [Broj stola] FROM Kosarica WHERE (ID_kosarica = @ID_kosarica
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PivoTableAdapter" GeneratorDataComponentClassName="PivoTableAdapter" Name="Pivo" UserDataComponentName="PivoTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Pivo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Pivo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Pivo] WHERE (([ID_pivo] = @Original_ID_pivo) AND ([Ime_piva] = @Original_Ime_piva) AND ([Cijena] = @Original_Cijena) AND ((@IsNull_Stanje = 1 AND [Stanje] IS NULL) OR ([Stanje] = @Original_Stanje)) AND ((@IsNull_Drzava_podrijetla = 1 AND [Drzava_podrijetla] IS NULL) OR ([Drzava_podrijetla] = @Original_Drzava_podrijetla)) AND ((@IsNull_Vrsta = 1 AND [Vrsta] IS NULL) OR ([Vrsta] = @Original_Vrsta)) AND ((@IsNull_Udio_alk = 1 AND [Udio_alk] IS NULL) OR ([Udio_alk] = @Original_Udio_alk)) AND ((@IsNull_Volumen = 1 AND [Volumen] IS NULL) OR ([Volumen] = @Original_Volumen)) AND ((@IsNull_OcjenaRB = 1 AND [OcjenaRB] IS NULL) OR ([OcjenaRB] = @Original_OcjenaRB)) AND ((@IsNull_OcjenaK = 1 AND [OcjenaK] IS NULL) OR ([OcjenaK] = @Original_OcjenaK)) AND ((@IsNull_Proizvodac = 1 AND [Proizvodac] IS NULL) OR ([Proizvodac] = @Original_Proizvodac)) AND ((@IsNull_Puta_narucivano = 1 AND [Puta_narucivano] IS NULL) OR ([Puta_narucivano] = @Original_Puta_narucivano)) AND ((@IsNull_Slika = 1 AND [Slika] IS NULL) OR ([Slika] = @Original_Slika)))</CommandText>
@@ -174,11 +174,24 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
               <Mapping SourceColumn="Puta_narucivano" DataSetColumn="Puta_narucivano" />
               <Mapping SourceColumn="Slika" DataSetColumn="Slika" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Pivo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByDrzava" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByDrzava" GeneratorSourceName="FillByDrzava" GetMethodModifier="Public" GetMethodName="GetDataByDrzava" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByDrzava" UserSourceName="FillByDrzava">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika
+FROM            Pivo
+WHERE        (Drzava_podrijetla = @Drzava_podrijetla)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Drzava_podrijetla" ColumnName="Drzava_podrijetla" DataSourceName="T07_DB.dbo.Pivo" DataTypeServer="varchar(30)" DbType="AnsiString" Direction="Input" ParameterName="@Drzava_podrijetla" Precision="0" ProviderType="VarChar" Scale="0" Size="30" SourceColumn="Drzava_podrijetla" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RacunTableAdapter" GeneratorDataComponentClassName="RacunTableAdapter" Name="Racun" UserDataComponentName="RacunTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Racun] WHERE (([ID_racun] = @Original_ID_racun) AND ([ID_kosarica] = @Original_ID_kosarica) AND ([Izdao] = @Original_Izdao) AND ([Datum] = @Original_Datum) AND ([Vrijeme] = @Original_Vrijeme))</CommandText>
@@ -240,7 +253,7 @@ SELECT ID_racun, ID_kosarica, Izdao, Datum, Vrijeme FROM Racun WHERE (ID_racun =
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Stavke_kosaricaTableAdapter" GeneratorDataComponentClassName="Stavke_kosaricaTableAdapter" Name="Stavke_kosarica" UserDataComponentName="Stavke_kosaricaTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Stavke_kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Stavke_kosarica" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [dbo].[Stavke_kosarica] ([ID_pivo], [ID_kosarica], [Kolicina]) VALUES (@ID_pivo, @ID_kosarica, @Kolicina)</CommandText>
@@ -268,7 +281,7 @@ SELECT ID_racun, ID_kosarica, Izdao, Datum, Vrijeme FROM Racun WHERE (ID_racun =
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Stavke_racunTableAdapter" GeneratorDataComponentClassName="Stavke_racunTableAdapter" Name="Stavke_racun" UserDataComponentName="Stavke_racunTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Stavke_racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Stavke_racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>INSERT INTO [dbo].[Stavke_racun] ([ID_pivo], [ID_racun], [Kolicina]) VALUES (@ID_pivo, @ID_racun, @Kolicina)</CommandText>
@@ -294,63 +307,71 @@ SELECT ID_racun, ID_kosarica, Izdao, Datum, Vrijeme FROM Racun WHERE (ID_racun =
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Table_testTableAdapter" GeneratorDataComponentClassName="Table_testTableAdapter" Name="Table_test" UserDataComponentName="Table_testTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Beer_RouletteTableAdapter" GeneratorDataComponentClassName="Beer_RouletteTableAdapter" Name="Beer_Roulette" UserDataComponentName="Beer_RouletteTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Table_test" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
-                <DeleteCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>DELETE FROM [dbo].[Table_test] WHERE (([ID] = @Original_ID) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ((@IsNull_Image = 1 AND [Image] IS NULL) OR ([Image] = @Original_Image)))</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Image" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
-                  </DbCommand>
-                </DeleteCommand>
-                <InsertCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>INSERT INTO [dbo].[Table_test] ([ID], [FirstName], [LastName], [Image]) VALUES (@ID, @FirstName, @LastName, @Image);
-SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Current" />
-                    </Parameters>
-                  </DbCommand>
-                </InsertCommand>
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Beer_Roulette" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT ID, FirstName, LastName, Image FROM dbo.Table_test</CommandText>
+                    <CommandText>SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaPB, OcjenaK, Proizvodac, Boja, Slika FROM dbo.Beer_Roulette</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
-                <UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Random_DrzavaTableAdapter" GeneratorDataComponentClassName="Random_DrzavaTableAdapter" Name="Random_Drzava" UserDataComponentName="Random_DrzavaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Random_Drzava" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>UPDATE [dbo].[Table_test] SET [ID] = @ID, [FirstName] = @FirstName, [LastName] = @LastName, [Image] = @Image WHERE (([ID] = @Original_ID) AND ([FirstName] = @Original_FirstName) AND ([LastName] = @Original_LastName) AND ((@IsNull_Image = 1 AND [Image] IS NULL) OR ([Image] = @Original_Image)));
-SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandText>
-                    <Parameters>
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FirstName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FirstName" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_LastName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="LastName" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Image" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="true" SourceVersion="Original" />
-                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_Image" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="Image" SourceColumnNullMapping="false" SourceVersion="Original" />
-                    </Parameters>
+                    <CommandText>SELECT Drzava_podrijetla FROM dbo.Random_Drzava</CommandText>
+                    <Parameters />
                   </DbCommand>
-                </UpdateCommand>
+                </SelectCommand>
               </DbSource>
             </MainSource>
             <Mappings>
-              <Mapping SourceColumn="ID" DataSetColumn="ID" />
-              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
-              <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
-              <Mapping SourceColumn="Image" DataSetColumn="Image" />
+              <Mapping SourceColumn="Drzava_podrijetla" DataSetColumn="Drzava_podrijetla" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Top10_RatebeerTableAdapter" GeneratorDataComponentClassName="Top10_RatebeerTableAdapter" Name="Top10_Ratebeer" UserDataComponentName="Top10_RatebeerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Top10_Ratebeer" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_pivo, Ime_piva, OcjenaRB, Cijena, Vrsta, Drzava_podrijetla, Udio_alk FROM dbo.Top10_Ratebeer</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_pivo" DataSetColumn="ID_pivo" />
+              <Mapping SourceColumn="Ime_piva" DataSetColumn="Ime_piva" />
+              <Mapping SourceColumn="OcjenaRB" DataSetColumn="OcjenaRB" />
+              <Mapping SourceColumn="Cijena" DataSetColumn="Cijena" />
+              <Mapping SourceColumn="Vrsta" DataSetColumn="Vrsta" />
+              <Mapping SourceColumn="Drzava_podrijetla" DataSetColumn="Drzava_podrijetla" />
+              <Mapping SourceColumn="Udio_alk" DataSetColumn="Udio_alk" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Drzava_SelectTableAdapter" GeneratorDataComponentClassName="Drzava_SelectTableAdapter" Name="Drzava_Select" UserDataComponentName="Drzava_SelectTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="T07_DBConnectionString_User (Settings)" DbObjectName="T07_DB.dbo.Drzava_Select" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Drzava_podrijetla FROM dbo.Drzava_Select</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Drzava_podrijetla" DataSetColumn="Drzava_podrijetla" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -359,7 +380,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="T07_DBDataSet11" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="T07_DBDataSet11" msprop:Generator_UserDSName="T07_DBDataSet11">
+  <xs:element name="T07_DBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="T07_DBDataSet" msprop:Generator_UserDSName="T07_DBDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Kosarica" msprop:Generator_TableClassName="KosaricaDataTable" msprop:Generator_TableVarName="tableKosarica" msprop:Generator_RowChangedName="KosaricaRowChanged" msprop:Generator_TablePropName="Kosarica" msprop:Generator_RowDeletingName="KosaricaRowDeleting" msprop:Generator_RowChangingName="KosaricaRowChanging" msprop:Generator_RowEvHandlerName="KosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="KosaricaRowDeleted" msprop:Generator_RowClassName="KosaricaRow" msprop:Generator_UserTableName="Kosarica" msprop:Generator_RowEvArgName="KosaricaRowChangeEvent">
@@ -373,8 +394,8 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
         <xs:element name="Pivo" msprop:Generator_TableClassName="PivoDataTable" msprop:Generator_TableVarName="tablePivo" msprop:Generator_RowChangedName="PivoRowChanged" msprop:Generator_TablePropName="Pivo" msprop:Generator_RowDeletingName="PivoRowDeleting" msprop:Generator_RowChangingName="PivoRowChanging" msprop:Generator_RowEvHandlerName="PivoRowChangeEventHandler" msprop:Generator_RowDeletedName="PivoRowDeleted" msprop:Generator_RowClassName="PivoRow" msprop:Generator_UserTableName="Pivo" msprop:Generator_RowEvArgName="PivoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID_pivo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="123" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
-              <xs:element name="Ime_piva" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="Ime_piva" msprop:Generator_ColumnVarNameInTable="columnIme_piva" msprop:Generator_ColumnPropNameInTable="Ime_pivaColumn" msprop:Generator_UserColumnName="Ime_piva" minOccurs="0">
+              <xs:element name="ID_pivo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="Ime_piva" msprop:Generator_ColumnVarNameInTable="columnIme_piva" msprop:Generator_ColumnPropNameInRow="Ime_piva" msprop:Generator_ColumnPropNameInTable="Ime_pivaColumn" msprop:Generator_UserColumnName="Ime_piva" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
@@ -454,28 +475,61 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Table_test" msprop:Generator_TableClassName="Table_testDataTable" msprop:Generator_TableVarName="tableTable_test" msprop:Generator_TablePropName="Table_test" msprop:Generator_RowDeletingName="Table_testRowDeleting" msprop:Generator_RowChangingName="Table_testRowChanging" msprop:Generator_RowEvHandlerName="Table_testRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_testRowDeleted" msprop:Generator_UserTableName="Table_test" msprop:Generator_RowChangedName="Table_testRowChanged" msprop:Generator_RowEvArgName="Table_testRowChangeEvent" msprop:Generator_RowClassName="Table_testRow">
+        <xs:element name="Beer_Roulette" msprop:Generator_TableClassName="Beer_RouletteDataTable" msprop:Generator_TableVarName="tableBeer_Roulette" msprop:Generator_RowChangedName="Beer_RouletteRowChanged" msprop:Generator_TablePropName="Beer_Roulette" msprop:Generator_RowDeletingName="Beer_RouletteRowDeleting" msprop:Generator_RowChangingName="Beer_RouletteRowChanging" msprop:Generator_RowEvHandlerName="Beer_RouletteRowChangeEventHandler" msprop:Generator_RowDeletedName="Beer_RouletteRowDeleted" msprop:Generator_RowClassName="Beer_RouletteRow" msprop:Generator_UserTableName="Beer_Roulette" msprop:Generator_RowEvArgName="Beer_RouletteRowChangeEvent">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Random_Drzava" msprop:Generator_TableClassName="Random_DrzavaDataTable" msprop:Generator_TableVarName="tableRandom_Drzava" msprop:Generator_RowChangedName="Random_DrzavaRowChanged" msprop:Generator_TablePropName="Random_Drzava" msprop:Generator_RowDeletingName="Random_DrzavaRowDeleting" msprop:Generator_RowChangingName="Random_DrzavaRowChanging" msprop:Generator_RowEvHandlerName="Random_DrzavaRowChangeEventHandler" msprop:Generator_RowDeletedName="Random_DrzavaRowDeleted" msprop:Generator_RowClassName="Random_DrzavaRow" msprop:Generator_UserTableName="Random_Drzava" msprop:Generator_RowEvArgName="Random_DrzavaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
-              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName">
+              <xs:element name="Drzava_podrijetla" msprop:Generator_ColumnVarNameInTable="columnDrzava_podrijetla" msprop:Generator_ColumnPropNameInRow="Drzava_podrijetla" msprop:Generator_ColumnPropNameInTable="Drzava_podrijetlaColumn" msprop:Generator_UserColumnName="Drzava_podrijetla" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Top10_Ratebeer" msprop:Generator_TableClassName="Top10_RatebeerDataTable" msprop:Generator_TableVarName="tableTop10_Ratebeer" msprop:Generator_RowChangedName="Top10_RatebeerRowChanged" msprop:Generator_TablePropName="Top10_Ratebeer" msprop:Generator_RowDeletingName="Top10_RatebeerRowDeleting" msprop:Generator_RowChangingName="Top10_RatebeerRowChanging" msprop:Generator_RowEvHandlerName="Top10_RatebeerRowChangeEventHandler" msprop:Generator_RowDeletedName="Top10_RatebeerRowDeleted" msprop:Generator_RowClassName="Top10_RatebeerRow" msprop:Generator_UserTableName="Top10_Ratebeer" msprop:Generator_RowEvArgName="Top10_RatebeerRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_pivo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
+              <xs:element name="Ime_piva" msprop:Generator_ColumnVarNameInTable="columnIme_piva" msprop:Generator_ColumnPropNameInRow="Ime_piva" msprop:Generator_ColumnPropNameInTable="Ime_pivaColumn" msprop:Generator_UserColumnName="Ime_piva">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OcjenaRB" msprop:Generator_ColumnVarNameInTable="columnOcjenaRB" msprop:Generator_ColumnPropNameInRow="OcjenaRB" msprop:Generator_ColumnPropNameInTable="OcjenaRBColumn" msprop:Generator_UserColumnName="OcjenaRB" type="xs:double" minOccurs="0" />
+              <xs:element name="Cijena" msprop:Generator_ColumnVarNameInTable="columnCijena" msprop:Generator_ColumnPropNameInRow="Cijena" msprop:Generator_ColumnPropNameInTable="CijenaColumn" msprop:Generator_UserColumnName="Cijena" type="xs:decimal" />
+              <xs:element name="Vrsta" msprop:Generator_ColumnVarNameInTable="columnVrsta" msprop:Generator_ColumnPropNameInRow="Vrsta" msprop:Generator_ColumnPropNameInTable="VrstaColumn" msprop:Generator_UserColumnName="Vrsta" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName">
+              <xs:element name="Drzava_podrijetla" msprop:Generator_ColumnVarNameInTable="columnDrzava_podrijetla" msprop:Generator_ColumnPropNameInRow="Drzava_podrijetla" msprop:Generator_ColumnPropNameInTable="Drzava_podrijetlaColumn" msprop:Generator_UserColumnName="Drzava_podrijetla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
+                    <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" msprop:Generator_UserColumnName="Image" minOccurs="0">
+              <xs:element name="Udio_alk" msprop:Generator_ColumnVarNameInTable="columnUdio_alk" msprop:Generator_ColumnPropNameInRow="Udio_alk" msprop:Generator_ColumnPropNameInTable="Udio_alkColumn" msprop:Generator_UserColumnName="Udio_alk" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Drzava_Select" msprop:Generator_TableClassName="Drzava_SelectDataTable" msprop:Generator_TableVarName="tableDrzava_Select" msprop:Generator_TablePropName="Drzava_Select" msprop:Generator_RowDeletingName="Drzava_SelectRowDeleting" msprop:Generator_RowChangingName="Drzava_SelectRowChanging" msprop:Generator_RowEvHandlerName="Drzava_SelectRowChangeEventHandler" msprop:Generator_RowDeletedName="Drzava_SelectRowDeleted" msprop:Generator_UserTableName="Drzava_Select" msprop:Generator_RowChangedName="Drzava_SelectRowChanged" msprop:Generator_RowEvArgName="Drzava_SelectRowChangeEvent" msprop:Generator_RowClassName="Drzava_SelectRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Drzava_podrijetla" msprop:Generator_ColumnVarNameInTable="columnDrzava_podrijetla" msprop:Generator_ColumnPropNameInRow="Drzava_podrijetla" msprop:Generator_ColumnPropNameInTable="Drzava_podrijetlaColumn" msprop:Generator_UserColumnName="Drzava_podrijetla" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
-                    <xs:maxLength value="100" />
+                    <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
@@ -496,9 +550,9 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
       <xs:selector xpath=".//mstns:Racun" />
       <xs:field xpath="mstns:ID_racun" />
     </xs:unique>
-    <xs:unique name="Table_test_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Table_test" />
-      <xs:field xpath="mstns:ID" />
+    <xs:unique name="Top10_Ratebeer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Top10_Ratebeer" />
+      <xs:field xpath="mstns:ID_pivo" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
