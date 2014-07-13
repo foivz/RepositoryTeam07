@@ -44,17 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Artikli.cs" />
+    <Compile Include="Class_Kosarica.cs" />
+    <Compile Include="FormGlavni.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormGlavni.Designer.cs">
+      <DependentUpon>FormGlavni.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCjenik.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCjenik.Designer.cs">
       <DependentUpon>FormCjenik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKosarica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKosarica.Designer.cs">
+      <DependentUpon>FormKosarica.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,11 +75,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>T07_DBDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormGlavni.resx">
+      <DependentUpon>FormGlavni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCjenik.resx">
       <DependentUpon>FormCjenik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKosarica.resx">
+      <DependentUpon>FormKosarica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

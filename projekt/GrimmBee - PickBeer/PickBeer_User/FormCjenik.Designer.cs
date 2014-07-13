@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label drzava_podrijetlaLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCjenik));
             System.Windows.Forms.Label ime_pivaLabel;
             System.Windows.Forms.Label cijenaLabel;
             System.Windows.Forms.Label drzava_podrijetlaLabel1;
@@ -40,6 +39,8 @@
             System.Windows.Forms.Label ocjenaRBLabel;
             System.Windows.Forms.Label proizvodacLabel;
             System.Windows.Forms.Label ocjenaKLabel;
+            System.Windows.Forms.Label kolicinaLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCjenik));
             this.groupBoxCjenik = new System.Windows.Forms.GroupBox();
             this.pivoDataGridViewCjenik = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,6 +90,10 @@
             this.labelCijena = new System.Windows.Forms.Label();
             this.labelVol = new System.Windows.Forms.Label();
             this.labelAlk = new System.Windows.Forms.Label();
+            this.buttonDodajuK = new System.Windows.Forms.Button();
+            this.stavke_kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stavke_kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter();
+            this.kolicinaTetBox = new System.Windows.Forms.TextBox();
             drzava_podrijetlaLabel = new System.Windows.Forms.Label();
             ime_pivaLabel = new System.Windows.Forms.Label();
             cijenaLabel = new System.Windows.Forms.Label();
@@ -99,6 +104,7 @@
             ocjenaRBLabel = new System.Windows.Forms.Label();
             proizvodacLabel = new System.Windows.Forms.Label();
             ocjenaKLabel = new System.Windows.Forms.Label();
+            kolicinaLabel = new System.Windows.Forms.Label();
             this.groupBoxCjenik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pivoDataGridViewCjenik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pivoBindingSource)).BeginInit();
@@ -107,6 +113,7 @@
             this.pivoBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drzava_SelectBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCjenik)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stavke_kosaricaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // drzava_podrijetlaLabel
@@ -117,6 +124,96 @@
             drzava_podrijetlaLabel.Size = new System.Drawing.Size(89, 13);
             drzava_podrijetlaLabel.TabIndex = 2;
             drzava_podrijetlaLabel.Text = "Drzava podrijetla:";
+            // 
+            // ime_pivaLabel
+            // 
+            ime_pivaLabel.AutoSize = true;
+            ime_pivaLabel.Location = new System.Drawing.Point(606, 99);
+            ime_pivaLabel.Name = "ime_pivaLabel";
+            ime_pivaLabel.Size = new System.Drawing.Size(50, 13);
+            ime_pivaLabel.TabIndex = 6;
+            ime_pivaLabel.Text = "Ime piva:";
+            // 
+            // cijenaLabel
+            // 
+            cijenaLabel.AutoSize = true;
+            cijenaLabel.Location = new System.Drawing.Point(606, 128);
+            cijenaLabel.Name = "cijenaLabel";
+            cijenaLabel.Size = new System.Drawing.Size(39, 13);
+            cijenaLabel.TabIndex = 8;
+            cijenaLabel.Text = "Cijena:";
+            // 
+            // drzava_podrijetlaLabel1
+            // 
+            drzava_podrijetlaLabel1.AutoSize = true;
+            drzava_podrijetlaLabel1.Location = new System.Drawing.Point(403, 401);
+            drzava_podrijetlaLabel1.Name = "drzava_podrijetlaLabel1";
+            drzava_podrijetlaLabel1.Size = new System.Drawing.Size(44, 13);
+            drzava_podrijetlaLabel1.TabIndex = 10;
+            drzava_podrijetlaLabel1.Text = "Država:";
+            // 
+            // vrstaLabel
+            // 
+            vrstaLabel.AutoSize = true;
+            vrstaLabel.Location = new System.Drawing.Point(403, 427);
+            vrstaLabel.Name = "vrstaLabel";
+            vrstaLabel.Size = new System.Drawing.Size(34, 13);
+            vrstaLabel.TabIndex = 12;
+            vrstaLabel.Text = "Vrsta:";
+            // 
+            // volumenLabel
+            // 
+            volumenLabel.AutoSize = true;
+            volumenLabel.Location = new System.Drawing.Point(606, 154);
+            volumenLabel.Name = "volumenLabel";
+            volumenLabel.Size = new System.Drawing.Size(51, 13);
+            volumenLabel.TabIndex = 14;
+            volumenLabel.Text = "Volumen:";
+            // 
+            // udio_alkLabel
+            // 
+            udio_alkLabel.AutoSize = true;
+            udio_alkLabel.Location = new System.Drawing.Point(403, 453);
+            udio_alkLabel.Name = "udio_alkLabel";
+            udio_alkLabel.Size = new System.Drawing.Size(75, 13);
+            udio_alkLabel.TabIndex = 16;
+            udio_alkLabel.Text = "Udio alkohola:";
+            // 
+            // ocjenaRBLabel
+            // 
+            ocjenaRBLabel.AutoSize = true;
+            ocjenaRBLabel.Location = new System.Drawing.Point(403, 505);
+            ocjenaRBLabel.Name = "ocjenaRBLabel";
+            ocjenaRBLabel.Size = new System.Drawing.Size(98, 13);
+            ocjenaRBLabel.TabIndex = 18;
+            ocjenaRBLabel.Text = "Ocjena RateBeera:";
+            // 
+            // proizvodacLabel
+            // 
+            proizvodacLabel.AutoSize = true;
+            proizvodacLabel.Location = new System.Drawing.Point(403, 479);
+            proizvodacLabel.Name = "proizvodacLabel";
+            proizvodacLabel.Size = new System.Drawing.Size(64, 13);
+            proizvodacLabel.TabIndex = 20;
+            proizvodacLabel.Text = "Proizvođač:";
+            // 
+            // ocjenaKLabel
+            // 
+            ocjenaKLabel.AutoSize = true;
+            ocjenaKLabel.Location = new System.Drawing.Point(403, 531);
+            ocjenaKLabel.Name = "ocjenaKLabel";
+            ocjenaKLabel.Size = new System.Drawing.Size(89, 13);
+            ocjenaKLabel.TabIndex = 22;
+            ocjenaKLabel.Text = "Ocjena korisnika:";
+            // 
+            // kolicinaLabel
+            // 
+            kolicinaLabel.AutoSize = true;
+            kolicinaLabel.Location = new System.Drawing.Point(393, 595);
+            kolicinaLabel.Name = "kolicinaLabel";
+            kolicinaLabel.Size = new System.Drawing.Size(47, 13);
+            kolicinaLabel.TabIndex = 30;
+            kolicinaLabel.Text = "Kolicina:";
             // 
             // groupBoxCjenik
             // 
@@ -301,7 +398,7 @@
             this.pivoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pivoBindingNavigator.Name = "pivoBindingNavigator";
             this.pivoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pivoBindingNavigator.Size = new System.Drawing.Size(788, 25);
+            this.pivoBindingNavigator.Size = new System.Drawing.Size(826, 25);
             this.pivoBindingNavigator.TabIndex = 1;
             this.pivoBindingNavigator.Text = "bindingNavigator1";
             this.pivoBindingNavigator.Visible = false;
@@ -456,163 +553,91 @@
             this.buttonSve.UseVisualStyleBackColor = true;
             this.buttonSve.Click += new System.EventHandler(this.buttonSve_Click);
             // 
-            // ime_pivaLabel
-            // 
-            ime_pivaLabel.AutoSize = true;
-            ime_pivaLabel.Location = new System.Drawing.Point(606, 99);
-            ime_pivaLabel.Name = "ime_pivaLabel";
-            ime_pivaLabel.Size = new System.Drawing.Size(50, 13);
-            ime_pivaLabel.TabIndex = 6;
-            ime_pivaLabel.Text = "Ime piva:";
-            // 
             // ime_pivaTextBox
             // 
             this.ime_pivaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Ime_piva", true));
             this.ime_pivaTextBox.Location = new System.Drawing.Point(663, 99);
             this.ime_pivaTextBox.Name = "ime_pivaTextBox";
+            this.ime_pivaTextBox.ReadOnly = true;
             this.ime_pivaTextBox.Size = new System.Drawing.Size(151, 20);
             this.ime_pivaTextBox.TabIndex = 7;
-            // 
-            // cijenaLabel
-            // 
-            cijenaLabel.AutoSize = true;
-            cijenaLabel.Location = new System.Drawing.Point(606, 128);
-            cijenaLabel.Name = "cijenaLabel";
-            cijenaLabel.Size = new System.Drawing.Size(39, 13);
-            cijenaLabel.TabIndex = 8;
-            cijenaLabel.Text = "Cijena:";
             // 
             // cijenaTextBox
             // 
             this.cijenaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Cijena", true));
             this.cijenaTextBox.Location = new System.Drawing.Point(663, 125);
             this.cijenaTextBox.Name = "cijenaTextBox";
-            this.cijenaTextBox.Size = new System.Drawing.Size(57, 20);
+            this.cijenaTextBox.ReadOnly = true;
+            this.cijenaTextBox.Size = new System.Drawing.Size(34, 20);
             this.cijenaTextBox.TabIndex = 9;
-            // 
-            // drzava_podrijetlaLabel1
-            // 
-            drzava_podrijetlaLabel1.AutoSize = true;
-            drzava_podrijetlaLabel1.Location = new System.Drawing.Point(403, 401);
-            drzava_podrijetlaLabel1.Name = "drzava_podrijetlaLabel1";
-            drzava_podrijetlaLabel1.Size = new System.Drawing.Size(44, 13);
-            drzava_podrijetlaLabel1.TabIndex = 10;
-            drzava_podrijetlaLabel1.Text = "Država:";
             // 
             // drzava_podrijetlaTextBox
             // 
             this.drzava_podrijetlaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Drzava_podrijetla", true));
             this.drzava_podrijetlaTextBox.Location = new System.Drawing.Point(507, 398);
             this.drzava_podrijetlaTextBox.Name = "drzava_podrijetlaTextBox";
+            this.drzava_podrijetlaTextBox.ReadOnly = true;
             this.drzava_podrijetlaTextBox.Size = new System.Drawing.Size(100, 20);
             this.drzava_podrijetlaTextBox.TabIndex = 11;
-            // 
-            // vrstaLabel
-            // 
-            vrstaLabel.AutoSize = true;
-            vrstaLabel.Location = new System.Drawing.Point(403, 427);
-            vrstaLabel.Name = "vrstaLabel";
-            vrstaLabel.Size = new System.Drawing.Size(34, 13);
-            vrstaLabel.TabIndex = 12;
-            vrstaLabel.Text = "Vrsta:";
             // 
             // vrstaTextBox
             // 
             this.vrstaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Vrsta", true));
             this.vrstaTextBox.Location = new System.Drawing.Point(507, 424);
             this.vrstaTextBox.Name = "vrstaTextBox";
+            this.vrstaTextBox.ReadOnly = true;
             this.vrstaTextBox.Size = new System.Drawing.Size(60, 20);
             this.vrstaTextBox.TabIndex = 13;
-            // 
-            // volumenLabel
-            // 
-            volumenLabel.AutoSize = true;
-            volumenLabel.Location = new System.Drawing.Point(606, 154);
-            volumenLabel.Name = "volumenLabel";
-            volumenLabel.Size = new System.Drawing.Size(51, 13);
-            volumenLabel.TabIndex = 14;
-            volumenLabel.Text = "Volumen:";
             // 
             // volumenTextBox
             // 
             this.volumenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Volumen", true));
             this.volumenTextBox.Location = new System.Drawing.Point(663, 151);
             this.volumenTextBox.Name = "volumenTextBox";
-            this.volumenTextBox.Size = new System.Drawing.Size(57, 20);
+            this.volumenTextBox.ReadOnly = true;
+            this.volumenTextBox.Size = new System.Drawing.Size(34, 20);
             this.volumenTextBox.TabIndex = 15;
-            // 
-            // udio_alkLabel
-            // 
-            udio_alkLabel.AutoSize = true;
-            udio_alkLabel.Location = new System.Drawing.Point(403, 453);
-            udio_alkLabel.Name = "udio_alkLabel";
-            udio_alkLabel.Size = new System.Drawing.Size(75, 13);
-            udio_alkLabel.TabIndex = 16;
-            udio_alkLabel.Text = "Udio alkohola:";
             // 
             // udio_alkTextBox
             // 
             this.udio_alkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Udio_alk", true));
             this.udio_alkTextBox.Location = new System.Drawing.Point(507, 450);
             this.udio_alkTextBox.Name = "udio_alkTextBox";
-            this.udio_alkTextBox.Size = new System.Drawing.Size(60, 20);
+            this.udio_alkTextBox.ReadOnly = true;
+            this.udio_alkTextBox.Size = new System.Drawing.Size(42, 20);
             this.udio_alkTextBox.TabIndex = 17;
-            // 
-            // ocjenaRBLabel
-            // 
-            ocjenaRBLabel.AutoSize = true;
-            ocjenaRBLabel.Location = new System.Drawing.Point(403, 505);
-            ocjenaRBLabel.Name = "ocjenaRBLabel";
-            ocjenaRBLabel.Size = new System.Drawing.Size(98, 13);
-            ocjenaRBLabel.TabIndex = 18;
-            ocjenaRBLabel.Text = "Ocjena RateBeera:";
             // 
             // ocjenaRBTextBox
             // 
             this.ocjenaRBTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "OcjenaRB", true));
             this.ocjenaRBTextBox.Location = new System.Drawing.Point(507, 502);
             this.ocjenaRBTextBox.Name = "ocjenaRBTextBox";
-            this.ocjenaRBTextBox.Size = new System.Drawing.Size(60, 20);
+            this.ocjenaRBTextBox.ReadOnly = true;
+            this.ocjenaRBTextBox.Size = new System.Drawing.Size(42, 20);
             this.ocjenaRBTextBox.TabIndex = 19;
-            // 
-            // proizvodacLabel
-            // 
-            proizvodacLabel.AutoSize = true;
-            proizvodacLabel.Location = new System.Drawing.Point(403, 479);
-            proizvodacLabel.Name = "proizvodacLabel";
-            proizvodacLabel.Size = new System.Drawing.Size(64, 13);
-            proizvodacLabel.TabIndex = 20;
-            proizvodacLabel.Text = "Proizvođač:";
             // 
             // proizvodacTextBox
             // 
             this.proizvodacTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Proizvodac", true));
             this.proizvodacTextBox.Location = new System.Drawing.Point(507, 476);
             this.proizvodacTextBox.Name = "proizvodacTextBox";
+            this.proizvodacTextBox.ReadOnly = true;
             this.proizvodacTextBox.Size = new System.Drawing.Size(190, 20);
             this.proizvodacTextBox.TabIndex = 21;
-            // 
-            // ocjenaKLabel
-            // 
-            ocjenaKLabel.AutoSize = true;
-            ocjenaKLabel.Location = new System.Drawing.Point(403, 531);
-            ocjenaKLabel.Name = "ocjenaKLabel";
-            ocjenaKLabel.Size = new System.Drawing.Size(89, 13);
-            ocjenaKLabel.TabIndex = 22;
-            ocjenaKLabel.Text = "Ocjena korisnika:";
             // 
             // ocjenaKTextBox
             // 
             this.ocjenaKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "OcjenaK", true));
             this.ocjenaKTextBox.Location = new System.Drawing.Point(507, 528);
             this.ocjenaKTextBox.Name = "ocjenaKTextBox";
-            this.ocjenaKTextBox.Size = new System.Drawing.Size(60, 20);
+            this.ocjenaKTextBox.ReadOnly = true;
+            this.ocjenaKTextBox.Size = new System.Drawing.Size(42, 20);
             this.ocjenaKTextBox.TabIndex = 23;
             // 
             // labelCijena
             // 
             this.labelCijena.AutoSize = true;
-            this.labelCijena.Location = new System.Drawing.Point(726, 128);
+            this.labelCijena.Location = new System.Drawing.Point(703, 128);
             this.labelCijena.Name = "labelCijena";
             this.labelCijena.Size = new System.Drawing.Size(19, 13);
             this.labelCijena.TabIndex = 24;
@@ -621,7 +646,7 @@
             // labelVol
             // 
             this.labelVol.AutoSize = true;
-            this.labelVol.Location = new System.Drawing.Point(726, 154);
+            this.labelVol.Location = new System.Drawing.Point(703, 154);
             this.labelVol.Name = "labelVol";
             this.labelVol.Size = new System.Drawing.Size(9, 13);
             this.labelVol.TabIndex = 25;
@@ -630,17 +655,47 @@
             // labelAlk
             // 
             this.labelAlk.AutoSize = true;
-            this.labelAlk.Location = new System.Drawing.Point(573, 453);
+            this.labelAlk.Location = new System.Drawing.Point(552, 453);
             this.labelAlk.Name = "labelAlk";
             this.labelAlk.Size = new System.Drawing.Size(15, 13);
             this.labelAlk.TabIndex = 26;
             this.labelAlk.Text = "%";
             // 
+            // buttonDodajuK
+            // 
+            this.buttonDodajuK.Location = new System.Drawing.Point(396, 614);
+            this.buttonDodajuK.Name = "buttonDodajuK";
+            this.buttonDodajuK.Size = new System.Drawing.Size(127, 36);
+            this.buttonDodajuK.TabIndex = 27;
+            this.buttonDodajuK.Text = "Dodaj u košaricu";
+            this.buttonDodajuK.UseVisualStyleBackColor = true;
+            this.buttonDodajuK.Click += new System.EventHandler(this.buttonDodajuK_Click);
+            // 
+            // stavke_kosaricaBindingSource
+            // 
+            this.stavke_kosaricaBindingSource.DataMember = "Stavke_kosarica";
+            this.stavke_kosaricaBindingSource.DataSource = this.t07_DBDataSet;
+            // 
+            // stavke_kosaricaTableAdapter
+            // 
+            this.stavke_kosaricaTableAdapter.ClearBeforeFill = true;
+            // 
+            // kolicinaTetBox
+            // 
+            this.kolicinaTetBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stavke_kosaricaBindingSource, "Kolicina", true));
+            this.kolicinaTetBox.Location = new System.Drawing.Point(446, 588);
+            this.kolicinaTetBox.Name = "kolicinaTetBox";
+            this.kolicinaTetBox.Size = new System.Drawing.Size(77, 20);
+            this.kolicinaTetBox.TabIndex = 31;
+            // 
             // FormCjenik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(826, 689);
+            this.ClientSize = new System.Drawing.Size(825, 689);
+            this.Controls.Add(kolicinaLabel);
+            this.Controls.Add(this.kolicinaTetBox);
+            this.Controls.Add(this.buttonDodajuK);
             this.Controls.Add(this.labelAlk);
             this.Controls.Add(this.labelVol);
             this.Controls.Add(this.labelCijena);
@@ -681,6 +736,7 @@
             this.pivoBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drzava_SelectBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCjenik)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stavke_kosaricaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -737,5 +793,9 @@
         private System.Windows.Forms.Label labelCijena;
         private System.Windows.Forms.Label labelVol;
         private System.Windows.Forms.Label labelAlk;
+        private System.Windows.Forms.Button buttonDodajuK;
+        private System.Windows.Forms.BindingSource stavke_kosaricaBindingSource;
+        private T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter stavke_kosaricaTableAdapter;
+        private System.Windows.Forms.TextBox kolicinaTetBox;
     }
 }

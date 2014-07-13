@@ -27,12 +27,14 @@ namespace PickBeer_User
 
         private void FormCjenik_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 't07_DBDataSet.Stavke_kosarica' table. You can move, or remove it, as needed.
+            this.stavke_kosaricaTableAdapter.Fill(this.t07_DBDataSet.Stavke_kosarica);
             // TODO: This line of code loads data into the 't07_DBDataSet.Drzava_Select' table. You can move, or remove it, as needed.
             this.drzava_SelectTableAdapter.Fill(this.t07_DBDataSet.Drzava_Select);
             // TODO: This line of code loads data into the 't07_DBDataSet.Pivo' table. You can move, or remove it, as needed.
             this.pivoTableAdapter.Fill(this.t07_DBDataSet.Pivo);
             pictureBoxCjenik.ImageLocation = pivoDataGridViewCjenik.CurrentRow.Cells[12].Value.ToString();
-        }
+                   }
 
         private void drzava_podrijetlaComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
@@ -53,6 +55,14 @@ namespace PickBeer_User
             this.pivoTableAdapter.Fill(this.t07_DBDataSet.Pivo);
         }
 
+        private void buttonDodajuK_Click(object sender, EventArgs e)
+        {
+            int Cjenik_ID = int.Parse(pivoDataGridViewCjenik.CurrentRow.Cells[0].Value.ToString());
+            Artikli a = new Artikli(Cjenik_ID);
+            a.Kolicina = int.Parse(kolicinaTextBox.Text.ToString());
+            
+            MessageBox.Show("Artikl dodan u košaricu");
+        }
         
     }
 }

@@ -8,3 +8,4 @@ C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\P
 C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.exe
 C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.pdb
 C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormCjenik.resources
+C:\Users\Gabriel\Documents\GitHub\RepositoryTeam07\projekt\GrimmBee - PickBeer\PickBeer_User\obj\Debug\PickBeer_User.FormKosarica.resources

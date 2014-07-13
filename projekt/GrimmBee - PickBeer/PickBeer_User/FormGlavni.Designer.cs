@@ -34,8 +34,8 @@
             this.buttonOdaberi = new System.Windows.Forms.Button();
             this.buttonBR = new System.Windows.Forms.Button();
             this.groupBoxGlavni_izb = new System.Windows.Forms.GroupBox();
-            this.buttonKosarica = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonKosarica = new System.Windows.Forms.Button();
             this.groupBoxGlavni_izb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,15 +89,6 @@
             this.groupBoxGlavni_izb.TabStop = false;
             this.groupBoxGlavni_izb.Text = "Upute";
             // 
-            // buttonKosarica
-            // 
-            this.buttonKosarica.Location = new System.Drawing.Point(13, 365);
-            this.buttonKosarica.Name = "buttonKosarica";
-            this.buttonKosarica.Size = new System.Drawing.Size(75, 23);
-            this.buttonKosarica.TabIndex = 5;
-            this.buttonKosarica.Text = "Košarica";
-            this.buttonKosarica.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -108,11 +99,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // buttonKosarica
+            // 
+            this.buttonKosarica.Location = new System.Drawing.Point(13, 365);
+            this.buttonKosarica.Name = "buttonKosarica";
+            this.buttonKosarica.Size = new System.Drawing.Size(75, 23);
+            this.buttonKosarica.TabIndex = 5;
+            this.buttonKosarica.Text = "Košarica";
+            this.buttonKosarica.UseVisualStyleBackColor = true;
+            this.buttonKosarica.Click += new System.EventHandler(this.buttonKosarica_Click);
+            // 
             // Glavni_izbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 401);
+            this.ClientSize = new System.Drawing.Size(507, 409);
             this.Controls.Add(this.buttonKosarica);
             this.Controls.Add(this.groupBoxGlavni_izb);
             this.Controls.Add(this.buttonBR);

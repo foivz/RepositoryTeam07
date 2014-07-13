@@ -358,7 +358,6 @@
             // pivoDataGridViewUpdate
             // 
             this.pivoDataGridViewUpdate.AllowUserToAddRows = false;
-            this.pivoDataGridViewUpdate.AllowUserToDeleteRows = false;
             this.pivoDataGridViewUpdate.AllowUserToResizeRows = false;
             this.pivoDataGridViewUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

@@ -15,12 +15,20 @@ namespace PickBeer_User
         public Glavni_izbornik()
         {
             InitializeComponent();
+            
         }
 
         private void buttonCjenik_Click(object sender, EventArgs e)
         {
             FormCjenik frmCjenik = new FormCjenik();
             frmCjenik.ShowDialog();
+        }
+
+        
+        private void buttonKosarica_Click(object sender, EventArgs e)
+        {
+            FormKosarica frmKos = new FormKosarica();
+            frmKos.ShowDialog();
         }
     }
 }
