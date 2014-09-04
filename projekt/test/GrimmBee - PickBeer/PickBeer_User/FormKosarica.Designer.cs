@@ -52,19 +52,20 @@
             this.stavke_kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonNaruci = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.KosaricaTableAdapter();
             this.tableAdapterManager = new PickBeer_User.T07_DBDataSetTableAdapters.TableAdapterManager();
             this.stavke_kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter();
             this.pivoTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.PivoTableAdapter();
             this.stavke_kosaricaDataGridView = new System.Windows.Forms.DataGridView();
-            this.pregled_narudbeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pregled_narudbeTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.Pregled_narudbeTableAdapter();
             this.iDpivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imepivaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.kolicinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ukupnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pregled_narudbeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pregled_narudbeTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.Pregled_narudbeTableAdapter();
+            this.txtUkupno = new System.Windows.Forms.TextBox();
+            this.lblUkupno = new System.Windows.Forms.Label();
             iD_kosaricaLabel = new System.Windows.Forms.Label();
             vrijemeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingNavigator)).BeginInit();
@@ -159,6 +160,7 @@
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -265,14 +267,6 @@
             this.buttonNaruci.UseVisualStyleBackColor = true;
             this.buttonNaruci.Click += new System.EventHandler(this.buttonNaruci_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stavke_kosaricaBindingSource, "Kolicina", true));
-            this.textBox2.Location = new System.Drawing.Point(12, 261);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(122, 20);
-            this.textBox2.TabIndex = 8;
-            // 
             // kosaricaTableAdapter
             // 
             this.kosaricaTableAdapter.ClearBeforeFill = true;
@@ -313,15 +307,6 @@
             this.stavke_kosaricaDataGridView.Size = new System.Drawing.Size(579, 172);
             this.stavke_kosaricaDataGridView.TabIndex = 5;
             this.stavke_kosaricaDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.stavke_kosaricaDataGridView_CellContentClick);
-            // 
-            // pregled_narudbeBindingSource
-            // 
-            this.pregled_narudbeBindingSource.DataMember = "Pregled_narudbe";
-            this.pregled_narudbeBindingSource.DataSource = this.t07_DBDataSet;
-            // 
-            // pregled_narudbeTableAdapter
-            // 
-            this.pregled_narudbeTableAdapter.ClearBeforeFill = true;
             // 
             // iDpivoDataGridViewTextBoxColumn
             // 
@@ -364,12 +349,39 @@
             this.ukupnoDataGridViewTextBoxColumn.Name = "ukupnoDataGridViewTextBoxColumn";
             this.ukupnoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // pregled_narudbeBindingSource
+            // 
+            this.pregled_narudbeBindingSource.DataMember = "Pregled_narudbe";
+            this.pregled_narudbeBindingSource.DataSource = this.t07_DBDataSet;
+            // 
+            // pregled_narudbeTableAdapter
+            // 
+            this.pregled_narudbeTableAdapter.ClearBeforeFill = true;
+            // 
+            // txtUkupno
+            // 
+            this.txtUkupno.Location = new System.Drawing.Point(66, 255);
+            this.txtUkupno.Name = "txtUkupno";
+            this.txtUkupno.ReadOnly = true;
+            this.txtUkupno.Size = new System.Drawing.Size(100, 20);
+            this.txtUkupno.TabIndex = 9;
+            // 
+            // lblUkupno
+            // 
+            this.lblUkupno.AutoSize = true;
+            this.lblUkupno.Location = new System.Drawing.Point(12, 258);
+            this.lblUkupno.Name = "lblUkupno";
+            this.lblUkupno.Size = new System.Drawing.Size(48, 13);
+            this.lblUkupno.TabIndex = 10;
+            this.lblUkupno.Text = "Ukupno:";
+            // 
             // FormKosarica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 296);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblUkupno);
+            this.Controls.Add(this.txtUkupno);
             this.Controls.Add(this.buttonNaruci);
             this.Controls.Add(this.stavke_kosaricaDataGridView);
             this.Controls.Add(vrijemeLabel);
@@ -418,7 +430,6 @@
         private System.Windows.Forms.TextBox vrijemeTextBox;
         private System.Windows.Forms.BindingSource stavke_kosaricaBindingSource;
         private System.Windows.Forms.Button buttonNaruci;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.BindingSource pivoBindingSource;
         private T07_DBDataSetTableAdapters.PivoTableAdapter pivoTableAdapter;
         private System.Windows.Forms.DataGridView stavke_kosaricaDataGridView;
@@ -429,6 +440,8 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn kolicinaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ukupnoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox txtUkupno;
+        private System.Windows.Forms.Label lblUkupno;
 
     }
 }

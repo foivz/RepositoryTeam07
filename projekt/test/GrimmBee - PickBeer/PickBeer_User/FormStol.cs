@@ -19,7 +19,7 @@ namespace PickBeer_User
         {
             InitializeComponent();
 
-            txtBrojStola.Text = DateTime.Now.TimeOfDay.ToString();
+            txtVrijeme.Text = DateTime.Now.TimeOfDay.ToString();
              
         }
 

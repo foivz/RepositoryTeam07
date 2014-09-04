@@ -15,6 +15,9 @@ namespace PickBeer_User
         public FormKosarica()
         {
             InitializeComponent();
+
+
+
         }
 
         private void kosaricaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -35,6 +38,15 @@ namespace PickBeer_User
             this.stavke_kosaricaTableAdapter.Fill(this.t07_DBDataSet.Stavke_kosarica);
             // TODO: This line of code loads data into the 't07_DBDataSet.Kosarica' table. You can move, or remove it, as needed.
             this.kosaricaTableAdapter.Fill(this.t07_DBDataSet.Kosarica);
+
+
+            int sum = 0;
+            for (int i = 0; i < stavke_kosaricaDataGridView.Rows.Count; i++)
+            {
+                sum = sum +  int.Parse(stavke_kosaricaDataGridView.Rows[i].Cells[4].Value.ToString());
+            }
+
+            txtUkupno.Text = sum.ToString();
         }
 
         private void stavke_kosaricaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -45,6 +57,18 @@ namespace PickBeer_User
         private void buttonNaruci_Click(object sender, EventArgs e)
         {
 
+            
+            
+
+
+
+           
+
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
