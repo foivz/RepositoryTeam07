@@ -92,7 +92,6 @@
             this.tableAdapterManager.RacunTableAdapter = null;
             this.tableAdapterManager.Stavke_kosaricaTableAdapter = null;
             this.tableAdapterManager.Stavke_racunTableAdapter = null;
-            this.tableAdapterManager.Table_testTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = GrimmBee___RateBeer.T07_DBDataSet11TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // pivoBindingNavigator
@@ -267,10 +266,10 @@
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_pivo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Šifra";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 53;
+            this.dataGridViewTextBoxColumn1.Width = 43;
             // 
             // dataGridViewTextBoxColumn2
             // 

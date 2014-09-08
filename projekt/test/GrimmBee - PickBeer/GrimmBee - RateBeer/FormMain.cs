@@ -34,11 +34,5 @@ namespace GrimmBee___RateBeer
             FormUpdate frmUpdate = new FormUpdate();
             frmUpdate.ShowDialog();
         }
-
-        private void btnStanje_Click(object sender, EventArgs e)
-        {
-            FormStanje frmStanje = new FormStanje();
-            frmStanje.ShowDialog();
-        }
     }
 }

@@ -66,5 +66,24 @@ namespace PickBeer_User
         {
             
         }
+
+        private void btnPonovi_Click(object sender, EventArgs e)
+        {
+            T07_DBDataSet.KosaricaRow izmjenareda;
+            izmjenareda = t07_DBDataSet.Kosarica.FindByID_kosarica(BrojNarudbe.brojNarudbe-1);
+
+            izmjenareda.Vrijeme = DateTime.Now;
+            izmjenareda.Status = false;
+
+            this.kosaricaTableAdapter.Update(this.t07_DBDataSet.Kosarica);
+
+            MessageBox.Show("Runda ponovljena");
+        }
+
+        private void buttonBR_Click(object sender, EventArgs e)
+        {
+            FormRoulette frmRoullette = new FormRoulette();
+            frmRoullette.ShowDialog();
+        }
     }
 }

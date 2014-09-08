@@ -37,7 +37,7 @@ namespace GrimmBee___RateBeer
             this.Validate();
             this.pivoBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.t07_DBDataSet11);
-            MessageBox.Show("Artikl je ažuriran");
+            MessageBox.Show("Enty updated");
         }
 
         private void pivoDataGridViewUpdate_SelectionChanged(object sender, EventArgs e)

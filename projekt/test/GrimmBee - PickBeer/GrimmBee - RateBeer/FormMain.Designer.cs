@@ -31,7 +31,6 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonView = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
-            this.btnStanje = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonAdd
@@ -41,9 +40,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAdd.Location = new System.Drawing.Point(82, 12);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(176, 67);
+            this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 0;
-            this.buttonAdd.Text = "Dodaj novi artikl";
+            this.buttonAdd.Text = "Add New";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
@@ -52,11 +51,11 @@
             this.buttonView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonView.Location = new System.Drawing.Point(82, 85);
+            this.buttonView.Location = new System.Drawing.Point(82, 41);
             this.buttonView.Name = "buttonView";
-            this.buttonView.Size = new System.Drawing.Size(176, 67);
+            this.buttonView.Size = new System.Drawing.Size(75, 23);
             this.buttonView.TabIndex = 1;
-            this.buttonView.Text = "Pregled artikala";
+            this.buttonView.Text = "View All";
             this.buttonView.UseVisualStyleBackColor = true;
             this.buttonView.Click += new System.EventHandler(this.buttonView_Click);
             // 
@@ -65,39 +64,25 @@
             this.buttonUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUpdate.Location = new System.Drawing.Point(82, 158);
+            this.buttonUpdate.Location = new System.Drawing.Point(82, 70);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(176, 67);
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 2;
-            this.buttonUpdate.Text = "Ažuriranje artikla";
+            this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
             this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // btnStanje
-            // 
-            this.btnStanje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStanje.Location = new System.Drawing.Point(264, 158);
-            this.btnStanje.Name = "btnStanje";
-            this.btnStanje.Size = new System.Drawing.Size(176, 67);
-            this.btnStanje.TabIndex = 3;
-            this.btnStanje.Text = "Ažuriranje stanja artikla";
-            this.btnStanje.UseVisualStyleBackColor = true;
-            this.btnStanje.Click += new System.EventHandler(this.btnStanje_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 250);
-            this.Controls.Add(this.btnStanje);
+            this.ClientSize = new System.Drawing.Size(243, 102);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonView);
             this.Controls.Add(this.buttonAdd);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FormMain";
-            this.Text = "Glavni izbornik";
+            this.Text = "Main Menu";
             this.ResumeLayout(false);
 
         }
@@ -107,7 +92,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonView;
         private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button btnStanje;
     }
 }
 

@@ -174,18 +174,7 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
               <Mapping SourceColumn="Puta_narucivano" DataSetColumn="Puta_narucivano" />
               <Mapping SourceColumn="Slika" DataSetColumn="Slika" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="T07_DBConnectionString (Settings)" DbObjectName="T07_DB.dbo.Pivo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByNedostaje" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByNedostaje" GeneratorSourceName="FillByNedostaje" GetMethodModifier="Public" GetMethodName="GetDataByNedostaje" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByNedostaje" UserSourceName="FillByNedostaje">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika
-FROM            Pivo
-WHERE        (Stanje &lt; 1)</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RacunTableAdapter" GeneratorDataComponentClassName="RacunTableAdapter" Name="Racun" UserDataComponentName="RacunTableAdapter">
             <MainSource>
@@ -373,7 +362,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
   <xs:element name="T07_DBDataSet11" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="T07_DBDataSet11" msprop:Generator_UserDSName="T07_DBDataSet11">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Kosarica" msprop:Generator_TableClassName="KosaricaDataTable" msprop:Generator_TableVarName="tableKosarica" msprop:Generator_TablePropName="Kosarica" msprop:Generator_RowDeletingName="KosaricaRowDeleting" msprop:Generator_RowChangingName="KosaricaRowChanging" msprop:Generator_RowEvHandlerName="KosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="KosaricaRowDeleted" msprop:Generator_UserTableName="Kosarica" msprop:Generator_RowChangedName="KosaricaRowChanged" msprop:Generator_RowEvArgName="KosaricaRowChangeEvent" msprop:Generator_RowClassName="KosaricaRow">
+        <xs:element name="Kosarica" msprop:Generator_TableClassName="KosaricaDataTable" msprop:Generator_TableVarName="tableKosarica" msprop:Generator_RowChangedName="KosaricaRowChanged" msprop:Generator_TablePropName="Kosarica" msprop:Generator_RowDeletingName="KosaricaRowDeleting" msprop:Generator_RowChangingName="KosaricaRowChanging" msprop:Generator_RowEvHandlerName="KosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="KosaricaRowDeleted" msprop:Generator_RowClassName="KosaricaRow" msprop:Generator_UserTableName="Kosarica" msprop:Generator_RowEvArgName="KosaricaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_kosarica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_kosarica" msprop:Generator_ColumnPropNameInRow="ID_kosarica" msprop:Generator_ColumnPropNameInTable="ID_kosaricaColumn" msprop:Generator_UserColumnName="ID_kosarica" type="xs:int" />
@@ -381,7 +370,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Pivo" msprop:Generator_TableClassName="PivoDataTable" msprop:Generator_TableVarName="tablePivo" msprop:Generator_TablePropName="Pivo" msprop:Generator_RowDeletingName="PivoRowDeleting" msprop:Generator_RowChangingName="PivoRowChanging" msprop:Generator_RowEvHandlerName="PivoRowChangeEventHandler" msprop:Generator_RowDeletedName="PivoRowDeleted" msprop:Generator_UserTableName="Pivo" msprop:Generator_RowChangedName="PivoRowChanged" msprop:Generator_RowEvArgName="PivoRowChangeEvent" msprop:Generator_RowClassName="PivoRow">
+        <xs:element name="Pivo" msprop:Generator_TableClassName="PivoDataTable" msprop:Generator_TableVarName="tablePivo" msprop:Generator_RowChangedName="PivoRowChanged" msprop:Generator_TablePropName="Pivo" msprop:Generator_RowDeletingName="PivoRowDeleting" msprop:Generator_RowChangingName="PivoRowChanging" msprop:Generator_RowEvHandlerName="PivoRowChangeEventHandler" msprop:Generator_RowDeletedName="PivoRowDeleted" msprop:Generator_RowClassName="PivoRow" msprop:Generator_UserTableName="Pivo" msprop:Generator_RowEvArgName="PivoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_pivo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="123" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
@@ -430,7 +419,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Racun" msprop:Generator_TableClassName="RacunDataTable" msprop:Generator_TableVarName="tableRacun" msprop:Generator_TablePropName="Racun" msprop:Generator_RowDeletingName="RacunRowDeleting" msprop:Generator_RowChangingName="RacunRowChanging" msprop:Generator_RowEvHandlerName="RacunRowChangeEventHandler" msprop:Generator_RowDeletedName="RacunRowDeleted" msprop:Generator_UserTableName="Racun" msprop:Generator_RowChangedName="RacunRowChanged" msprop:Generator_RowEvArgName="RacunRowChangeEvent" msprop:Generator_RowClassName="RacunRow">
+        <xs:element name="Racun" msprop:Generator_TableClassName="RacunDataTable" msprop:Generator_TableVarName="tableRacun" msprop:Generator_RowChangedName="RacunRowChanged" msprop:Generator_TablePropName="Racun" msprop:Generator_RowDeletingName="RacunRowDeleting" msprop:Generator_RowChangingName="RacunRowChanging" msprop:Generator_RowEvHandlerName="RacunRowChangeEventHandler" msprop:Generator_RowDeletedName="RacunRowDeleted" msprop:Generator_RowClassName="RacunRow" msprop:Generator_UserTableName="Racun" msprop:Generator_RowEvArgName="RacunRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_racun" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_racun" msprop:Generator_ColumnPropNameInRow="ID_racun" msprop:Generator_ColumnPropNameInTable="ID_racunColumn" msprop:Generator_UserColumnName="ID_racun" type="xs:int" />
@@ -447,7 +436,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Stavke_kosarica" msprop:Generator_TableClassName="Stavke_kosaricaDataTable" msprop:Generator_TableVarName="tableStavke_kosarica" msprop:Generator_TablePropName="Stavke_kosarica" msprop:Generator_RowDeletingName="Stavke_kosaricaRowDeleting" msprop:Generator_RowChangingName="Stavke_kosaricaRowChanging" msprop:Generator_RowEvHandlerName="Stavke_kosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="Stavke_kosaricaRowDeleted" msprop:Generator_UserTableName="Stavke_kosarica" msprop:Generator_RowChangedName="Stavke_kosaricaRowChanged" msprop:Generator_RowEvArgName="Stavke_kosaricaRowChangeEvent" msprop:Generator_RowClassName="Stavke_kosaricaRow">
+        <xs:element name="Stavke_kosarica" msprop:Generator_TableClassName="Stavke_kosaricaDataTable" msprop:Generator_TableVarName="tableStavke_kosarica" msprop:Generator_RowChangedName="Stavke_kosaricaRowChanged" msprop:Generator_TablePropName="Stavke_kosarica" msprop:Generator_RowDeletingName="Stavke_kosaricaRowDeleting" msprop:Generator_RowChangingName="Stavke_kosaricaRowChanging" msprop:Generator_RowEvHandlerName="Stavke_kosaricaRowChangeEventHandler" msprop:Generator_RowDeletedName="Stavke_kosaricaRowDeleted" msprop:Generator_RowClassName="Stavke_kosaricaRow" msprop:Generator_UserTableName="Stavke_kosarica" msprop:Generator_RowEvArgName="Stavke_kosaricaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_pivo" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
@@ -456,7 +445,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Stavke_racun" msprop:Generator_TableClassName="Stavke_racunDataTable" msprop:Generator_TableVarName="tableStavke_racun" msprop:Generator_TablePropName="Stavke_racun" msprop:Generator_RowDeletingName="Stavke_racunRowDeleting" msprop:Generator_RowChangingName="Stavke_racunRowChanging" msprop:Generator_RowEvHandlerName="Stavke_racunRowChangeEventHandler" msprop:Generator_RowDeletedName="Stavke_racunRowDeleted" msprop:Generator_UserTableName="Stavke_racun" msprop:Generator_RowChangedName="Stavke_racunRowChanged" msprop:Generator_RowEvArgName="Stavke_racunRowChangeEvent" msprop:Generator_RowClassName="Stavke_racunRow">
+        <xs:element name="Stavke_racun" msprop:Generator_TableClassName="Stavke_racunDataTable" msprop:Generator_TableVarName="tableStavke_racun" msprop:Generator_RowChangedName="Stavke_racunRowChanged" msprop:Generator_TablePropName="Stavke_racun" msprop:Generator_RowDeletingName="Stavke_racunRowDeleting" msprop:Generator_RowChangingName="Stavke_racunRowChanging" msprop:Generator_RowEvHandlerName="Stavke_racunRowChangeEventHandler" msprop:Generator_RowDeletedName="Stavke_racunRowDeleted" msprop:Generator_RowClassName="Stavke_racunRow" msprop:Generator_UserTableName="Stavke_racun" msprop:Generator_RowEvArgName="Stavke_racunRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_pivo" msprop:Generator_ColumnVarNameInTable="columnID_pivo" msprop:Generator_ColumnPropNameInRow="ID_pivo" msprop:Generator_ColumnPropNameInTable="ID_pivoColumn" msprop:Generator_UserColumnName="ID_pivo" type="xs:int" />
@@ -465,7 +454,7 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Table_test" msprop:Generator_TableClassName="Table_testDataTable" msprop:Generator_TableVarName="tableTable_test" msprop:Generator_RowChangedName="Table_testRowChanged" msprop:Generator_TablePropName="Table_test" msprop:Generator_RowDeletingName="Table_testRowDeleting" msprop:Generator_RowChangingName="Table_testRowChanging" msprop:Generator_RowEvHandlerName="Table_testRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_testRowDeleted" msprop:Generator_RowClassName="Table_testRow" msprop:Generator_UserTableName="Table_test" msprop:Generator_RowEvArgName="Table_testRowChangeEvent">
+        <xs:element name="Table_test" msprop:Generator_TableClassName="Table_testDataTable" msprop:Generator_TableVarName="tableTable_test" msprop:Generator_TablePropName="Table_test" msprop:Generator_RowDeletingName="Table_testRowDeleting" msprop:Generator_RowChangingName="Table_testRowChanging" msprop:Generator_RowEvHandlerName="Table_testRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_testRowDeleted" msprop:Generator_UserTableName="Table_test" msprop:Generator_RowChangedName="Table_testRowChanged" msprop:Generator_RowEvArgName="Table_testRowChangeEvent" msprop:Generator_RowClassName="Table_testRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -514,11 +503,11 @@ SELECT ID, FirstName, LastName, Image FROM Table_test WHERE (ID = @ID)</CommandT
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Racun_Kosarica" msdata:parent="Kosarica" msdata:child="Racun" msdata:parentkey="ID_kosarica" msdata:childkey="ID_kosarica" msprop:Generator_UserChildTable="Racun" msprop:Generator_ChildPropName="GetRacunRows" msprop:Generator_UserRelationName="FK_Racun_Kosarica" msprop:Generator_ParentPropName="KosaricaRow" msprop:Generator_RelationVarName="relationFK_Racun_Kosarica" msprop:Generator_UserParentTable="Kosarica" />
-      <msdata:Relationship name="FK_Stavke_kosarica_Kosarica" msdata:parent="Kosarica" msdata:child="Stavke_kosarica" msdata:parentkey="ID_kosarica" msdata:childkey="ID_kosarica" msprop:Generator_UserChildTable="Stavke_kosarica" msprop:Generator_ChildPropName="GetStavke_kosaricaRows" msprop:Generator_UserRelationName="FK_Stavke_kosarica_Kosarica" msprop:Generator_ParentPropName="KosaricaRow" msprop:Generator_RelationVarName="relationFK_Stavke_kosarica_Kosarica" msprop:Generator_UserParentTable="Kosarica" />
-      <msdata:Relationship name="FK_Stavke_kosarica_Pivo" msdata:parent="Pivo" msdata:child="Stavke_kosarica" msdata:parentkey="ID_pivo" msdata:childkey="ID_pivo" msprop:Generator_UserChildTable="Stavke_kosarica" msprop:Generator_ChildPropName="GetStavke_kosaricaRows" msprop:Generator_UserRelationName="FK_Stavke_kosarica_Pivo" msprop:Generator_ParentPropName="PivoRow" msprop:Generator_RelationVarName="relationFK_Stavke_kosarica_Pivo" msprop:Generator_UserParentTable="Pivo" />
-      <msdata:Relationship name="FK_Stavke_racun_Pivo" msdata:parent="Pivo" msdata:child="Stavke_racun" msdata:parentkey="ID_pivo" msdata:childkey="ID_pivo" msprop:Generator_UserChildTable="Stavke_racun" msprop:Generator_ChildPropName="GetStavke_racunRows" msprop:Generator_UserRelationName="FK_Stavke_racun_Pivo" msprop:Generator_ParentPropName="PivoRow" msprop:Generator_RelationVarName="relationFK_Stavke_racun_Pivo" msprop:Generator_UserParentTable="Pivo" />
-      <msdata:Relationship name="FK_Stavke_racun_Racun" msdata:parent="Racun" msdata:child="Stavke_racun" msdata:parentkey="ID_racun" msdata:childkey="ID_racun" msprop:Generator_UserChildTable="Stavke_racun" msprop:Generator_ChildPropName="GetStavke_racunRows" msprop:Generator_UserRelationName="FK_Stavke_racun_Racun" msprop:Generator_ParentPropName="RacunRow" msprop:Generator_RelationVarName="relationFK_Stavke_racun_Racun" msprop:Generator_UserParentTable="Racun" />
+      <msdata:Relationship name="FK_Racun_Kosarica" msdata:parent="Kosarica" msdata:child="Racun" msdata:parentkey="ID_kosarica" msdata:childkey="ID_kosarica" msprop:Generator_UserChildTable="Racun" msprop:Generator_ChildPropName="GetRacunRows" msprop:Generator_UserRelationName="FK_Racun_Kosarica" msprop:Generator_RelationVarName="relationFK_Racun_Kosarica" msprop:Generator_UserParentTable="Kosarica" msprop:Generator_ParentPropName="KosaricaRow" />
+      <msdata:Relationship name="FK_Stavke_kosarica_Kosarica" msdata:parent="Kosarica" msdata:child="Stavke_kosarica" msdata:parentkey="ID_kosarica" msdata:childkey="ID_kosarica" msprop:Generator_UserChildTable="Stavke_kosarica" msprop:Generator_ChildPropName="GetStavke_kosaricaRows" msprop:Generator_UserRelationName="FK_Stavke_kosarica_Kosarica" msprop:Generator_RelationVarName="relationFK_Stavke_kosarica_Kosarica" msprop:Generator_UserParentTable="Kosarica" msprop:Generator_ParentPropName="KosaricaRow" />
+      <msdata:Relationship name="FK_Stavke_kosarica_Pivo" msdata:parent="Pivo" msdata:child="Stavke_kosarica" msdata:parentkey="ID_pivo" msdata:childkey="ID_pivo" msprop:Generator_UserChildTable="Stavke_kosarica" msprop:Generator_ChildPropName="GetStavke_kosaricaRows" msprop:Generator_UserRelationName="FK_Stavke_kosarica_Pivo" msprop:Generator_RelationVarName="relationFK_Stavke_kosarica_Pivo" msprop:Generator_UserParentTable="Pivo" msprop:Generator_ParentPropName="PivoRow" />
+      <msdata:Relationship name="FK_Stavke_racun_Pivo" msdata:parent="Pivo" msdata:child="Stavke_racun" msdata:parentkey="ID_pivo" msdata:childkey="ID_pivo" msprop:Generator_UserChildTable="Stavke_racun" msprop:Generator_ChildPropName="GetStavke_racunRows" msprop:Generator_UserRelationName="FK_Stavke_racun_Pivo" msprop:Generator_RelationVarName="relationFK_Stavke_racun_Pivo" msprop:Generator_UserParentTable="Pivo" msprop:Generator_ParentPropName="PivoRow" />
+      <msdata:Relationship name="FK_Stavke_racun_Racun" msdata:parent="Racun" msdata:child="Stavke_racun" msdata:parentkey="ID_racun" msdata:childkey="ID_racun" msprop:Generator_UserChildTable="Stavke_racun" msprop:Generator_ChildPropName="GetStavke_racunRows" msprop:Generator_UserRelationName="FK_Stavke_racun_Racun" msprop:Generator_RelationVarName="relationFK_Stavke_racun_Racun" msprop:Generator_UserParentTable="Racun" msprop:Generator_ParentPropName="RacunRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

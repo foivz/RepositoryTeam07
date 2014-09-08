@@ -212,7 +212,6 @@
             this.tableAdapterManager.RacunTableAdapter = null;
             this.tableAdapterManager.Stavke_kosaricaTableAdapter = null;
             this.tableAdapterManager.Stavke_racunTableAdapter = null;
-            this.tableAdapterManager.Table_testTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = GrimmBee___RateBeer.T07_DBDataSet11TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // pivoBindingNavigator
@@ -440,7 +439,7 @@
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 23;
-            this.buttonAdd.Text = "Dodaj";
+            this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 

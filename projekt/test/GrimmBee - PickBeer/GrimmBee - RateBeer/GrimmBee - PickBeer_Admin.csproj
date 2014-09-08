@@ -56,18 +56,6 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNedostaje.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNedostaje.Designer.cs">
-      <DependentUpon>FormNedostaje.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormStanje.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormStanje.Designer.cs">
-      <DependentUpon>FormStanje.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,12 +80,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormNedostaje.resx">
-      <DependentUpon>FormNedostaje.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormStanje.resx">
-      <DependentUpon>FormStanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdate.resx">
       <DependentUpon>FormUpdate.cs</DependentUpon>
