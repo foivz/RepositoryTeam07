@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace PickBeer_User
 {
-    class BrojStola
+    class BrojNarudbe
     {
-        public static int brojStola;
+        public static int brojNarudbe;
     }
 }

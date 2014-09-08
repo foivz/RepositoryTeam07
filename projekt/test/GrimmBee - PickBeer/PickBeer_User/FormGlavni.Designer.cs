@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Glavni_izbornik));
             this.labelNaslov = new System.Windows.Forms.Label();
             this.buttonCjenik = new System.Windows.Forms.Button();
@@ -36,8 +37,18 @@
             this.groupBoxGlavni_izb = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonKosarica = new System.Windows.Forms.Button();
+            this.t07_DBDataSet = new PickBeer_User.T07_DBDataSet();
+            this.kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.KosaricaTableAdapter();
+            this.tableAdapterManager = new PickBeer_User.T07_DBDataSetTableAdapters.TableAdapterManager();
+            this.mAX_ID_KosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mAX_ID_KosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.MAX_ID_KosaricaTableAdapter();
+            this.ZadnjaNarudba = new System.Windows.Forms.Label();
             this.groupBoxGlavni_izb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t07_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAX_ID_KosaricaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNaslov
@@ -101,7 +112,7 @@
             // 
             // buttonKosarica
             // 
-            this.buttonKosarica.Location = new System.Drawing.Point(13, 365);
+            this.buttonKosarica.Location = new System.Drawing.Point(19, 351);
             this.buttonKosarica.Name = "buttonKosarica";
             this.buttonKosarica.Size = new System.Drawing.Size(75, 23);
             this.buttonKosarica.TabIndex = 5;
@@ -109,11 +120,54 @@
             this.buttonKosarica.UseVisualStyleBackColor = true;
             this.buttonKosarica.Click += new System.EventHandler(this.buttonKosarica_Click);
             // 
+            // t07_DBDataSet
+            // 
+            this.t07_DBDataSet.DataSetName = "T07_DBDataSet";
+            this.t07_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kosaricaBindingSource
+            // 
+            this.kosaricaBindingSource.DataMember = "Kosarica";
+            this.kosaricaBindingSource.DataSource = this.t07_DBDataSet;
+            // 
+            // kosaricaTableAdapter
+            // 
+            this.kosaricaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.KosaricaTableAdapter = this.kosaricaTableAdapter;
+            this.tableAdapterManager.PivoTableAdapter = null;
+            this.tableAdapterManager.RacunTableAdapter = null;
+            this.tableAdapterManager.Stavke_kosaricaTableAdapter = null;
+            this.tableAdapterManager.Stavke_racunTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = PickBeer_User.T07_DBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // mAX_ID_KosaricaBindingSource
+            // 
+            this.mAX_ID_KosaricaBindingSource.DataMember = "MAX ID_Kosarica";
+            this.mAX_ID_KosaricaBindingSource.DataSource = this.t07_DBDataSet;
+            // 
+            // mAX_ID_KosaricaTableAdapter
+            // 
+            this.mAX_ID_KosaricaTableAdapter.ClearBeforeFill = true;
+            // 
+            // ZadnjaNarudba
+            // 
+            this.ZadnjaNarudba.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mAX_ID_KosaricaBindingSource, "Expr1", true));
+            this.ZadnjaNarudba.Location = new System.Drawing.Point(16, 377);
+            this.ZadnjaNarudba.Name = "ZadnjaNarudba";
+            this.ZadnjaNarudba.Size = new System.Drawing.Size(100, 23);
+            this.ZadnjaNarudba.TabIndex = 7;
+            this.ZadnjaNarudba.Text = "label1";
+            // 
             // Glavni_izbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 409);
+            this.Controls.Add(this.ZadnjaNarudba);
             this.Controls.Add(this.buttonKosarica);
             this.Controls.Add(this.groupBoxGlavni_izb);
             this.Controls.Add(this.buttonBR);
@@ -126,6 +180,9 @@
             this.groupBoxGlavni_izb.ResumeLayout(false);
             this.groupBoxGlavni_izb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.t07_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAX_ID_KosaricaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,6 +197,13 @@
         private System.Windows.Forms.GroupBox groupBoxGlavni_izb;
         private System.Windows.Forms.Button buttonKosarica;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private T07_DBDataSet t07_DBDataSet;
+        private System.Windows.Forms.BindingSource kosaricaBindingSource;
+        private T07_DBDataSetTableAdapters.KosaricaTableAdapter kosaricaTableAdapter;
+        private T07_DBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingSource mAX_ID_KosaricaBindingSource;
+        private T07_DBDataSetTableAdapters.MAX_ID_KosaricaTableAdapter mAX_ID_KosaricaTableAdapter;
+        private System.Windows.Forms.Label ZadnjaNarudba;
     }
 }
 

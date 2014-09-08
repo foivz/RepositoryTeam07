@@ -94,6 +94,8 @@
             this.stavke_kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stavke_kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter();
             this.kolicinaTextBox = new System.Windows.Forms.TextBox();
+            this.kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.KosaricaTableAdapter();
             drzava_podrijetlaLabel = new System.Windows.Forms.Label();
             ime_pivaLabel = new System.Windows.Forms.Label();
             cijenaLabel = new System.Windows.Forms.Label();
@@ -114,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.drzava_SelectBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCjenik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_kosaricaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // drzava_podrijetlaLabel
@@ -688,11 +691,20 @@
             this.kolicinaTextBox.Size = new System.Drawing.Size(77, 20);
             this.kolicinaTextBox.TabIndex = 31;
             // 
+            // kosaricaBindingSource
+            // 
+            this.kosaricaBindingSource.DataMember = "Kosarica";
+            this.kosaricaBindingSource.DataSource = this.t07_DBDataSet;
+            // 
+            // kosaricaTableAdapter
+            // 
+            this.kosaricaTableAdapter.ClearBeforeFill = true;
+            // 
             // FormCjenik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 689);
+            this.ClientSize = new System.Drawing.Size(840, 689);
             this.Controls.Add(kolicinaLabel);
             this.Controls.Add(this.kolicinaTextBox);
             this.Controls.Add(this.buttonDodajuK);
@@ -737,6 +749,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.drzava_SelectBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCjenik)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_kosaricaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,5 +810,7 @@
         private System.Windows.Forms.BindingSource stavke_kosaricaBindingSource;
         private T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter stavke_kosaricaTableAdapter;
         private System.Windows.Forms.TextBox kolicinaTextBox;
+        private System.Windows.Forms.BindingSource kosaricaBindingSource;
+        private T07_DBDataSetTableAdapters.KosaricaTableAdapter kosaricaTableAdapter;
     }
 }

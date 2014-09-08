@@ -25,7 +25,7 @@ namespace PickBeer_User
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BrojStola.brojStola = int.Parse(txtBrojStola.Text);
+            BrojNarudbe.brojNarudbe = int.Parse(txtBrojStola.Text);
 
             this.Validate();
             this.kosaricaBindingSource.EndEdit();
