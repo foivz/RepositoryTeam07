@@ -59,19 +59,6 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pivoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pivoDataGridViewUpdate = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iD_pivoTextBox = new System.Windows.Forms.TextBox();
             this.ime_pivaTextBox = new System.Windows.Forms.TextBox();
             this.cijenaTextBox = new System.Windows.Forms.TextBox();
@@ -85,6 +72,19 @@
             this.slikaTextBox = new System.Windows.Forms.TextBox();
             this.pictureBoxUpdate = new System.Windows.Forms.PictureBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             iD_pivoLabel = new System.Windows.Forms.Label();
             ime_pivaLabel = new System.Windows.Forms.Label();
             cijenaLabel = new System.Windows.Forms.Label();
@@ -358,7 +358,6 @@
             // pivoDataGridViewUpdate
             // 
             this.pivoDataGridViewUpdate.AllowUserToAddRows = false;
-            this.pivoDataGridViewUpdate.AllowUserToDeleteRows = false;
             this.pivoDataGridViewUpdate.AllowUserToResizeRows = false;
             this.pivoDataGridViewUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -387,14 +386,122 @@
             this.pivoDataGridViewUpdate.TabIndex = 1;
             this.pivoDataGridViewUpdate.SelectionChanged += new System.EventHandler(this.pivoDataGridViewUpdate_SelectionChanged);
             // 
+            // iD_pivoTextBox
+            // 
+            this.iD_pivoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "ID_pivo", true));
+            this.iD_pivoTextBox.Location = new System.Drawing.Point(113, 262);
+            this.iD_pivoTextBox.Name = "iD_pivoTextBox";
+            this.iD_pivoTextBox.ReadOnly = true;
+            this.iD_pivoTextBox.Size = new System.Drawing.Size(49, 20);
+            this.iD_pivoTextBox.TabIndex = 3;
+            // 
+            // ime_pivaTextBox
+            // 
+            this.ime_pivaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Ime_piva", true));
+            this.ime_pivaTextBox.Location = new System.Drawing.Point(113, 288);
+            this.ime_pivaTextBox.Name = "ime_pivaTextBox";
+            this.ime_pivaTextBox.Size = new System.Drawing.Size(134, 20);
+            this.ime_pivaTextBox.TabIndex = 5;
+            // 
+            // cijenaTextBox
+            // 
+            this.cijenaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Cijena", true));
+            this.cijenaTextBox.Location = new System.Drawing.Point(113, 314);
+            this.cijenaTextBox.Name = "cijenaTextBox";
+            this.cijenaTextBox.Size = new System.Drawing.Size(49, 20);
+            this.cijenaTextBox.TabIndex = 7;
+            // 
+            // stanjeTextBox
+            // 
+            this.stanjeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Stanje", true));
+            this.stanjeTextBox.Location = new System.Drawing.Point(113, 340);
+            this.stanjeTextBox.Name = "stanjeTextBox";
+            this.stanjeTextBox.Size = new System.Drawing.Size(49, 20);
+            this.stanjeTextBox.TabIndex = 9;
+            // 
+            // drzava_podrijetlaTextBox
+            // 
+            this.drzava_podrijetlaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Drzava_podrijetla", true));
+            this.drzava_podrijetlaTextBox.Location = new System.Drawing.Point(438, 262);
+            this.drzava_podrijetlaTextBox.Name = "drzava_podrijetlaTextBox";
+            this.drzava_podrijetlaTextBox.Size = new System.Drawing.Size(76, 20);
+            this.drzava_podrijetlaTextBox.TabIndex = 11;
+            // 
+            // vrstaTextBox
+            // 
+            this.vrstaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Vrsta", true));
+            this.vrstaTextBox.Location = new System.Drawing.Point(438, 288);
+            this.vrstaTextBox.Name = "vrstaTextBox";
+            this.vrstaTextBox.Size = new System.Drawing.Size(76, 20);
+            this.vrstaTextBox.TabIndex = 13;
+            // 
+            // udio_alkTextBox
+            // 
+            this.udio_alkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Udio_alk", true));
+            this.udio_alkTextBox.Location = new System.Drawing.Point(438, 314);
+            this.udio_alkTextBox.Name = "udio_alkTextBox";
+            this.udio_alkTextBox.Size = new System.Drawing.Size(59, 20);
+            this.udio_alkTextBox.TabIndex = 15;
+            // 
+            // volumenTextBox
+            // 
+            this.volumenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Volumen", true));
+            this.volumenTextBox.Location = new System.Drawing.Point(438, 340);
+            this.volumenTextBox.Name = "volumenTextBox";
+            this.volumenTextBox.Size = new System.Drawing.Size(59, 20);
+            this.volumenTextBox.TabIndex = 17;
+            // 
+            // ocjenaRBTextBox
+            // 
+            this.ocjenaRBTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "OcjenaRB", true));
+            this.ocjenaRBTextBox.Location = new System.Drawing.Point(438, 366);
+            this.ocjenaRBTextBox.Name = "ocjenaRBTextBox";
+            this.ocjenaRBTextBox.Size = new System.Drawing.Size(59, 20);
+            this.ocjenaRBTextBox.TabIndex = 19;
+            // 
+            // proizvodacTextBox
+            // 
+            this.proizvodacTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Proizvodac", true));
+            this.proizvodacTextBox.Location = new System.Drawing.Point(438, 392);
+            this.proizvodacTextBox.Name = "proizvodacTextBox";
+            this.proizvodacTextBox.Size = new System.Drawing.Size(214, 20);
+            this.proizvodacTextBox.TabIndex = 21;
+            // 
+            // slikaTextBox
+            // 
+            this.slikaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Slika", true));
+            this.slikaTextBox.Location = new System.Drawing.Point(438, 418);
+            this.slikaTextBox.Name = "slikaTextBox";
+            this.slikaTextBox.Size = new System.Drawing.Size(214, 20);
+            this.slikaTextBox.TabIndex = 23;
+            // 
+            // pictureBoxUpdate
+            // 
+            this.pictureBoxUpdate.Location = new System.Drawing.Point(747, 262);
+            this.pictureBoxUpdate.Name = "pictureBoxUpdate";
+            this.pictureBoxUpdate.Size = new System.Drawing.Size(258, 176);
+            this.pictureBoxUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxUpdate.TabIndex = 24;
+            this.pictureBoxUpdate.TabStop = false;
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(113, 415);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
+            this.buttonUpdate.TabIndex = 25;
+            this.buttonUpdate.Text = "Ažuriraj";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_pivo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Šifra";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 43;
+            this.dataGridViewTextBoxColumn1.Width = 53;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -501,114 +608,6 @@
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
             this.dataGridViewTextBoxColumn13.Width = 55;
-            // 
-            // iD_pivoTextBox
-            // 
-            this.iD_pivoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "ID_pivo", true));
-            this.iD_pivoTextBox.Location = new System.Drawing.Point(113, 262);
-            this.iD_pivoTextBox.Name = "iD_pivoTextBox";
-            this.iD_pivoTextBox.ReadOnly = true;
-            this.iD_pivoTextBox.Size = new System.Drawing.Size(49, 20);
-            this.iD_pivoTextBox.TabIndex = 3;
-            // 
-            // ime_pivaTextBox
-            // 
-            this.ime_pivaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Ime_piva", true));
-            this.ime_pivaTextBox.Location = new System.Drawing.Point(113, 288);
-            this.ime_pivaTextBox.Name = "ime_pivaTextBox";
-            this.ime_pivaTextBox.Size = new System.Drawing.Size(134, 20);
-            this.ime_pivaTextBox.TabIndex = 5;
-            // 
-            // cijenaTextBox
-            // 
-            this.cijenaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Cijena", true));
-            this.cijenaTextBox.Location = new System.Drawing.Point(113, 314);
-            this.cijenaTextBox.Name = "cijenaTextBox";
-            this.cijenaTextBox.Size = new System.Drawing.Size(49, 20);
-            this.cijenaTextBox.TabIndex = 7;
-            // 
-            // stanjeTextBox
-            // 
-            this.stanjeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Stanje", true));
-            this.stanjeTextBox.Location = new System.Drawing.Point(113, 340);
-            this.stanjeTextBox.Name = "stanjeTextBox";
-            this.stanjeTextBox.Size = new System.Drawing.Size(49, 20);
-            this.stanjeTextBox.TabIndex = 9;
-            // 
-            // drzava_podrijetlaTextBox
-            // 
-            this.drzava_podrijetlaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Drzava_podrijetla", true));
-            this.drzava_podrijetlaTextBox.Location = new System.Drawing.Point(438, 262);
-            this.drzava_podrijetlaTextBox.Name = "drzava_podrijetlaTextBox";
-            this.drzava_podrijetlaTextBox.Size = new System.Drawing.Size(76, 20);
-            this.drzava_podrijetlaTextBox.TabIndex = 11;
-            // 
-            // vrstaTextBox
-            // 
-            this.vrstaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Vrsta", true));
-            this.vrstaTextBox.Location = new System.Drawing.Point(438, 288);
-            this.vrstaTextBox.Name = "vrstaTextBox";
-            this.vrstaTextBox.Size = new System.Drawing.Size(76, 20);
-            this.vrstaTextBox.TabIndex = 13;
-            // 
-            // udio_alkTextBox
-            // 
-            this.udio_alkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Udio_alk", true));
-            this.udio_alkTextBox.Location = new System.Drawing.Point(438, 314);
-            this.udio_alkTextBox.Name = "udio_alkTextBox";
-            this.udio_alkTextBox.Size = new System.Drawing.Size(59, 20);
-            this.udio_alkTextBox.TabIndex = 15;
-            // 
-            // volumenTextBox
-            // 
-            this.volumenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Volumen", true));
-            this.volumenTextBox.Location = new System.Drawing.Point(438, 340);
-            this.volumenTextBox.Name = "volumenTextBox";
-            this.volumenTextBox.Size = new System.Drawing.Size(59, 20);
-            this.volumenTextBox.TabIndex = 17;
-            // 
-            // ocjenaRBTextBox
-            // 
-            this.ocjenaRBTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "OcjenaRB", true));
-            this.ocjenaRBTextBox.Location = new System.Drawing.Point(438, 366);
-            this.ocjenaRBTextBox.Name = "ocjenaRBTextBox";
-            this.ocjenaRBTextBox.Size = new System.Drawing.Size(59, 20);
-            this.ocjenaRBTextBox.TabIndex = 19;
-            // 
-            // proizvodacTextBox
-            // 
-            this.proizvodacTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Proizvodac", true));
-            this.proizvodacTextBox.Location = new System.Drawing.Point(438, 392);
-            this.proizvodacTextBox.Name = "proizvodacTextBox";
-            this.proizvodacTextBox.Size = new System.Drawing.Size(214, 20);
-            this.proizvodacTextBox.TabIndex = 21;
-            // 
-            // slikaTextBox
-            // 
-            this.slikaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pivoBindingSource, "Slika", true));
-            this.slikaTextBox.Location = new System.Drawing.Point(438, 418);
-            this.slikaTextBox.Name = "slikaTextBox";
-            this.slikaTextBox.Size = new System.Drawing.Size(214, 20);
-            this.slikaTextBox.TabIndex = 23;
-            // 
-            // pictureBoxUpdate
-            // 
-            this.pictureBoxUpdate.Location = new System.Drawing.Point(747, 262);
-            this.pictureBoxUpdate.Name = "pictureBoxUpdate";
-            this.pictureBoxUpdate.Size = new System.Drawing.Size(258, 176);
-            this.pictureBoxUpdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxUpdate.TabIndex = 24;
-            this.pictureBoxUpdate.TabStop = false;
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(113, 415);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpdate.TabIndex = 25;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // FormUpdate
             // 

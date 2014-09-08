@@ -37,7 +37,7 @@ namespace GrimmBee___RateBeer
             this.Validate();
             this.pivoBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.t07_DBDataSet11);
-            MessageBox.Show("Entry saved to database");
+            MessageBox.Show("Artikl je dodan");
         }
     }
 }

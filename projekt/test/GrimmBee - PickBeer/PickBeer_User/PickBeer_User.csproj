@@ -65,11 +65,11 @@
     <Compile Include="FormKosarica.Designer.cs">
       <DependentUpon>FormKosarica.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRoulette.cs">
+    <Compile Include="FormRulet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRoulette.Designer.cs">
-      <DependentUpon>FormRoulette.cs</DependentUpon>
+    <Compile Include="FormRulet.Designer.cs">
+      <DependentUpon>FormRulet.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,8 +91,8 @@
     <EmbeddedResource Include="FormKosarica.resx">
       <DependentUpon>FormKosarica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRoulette.resx">
-      <DependentUpon>FormRoulette.cs</DependentUpon>
+    <EmbeddedResource Include="FormRulet.resx">
+      <DependentUpon>FormRulet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

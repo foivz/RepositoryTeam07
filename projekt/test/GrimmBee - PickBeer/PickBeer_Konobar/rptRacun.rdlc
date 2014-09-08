@@ -262,6 +262,10 @@
                               <Value>=Fields!Kolicina.Value</Value>
                               <Style />
                             </TextRun>
+                            <TextRun>
+                              <Value> kom</Value>
+                              <Style />
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
@@ -292,6 +296,10 @@
                               <Value>=Fields!Cijena.Value</Value>
                               <Style />
                             </TextRun>
+                            <TextRun>
+                              <Value>,00</Value>
+                              <Style />
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
@@ -320,6 +328,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Ukupno.Value</Value>
+                              <Style />
+                            </TextRun>
+                            <TextRun>
+                              <Value>,00</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -479,6 +491,10 @@
                               <Value>=sum(Fields!Ukupno.Value)</Value>
                               <Style />
                             </TextRun>
+                            <TextRun>
+                              <Value>,00</Value>
+                              <Style />
+                            </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
@@ -540,9 +556,70 @@
   <Width>3.39434in</Width>
   <Page>
     <PageHeader>
-      <Height>2.54cm</Height>
+      <Height>2.60766cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="ID_kosarica">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Sum(Fields!ID_kosarica.Value, "Kosarica")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ID_kosarica</rd:DefaultName>
+          <Top>1.86655cm</Top>
+          <Left>2.67794cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Broj računa:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>1.86655cm</Top>
+          <Left>0.26141cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.27542cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>

@@ -34,9 +34,9 @@ namespace PickBeer_User
             // TODO: This line of code loads data into the 't07_DBDataSet.Drzava_Select' table. You can move, or remove it, as needed.
             this.drzava_SelectTableAdapter.Fill(this.t07_DBDataSet.Drzava_Select);
             // TODO: This line of code loads data into the 't07_DBDataSet.Pivo' table. You can move, or remove it, as needed.
-            this.pivoTableAdapter.Fill(this.t07_DBDataSet.Pivo);
+            this.pivoTableAdapter.FillByStanje(this.t07_DBDataSet.Pivo);
             pictureBoxCjenik.ImageLocation = pivoDataGridViewCjenik.CurrentRow.Cells[12].Value.ToString();
-        }
+                   }
 
         private void drzava_podrijetlaComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
@@ -54,7 +54,7 @@ namespace PickBeer_User
 
         private void buttonSve_Click(object sender, EventArgs e)
         {
-            this.pivoTableAdapter.Fill(this.t07_DBDataSet.Pivo);
+            this.pivoTableAdapter.FillByStanje(this.t07_DBDataSet.Pivo);
         }
 
         private void buttonDodajuK_Click(object sender, EventArgs e)

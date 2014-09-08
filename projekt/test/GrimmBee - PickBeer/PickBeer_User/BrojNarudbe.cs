@@ -9,5 +9,6 @@ namespace PickBeer_User
     class BrojNarudbe
     {
         public static int brojNarudbe;
+        public static int staraNarudba;
     }
 }
