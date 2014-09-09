@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Glavni_izbornik));
             this.labelNaslov = new System.Windows.Forms.Label();
             this.buttonCjenik = new System.Windows.Forms.Button();
@@ -37,6 +36,7 @@
             this.groupBoxGlavni_izb = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonKosarica = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.ZadnjaNarudba = new System.Windows.Forms.Label();
             this.btnPonovi = new System.Windows.Forms.Button();
             this.mAX_ID_KosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -50,6 +50,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.mAX_ID_KosaricaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t07_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).BeginInit();
+=======
+            this.groupBoxGlavni_izb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+>>>>>>> parent of df26571... Dorada aplikacije
             this.SuspendLayout();
             // 
             // labelNaslov
@@ -114,7 +118,7 @@
             // 
             // buttonKosarica
             // 
-            this.buttonKosarica.Location = new System.Drawing.Point(19, 351);
+            this.buttonKosarica.Location = new System.Drawing.Point(13, 365);
             this.buttonKosarica.Name = "buttonKosarica";
             this.buttonKosarica.Size = new System.Drawing.Size(75, 23);
             this.buttonKosarica.TabIndex = 5;
@@ -122,6 +126,7 @@
             this.buttonKosarica.UseVisualStyleBackColor = true;
             this.buttonKosarica.Click += new System.EventHandler(this.buttonKosarica_Click);
             // 
+<<<<<<< HEAD
             // ZadnjaNarudba
             // 
             this.ZadnjaNarudba.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.mAX_ID_KosaricaBindingSource, "Expr1", true));
@@ -174,13 +179,18 @@
             // 
             this.mAX_ID_KosaricaTableAdapter.ClearBeforeFill = true;
             // 
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             // Glavni_izbornik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 409);
+<<<<<<< HEAD
             this.Controls.Add(this.btnPonovi);
             this.Controls.Add(this.ZadnjaNarudba);
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             this.Controls.Add(this.buttonKosarica);
             this.Controls.Add(this.groupBoxGlavni_izb);
             this.Controls.Add(this.buttonBR);
@@ -193,9 +203,12 @@
             this.groupBoxGlavni_izb.ResumeLayout(false);
             this.groupBoxGlavni_izb.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.mAX_ID_KosaricaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t07_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).EndInit();
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,6 +223,7 @@
         private System.Windows.Forms.GroupBox groupBoxGlavni_izb;
         private System.Windows.Forms.Button buttonKosarica;
         private System.Windows.Forms.PictureBox pictureBox1;
+<<<<<<< HEAD
         private T07_DBDataSet t07_DBDataSet;
         private System.Windows.Forms.BindingSource kosaricaBindingSource;
         private T07_DBDataSetTableAdapters.KosaricaTableAdapter kosaricaTableAdapter;
@@ -218,6 +232,8 @@
         private T07_DBDataSetTableAdapters.MAX_ID_KosaricaTableAdapter mAX_ID_KosaricaTableAdapter;
         private System.Windows.Forms.Label ZadnjaNarudba;
         private System.Windows.Forms.Button btnPonovi;
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
     }
 }
 

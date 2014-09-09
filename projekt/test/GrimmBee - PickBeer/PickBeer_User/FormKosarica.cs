@@ -15,31 +15,40 @@ namespace PickBeer_User
         public FormKosarica()
         {
             InitializeComponent();
+
+
+
         }
 
-        private void stavke_kosaricaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void kosaricaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
-            this.stavke_kosaricaBindingSource.EndEdit();
+            this.kosaricaBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.t07_DBDataSet);
 
         }
 
         private void FormKosarica_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 't07_DBDataSet.Kosarica' table. You can move, or remove it, as needed.
-            this.kosaricaTableAdapter.Fill(this.t07_DBDataSet.Kosarica);
+            // TODO: This line of code loads data into the 't07_DBDataSet.Pregled_narudbe' table. You can move, or remove it, as needed.
+            this.pregled_narudbeTableAdapter.Fill(this.t07_DBDataSet.Pregled_narudbe);
             // TODO: This line of code loads data into the 't07_DBDataSet.Pivo' table. You can move, or remove it, as needed.
             this.pivoTableAdapter.Fill(this.t07_DBDataSet.Pivo);
             // TODO: This line of code loads data into the 't07_DBDataSet.Stavke_kosarica' table. You can move, or remove it, as needed.
+<<<<<<< HEAD
             this.stavke_kosaricaTableAdapter.FillByID(this.t07_DBDataSet.Stavke_kosarica,BrojNarudbe.brojNarudbe);
             
+=======
+            this.stavke_kosaricaTableAdapter.Fill(this.t07_DBDataSet.Stavke_kosarica);
+            // TODO: This line of code loads data into the 't07_DBDataSet.Kosarica' table. You can move, or remove it, as needed.
+            this.kosaricaTableAdapter.Fill(this.t07_DBDataSet.Kosarica);
 
-            
-            
+>>>>>>> parent of df26571... Dorada aplikacije
+
             int sum = 0;
-            for (int i = 0; i < stavke_kosaricaDataGridView.Rows.Count; i=i+1)
+            for (int i = 0; i < stavke_kosaricaDataGridView.Rows.Count; i++)
             {
+<<<<<<< HEAD
                 int prvi = int.Parse(stavke_kosaricaDataGridView.Rows[i].Cells[3].Value.ToString());
                 int drugi = int.Parse(stavke_kosaricaDataGridView.Rows[i].Cells[4].FormattedValue.ToString());
                 int zbroj = prvi *drugi;
@@ -52,10 +61,17 @@ namespace PickBeer_User
             
             
 
+=======
+                sum = sum +  int.Parse(stavke_kosaricaDataGridView.Rows[i].Cells[4].Value.ToString());
+            }
+
+            txtUkupno.Text = sum.ToString();
+>>>>>>> parent of df26571... Dorada aplikacije
         }
 
-        private void btnNaruci_Click(object sender, EventArgs e)
+        private void stavke_kosaricaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+<<<<<<< HEAD
             T07_DBDataSet.KosaricaRow izmjenareda;
             izmjenareda = t07_DBDataSet.Kosarica.FindByID_kosarica(BrojNarudbe.brojNarudbe);
 
@@ -76,14 +92,26 @@ namespace PickBeer_User
 
             MessageBox.Show("Narudžba je zaprimljena");
         }
-
-        private void stavke_kosaricaDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+=======
 
         }
 
-        private void btnIzbrisi_Click(object sender, EventArgs e)
+        private void buttonNaruci_Click(object sender, EventArgs e)
         {
+
+            
+            
+
+
+>>>>>>> parent of df26571... Dorada aplikacije
+
+           
+
+        }
+
+        private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
+        {
+<<<<<<< HEAD
             int redBrisanje = int.Parse(stavke_kosaricaDataGridView.CurrentRow.Cells[0].Value.ToString());
             int kolicina = int.Parse(stavke_kosaricaDataGridView.CurrentRow.Cells[3].Value.ToString());
             MessageBox.Show(redBrisanje.ToString() + "  " + kolicina.ToString());
@@ -125,5 +153,9 @@ namespace PickBeer_User
         }
 
 
+=======
+            
+        }
+>>>>>>> parent of df26571... Dorada aplikacije
     }
 }

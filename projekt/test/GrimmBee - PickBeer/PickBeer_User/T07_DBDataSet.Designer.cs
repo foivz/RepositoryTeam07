@@ -30,14 +30,24 @@ namespace PickBeer_User {
         
         private Stavke_racunDataTable tableStavke_racun;
         
+<<<<<<< HEAD
+=======
+        private Beer_RouletteDataTable tableBeer_Roulette;
+        
+        private Random_DrzavaDataTable tableRandom_Drzava;
+        
+>>>>>>> parent of df26571... Dorada aplikacije
         private Top10_RatebeerDataTable tableTop10_Ratebeer;
         
         private Drzava_SelectDataTable tableDrzava_Select;
+        
+        private KosaricaDataTable tableKosarica;
         
         private RacunDataTable tableRacun;
         
         private Pregled_narudbeDataTable tablePregled_narudbe;
         
+<<<<<<< HEAD
         private MAX_ID_KosaricaDataTable tableMAX_ID_Kosarica;
         
         private KosaricaDataTable tableKosarica;
@@ -46,13 +56,15 @@ namespace PickBeer_User {
         
         private RouletteDataTable tableRoulette;
         
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
         private global::System.Data.DataRelation relationFK_Stavke_kosarica_Pivo;
         
         private global::System.Data.DataRelation relationFK_Stavke_racun_Pivo;
         
-        private global::System.Data.DataRelation relationFK_Stavke_racun_Racun;
-        
         private global::System.Data.DataRelation relationFK_Stavke_kosarica_Kosarica;
+        
+        private global::System.Data.DataRelation relationFK_Stavke_racun_Racun;
         
         private global::System.Data.DataRelation relationFK_Racun_Kosarica;
         
@@ -97,11 +109,23 @@ namespace PickBeer_User {
                 if ((ds.Tables["Stavke_racun"] != null)) {
                     base.Tables.Add(new Stavke_racunDataTable(ds.Tables["Stavke_racun"]));
                 }
+<<<<<<< HEAD
+=======
+                if ((ds.Tables["Beer_Roulette"] != null)) {
+                    base.Tables.Add(new Beer_RouletteDataTable(ds.Tables["Beer_Roulette"]));
+                }
+                if ((ds.Tables["Random_Drzava"] != null)) {
+                    base.Tables.Add(new Random_DrzavaDataTable(ds.Tables["Random_Drzava"]));
+                }
+>>>>>>> parent of df26571... Dorada aplikacije
                 if ((ds.Tables["Top10_Ratebeer"] != null)) {
                     base.Tables.Add(new Top10_RatebeerDataTable(ds.Tables["Top10_Ratebeer"]));
                 }
                 if ((ds.Tables["Drzava_Select"] != null)) {
                     base.Tables.Add(new Drzava_SelectDataTable(ds.Tables["Drzava_Select"]));
+                }
+                if ((ds.Tables["Kosarica"] != null)) {
+                    base.Tables.Add(new KosaricaDataTable(ds.Tables["Kosarica"]));
                 }
                 if ((ds.Tables["Racun"] != null)) {
                     base.Tables.Add(new RacunDataTable(ds.Tables["Racun"]));
@@ -109,6 +133,7 @@ namespace PickBeer_User {
                 if ((ds.Tables["Pregled_narudbe"] != null)) {
                     base.Tables.Add(new Pregled_narudbeDataTable(ds.Tables["Pregled_narudbe"]));
                 }
+<<<<<<< HEAD
                 if ((ds.Tables["MAX ID_Kosarica"] != null)) {
                     base.Tables.Add(new MAX_ID_KosaricaDataTable(ds.Tables["MAX ID_Kosarica"]));
                 }
@@ -121,6 +146,8 @@ namespace PickBeer_User {
                 if ((ds.Tables["Roulette"] != null)) {
                     base.Tables.Add(new RouletteDataTable(ds.Tables["Roulette"]));
                 }
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -173,6 +200,36 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
+        public Top10_RatebeerDataTable Top10_Ratebeer {
+            get {
+                return this.tableTop10_Ratebeer;
+=======
+        public Beer_RouletteDataTable Beer_Roulette {
+            get {
+                return this.tableBeer_Roulette;
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
+        public Drzava_SelectDataTable Drzava_Select {
+=======
+        public Random_DrzavaDataTable Random_Drzava {
+>>>>>>> parent of df26571... Dorada aplikacije
+            get {
+                return this.tableRandom_Drzava;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public Top10_RatebeerDataTable Top10_Ratebeer {
             get {
                 return this.tableTop10_Ratebeer;
@@ -183,29 +240,15 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Drzava_SelectDataTable Drzava_Select {
-            get {
-                return this.tableDrzava_Select;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public RacunDataTable Racun {
-            get {
-                return this.tableRacun;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
         public Pregled_narudbeDataTable Pregled_narudbe {
             get {
                 return this.tablePregled_narudbe;
+=======
+        public Drzava_SelectDataTable Drzava_Select {
+            get {
+                return this.tableDrzava_Select;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
         }
         
@@ -213,19 +256,15 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
         public MAX_ID_KosaricaDataTable MAX_ID_Kosarica {
             get {
                 return this.tableMAX_ID_Kosarica;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+=======
         public KosaricaDataTable Kosarica {
             get {
                 return this.tableKosarica;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
         }
         
@@ -233,9 +272,31 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
+        public KosaricaDataTable Kosarica {
+            get {
+                return this.tableKosarica;
+=======
+        public RacunDataTable Racun {
+            get {
+                return this.tableRacun;
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
         public Random_DrzavaDataTable Random_Drzava {
             get {
                 return this.tableRandom_Drzava;
+=======
+        public Table1DataTable Table1 {
+            get {
+                return this.tableTable1;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
         }
         
@@ -243,9 +304,15 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+<<<<<<< HEAD
         public RouletteDataTable Roulette {
             get {
                 return this.tableRoulette;
+=======
+        public Pregled_narudbeDataTable Pregled_narudbe {
+            get {
+                return this.tablePregled_narudbe;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
         }
         
@@ -325,11 +392,23 @@ namespace PickBeer_User {
                 if ((ds.Tables["Stavke_racun"] != null)) {
                     base.Tables.Add(new Stavke_racunDataTable(ds.Tables["Stavke_racun"]));
                 }
+<<<<<<< HEAD
+=======
+                if ((ds.Tables["Beer_Roulette"] != null)) {
+                    base.Tables.Add(new Beer_RouletteDataTable(ds.Tables["Beer_Roulette"]));
+                }
+                if ((ds.Tables["Random_Drzava"] != null)) {
+                    base.Tables.Add(new Random_DrzavaDataTable(ds.Tables["Random_Drzava"]));
+                }
+>>>>>>> parent of df26571... Dorada aplikacije
                 if ((ds.Tables["Top10_Ratebeer"] != null)) {
                     base.Tables.Add(new Top10_RatebeerDataTable(ds.Tables["Top10_Ratebeer"]));
                 }
                 if ((ds.Tables["Drzava_Select"] != null)) {
                     base.Tables.Add(new Drzava_SelectDataTable(ds.Tables["Drzava_Select"]));
+                }
+                if ((ds.Tables["Kosarica"] != null)) {
+                    base.Tables.Add(new KosaricaDataTable(ds.Tables["Kosarica"]));
                 }
                 if ((ds.Tables["Racun"] != null)) {
                     base.Tables.Add(new RacunDataTable(ds.Tables["Racun"]));
@@ -337,6 +416,7 @@ namespace PickBeer_User {
                 if ((ds.Tables["Pregled_narudbe"] != null)) {
                     base.Tables.Add(new Pregled_narudbeDataTable(ds.Tables["Pregled_narudbe"]));
                 }
+<<<<<<< HEAD
                 if ((ds.Tables["MAX ID_Kosarica"] != null)) {
                     base.Tables.Add(new MAX_ID_KosaricaDataTable(ds.Tables["MAX ID_Kosarica"]));
                 }
@@ -349,6 +429,8 @@ namespace PickBeer_User {
                 if ((ds.Tables["Roulette"] != null)) {
                     base.Tables.Add(new RouletteDataTable(ds.Tables["Roulette"]));
                 }
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -400,6 +482,21 @@ namespace PickBeer_User {
                     this.tableStavke_racun.InitVars();
                 }
             }
+<<<<<<< HEAD
+=======
+            this.tableBeer_Roulette = ((Beer_RouletteDataTable)(base.Tables["Beer_Roulette"]));
+            if ((initTable == true)) {
+                if ((this.tableBeer_Roulette != null)) {
+                    this.tableBeer_Roulette.InitVars();
+                }
+            }
+            this.tableRandom_Drzava = ((Random_DrzavaDataTable)(base.Tables["Random_Drzava"]));
+            if ((initTable == true)) {
+                if ((this.tableRandom_Drzava != null)) {
+                    this.tableRandom_Drzava.InitVars();
+                }
+            }
+>>>>>>> parent of df26571... Dorada aplikacije
             this.tableTop10_Ratebeer = ((Top10_RatebeerDataTable)(base.Tables["Top10_Ratebeer"]));
             if ((initTable == true)) {
                 if ((this.tableTop10_Ratebeer != null)) {
@@ -410,6 +507,12 @@ namespace PickBeer_User {
             if ((initTable == true)) {
                 if ((this.tableDrzava_Select != null)) {
                     this.tableDrzava_Select.InitVars();
+                }
+            }
+            this.tableKosarica = ((KosaricaDataTable)(base.Tables["Kosarica"]));
+            if ((initTable == true)) {
+                if ((this.tableKosarica != null)) {
+                    this.tableKosarica.InitVars();
                 }
             }
             this.tableRacun = ((RacunDataTable)(base.Tables["Racun"]));
@@ -424,6 +527,7 @@ namespace PickBeer_User {
                     this.tablePregled_narudbe.InitVars();
                 }
             }
+<<<<<<< HEAD
             this.tableMAX_ID_Kosarica = ((MAX_ID_KosaricaDataTable)(base.Tables["MAX ID_Kosarica"]));
             if ((initTable == true)) {
                 if ((this.tableMAX_ID_Kosarica != null)) {
@@ -448,10 +552,12 @@ namespace PickBeer_User {
                     this.tableRoulette.InitVars();
                 }
             }
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             this.relationFK_Stavke_kosarica_Pivo = this.Relations["FK_Stavke_kosarica_Pivo"];
             this.relationFK_Stavke_racun_Pivo = this.Relations["FK_Stavke_racun_Pivo"];
-            this.relationFK_Stavke_racun_Racun = this.Relations["FK_Stavke_racun_Racun"];
             this.relationFK_Stavke_kosarica_Kosarica = this.Relations["FK_Stavke_kosarica_Kosarica"];
+            this.relationFK_Stavke_racun_Racun = this.Relations["FK_Stavke_racun_Racun"];
             this.relationFK_Racun_Kosarica = this.Relations["FK_Racun_Kosarica"];
             this.relationFK_Stavke_kosarica_Pivo1 = this.Relations["FK_Stavke_kosarica_Pivo1"];
             this.relationFK_Stavke_racun_Pivo1 = this.Relations["FK_Stavke_racun_Pivo1"];
@@ -471,14 +577,24 @@ namespace PickBeer_User {
             base.Tables.Add(this.tableStavke_kosarica);
             this.tableStavke_racun = new Stavke_racunDataTable();
             base.Tables.Add(this.tableStavke_racun);
+<<<<<<< HEAD
+=======
+            this.tableBeer_Roulette = new Beer_RouletteDataTable();
+            base.Tables.Add(this.tableBeer_Roulette);
+            this.tableRandom_Drzava = new Random_DrzavaDataTable();
+            base.Tables.Add(this.tableRandom_Drzava);
+>>>>>>> parent of df26571... Dorada aplikacije
             this.tableTop10_Ratebeer = new Top10_RatebeerDataTable();
             base.Tables.Add(this.tableTop10_Ratebeer);
             this.tableDrzava_Select = new Drzava_SelectDataTable();
             base.Tables.Add(this.tableDrzava_Select);
+            this.tableKosarica = new KosaricaDataTable();
+            base.Tables.Add(this.tableKosarica);
             this.tableRacun = new RacunDataTable();
             base.Tables.Add(this.tableRacun);
             this.tablePregled_narudbe = new Pregled_narudbeDataTable();
             base.Tables.Add(this.tablePregled_narudbe);
+<<<<<<< HEAD
             this.tableMAX_ID_Kosarica = new MAX_ID_KosaricaDataTable();
             base.Tables.Add(this.tableMAX_ID_Kosarica);
             this.tableKosarica = new KosaricaDataTable();
@@ -487,6 +603,8 @@ namespace PickBeer_User {
             base.Tables.Add(this.tableRandom_Drzava);
             this.tableRoulette = new RouletteDataTable();
             base.Tables.Add(this.tableRoulette);
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             this.relationFK_Stavke_kosarica_Pivo = new global::System.Data.DataRelation("FK_Stavke_kosarica_Pivo", new global::System.Data.DataColumn[] {
                         this.tablePivo.ID_pivoColumn}, new global::System.Data.DataColumn[] {
                         this.tableStavke_kosarica.ID_pivoColumn}, false);
@@ -495,14 +613,14 @@ namespace PickBeer_User {
                         this.tablePivo.ID_pivoColumn}, new global::System.Data.DataColumn[] {
                         this.tableStavke_racun.ID_pivoColumn}, false);
             this.Relations.Add(this.relationFK_Stavke_racun_Pivo);
-            this.relationFK_Stavke_racun_Racun = new global::System.Data.DataRelation("FK_Stavke_racun_Racun", new global::System.Data.DataColumn[] {
-                        this.tableRacun.ID_racunColumn}, new global::System.Data.DataColumn[] {
-                        this.tableStavke_racun.ID_racunColumn}, false);
-            this.Relations.Add(this.relationFK_Stavke_racun_Racun);
             this.relationFK_Stavke_kosarica_Kosarica = new global::System.Data.DataRelation("FK_Stavke_kosarica_Kosarica", new global::System.Data.DataColumn[] {
                         this.tableKosarica.ID_kosaricaColumn}, new global::System.Data.DataColumn[] {
                         this.tableStavke_kosarica.ID_kosaricaColumn}, false);
             this.Relations.Add(this.relationFK_Stavke_kosarica_Kosarica);
+            this.relationFK_Stavke_racun_Racun = new global::System.Data.DataRelation("FK_Stavke_racun_Racun", new global::System.Data.DataColumn[] {
+                        this.tableRacun.ID_racunColumn}, new global::System.Data.DataColumn[] {
+                        this.tableStavke_racun.ID_racunColumn}, false);
+            this.Relations.Add(this.relationFK_Stavke_racun_Racun);
             this.relationFK_Racun_Kosarica = new global::System.Data.DataRelation("FK_Racun_Kosarica", new global::System.Data.DataColumn[] {
                         this.tableKosarica.ID_kosaricaColumn}, new global::System.Data.DataColumn[] {
                         this.tableRacun.ID_kosaricaColumn}, false);
@@ -537,49 +655,77 @@ namespace PickBeer_User {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        private bool ShouldSerializeTop10_Ratebeer() {
+=======
+        private bool ShouldSerializeBeer_Roulette() {
+>>>>>>> parent of df26571... Dorada aplikacije
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        private bool ShouldSerializeDrzava_Select() {
+=======
+        private bool ShouldSerializeRandom_Drzava() {
+>>>>>>> parent of df26571... Dorada aplikacije
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeTop10_Ratebeer() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeDrzava_Select() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeRacun() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         private bool ShouldSerializePregled_narudbe() {
+=======
+        private bool ShouldSerializeDrzava_Select() {
+>>>>>>> parent of df26571... Dorada aplikacije
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         private bool ShouldSerializeMAX_ID_Kosarica() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+=======
         private bool ShouldSerializeKosarica() {
+>>>>>>> parent of df26571... Dorada aplikacije
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        private bool ShouldSerializeKosarica() {
+=======
+        private bool ShouldSerializeRacun() {
+>>>>>>> parent of df26571... Dorada aplikacije
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         private bool ShouldSerializeRandom_Drzava() {
+=======
+        private bool ShouldSerializeTable1() {
+>>>>>>> parent of df26571... Dorada aplikacije
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         private bool ShouldSerializeRoulette() {
+=======
+        private bool ShouldSerializePregled_narudbe() {
+>>>>>>> parent of df26571... Dorada aplikacije
             return false;
         }
         
@@ -648,10 +794,22 @@ namespace PickBeer_User {
         public delegate void Stavke_racunRowChangeEventHandler(object sender, Stavke_racunRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+=======
+        public delegate void Beer_RouletteRowChangeEventHandler(object sender, Beer_RouletteRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void Random_DrzavaRowChangeEventHandler(object sender, Random_DrzavaRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+>>>>>>> parent of df26571... Dorada aplikacije
         public delegate void Top10_RatebeerRowChangeEventHandler(object sender, Top10_RatebeerRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void Drzava_SelectRowChangeEventHandler(object sender, Drzava_SelectRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void KosaricaRowChangeEventHandler(object sender, KosaricaRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void RacunRowChangeEventHandler(object sender, RacunRowChangeEvent e);
@@ -662,6 +820,7 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void MAX_ID_KosaricaRowChangeEventHandler(object sender, MAX_ID_KosaricaRowChangeEvent e);
         
+<<<<<<< HEAD
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void KosaricaRowChangeEventHandler(object sender, KosaricaRowChangeEvent e);
         
@@ -671,6 +830,8 @@ namespace PickBeer_User {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void RouletteRowChangeEventHandler(object sender, RouletteRowChangeEvent e);
         
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -2045,14 +2206,23 @@ namespace PickBeer_User {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class Drzava_SelectDataTable : global::System.Data.TypedTableBase<Drzava_SelectRow> {
+=======
+        public partial class Random_DrzavaDataTable : global::System.Data.TypedTableBase<Random_DrzavaRow> {
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private global::System.Data.DataColumn columnDrzava_podrijetla;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Drzava_SelectDataTable() {
                 this.TableName = "Drzava_Select";
+=======
+            public Random_DrzavaDataTable() {
+                this.TableName = "Random_Drzava";
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2060,7 +2230,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             internal Drzava_SelectDataTable(global::System.Data.DataTable table) {
+=======
+            internal Random_DrzavaDataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2077,7 +2251,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             protected Drzava_SelectDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected Random_DrzavaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
                     base(info, context) {
                 this.InitVars();
             }
@@ -2101,13 +2279,20 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Drzava_SelectRow this[int index] {
                 get {
                     return ((Drzava_SelectRow)(this.Rows[index]));
+=======
+            public Random_DrzavaRow this[int index] {
+                get {
+                    return ((Random_DrzavaRow)(this.Rows[index]));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public event Drzava_SelectRowChangeEventHandler Drzava_SelectRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2122,11 +2307,28 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddDrzava_SelectRow(Drzava_SelectRow row) {
+=======
+            public event Random_DrzavaRowChangeEventHandler Random_DrzavaRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Random_DrzavaRowChangeEventHandler Random_DrzavaRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Random_DrzavaRowChangeEventHandler Random_DrzavaRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Random_DrzavaRowChangeEventHandler Random_DrzavaRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddRandom_DrzavaRow(Random_DrzavaRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Drzava_SelectRow AddDrzava_SelectRow(string Drzava_podrijetla) {
                 Drzava_SelectRow rowDrzava_SelectRow = ((Drzava_SelectRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -2134,12 +2336,25 @@ namespace PickBeer_User {
                 rowDrzava_SelectRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDrzava_SelectRow);
                 return rowDrzava_SelectRow;
+=======
+            public Random_DrzavaRow AddRandom_DrzavaRow(string Drzava_podrijetla) {
+                Random_DrzavaRow rowRandom_DrzavaRow = ((Random_DrzavaRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Drzava_podrijetla};
+                rowRandom_DrzavaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowRandom_DrzavaRow);
+                return rowRandom_DrzavaRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 Drzava_SelectDataTable cln = ((Drzava_SelectDataTable)(base.Clone()));
+=======
+                Random_DrzavaDataTable cln = ((Random_DrzavaDataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
                 cln.InitVars();
                 return cln;
             }
@@ -2147,7 +2362,11 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new Drzava_SelectDataTable();
+=======
+                return new Random_DrzavaDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2166,28 +2385,46 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Drzava_SelectRow NewDrzava_SelectRow() {
                 return ((Drzava_SelectRow)(this.NewRow()));
+=======
+            public Random_DrzavaRow NewRandom_DrzavaRow() {
+                return ((Random_DrzavaRow)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new Drzava_SelectRow(builder);
+=======
+                return new Random_DrzavaRow(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(Drzava_SelectRow);
+=======
+                return typeof(Random_DrzavaRow);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.Drzava_SelectRowChanged != null)) {
                     this.Drzava_SelectRowChanged(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+=======
+                if ((this.Random_DrzavaRowChanged != null)) {
+                    this.Random_DrzavaRowChanged(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2195,8 +2432,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.Drzava_SelectRowChanging != null)) {
                     this.Drzava_SelectRowChanging(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+=======
+                if ((this.Random_DrzavaRowChanging != null)) {
+                    this.Random_DrzavaRowChanging(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2204,8 +2446,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.Drzava_SelectRowDeleted != null)) {
                     this.Drzava_SelectRowDeleted(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+=======
+                if ((this.Random_DrzavaRowDeleted != null)) {
+                    this.Random_DrzavaRowDeleted(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2213,14 +2460,23 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.Drzava_SelectRowDeleting != null)) {
                     this.Drzava_SelectRowDeleting(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+=======
+                if ((this.Random_DrzavaRowDeleting != null)) {
+                    this.Random_DrzavaRowDeleting(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void RemoveDrzava_SelectRow(Drzava_SelectRow row) {
+=======
+            public void RemoveRandom_DrzavaRow(Random_DrzavaRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Remove(row);
             }
             
@@ -2247,7 +2503,11 @@ namespace PickBeer_User {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "Drzava_SelectDataTable";
+=======
+                attribute2.FixedValue = "Random_DrzavaDataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2293,7 +2553,21 @@ namespace PickBeer_User {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class RacunDataTable : global::System.Data.TypedTableBase<RacunRow> {
+=======
+        public partial class Top10_RatebeerDataTable : global::System.Data.TypedTableBase<Top10_RatebeerRow> {
+            
+            private global::System.Data.DataColumn columnID_pivo;
+            
+            private global::System.Data.DataColumn columnIme_piva;
+            
+            private global::System.Data.DataColumn columnOcjenaRB;
+            
+            private global::System.Data.DataColumn columnCijena;
+            
+            private global::System.Data.DataColumn columnVrsta;
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private global::System.Data.DataColumn columnID_racun;
             
@@ -2303,10 +2577,17 @@ namespace PickBeer_User {
             
             private global::System.Data.DataColumn columnVrijeme;
             
+            private global::System.Data.DataColumn columnUdio_alk;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RacunDataTable() {
                 this.TableName = "Racun";
+=======
+            public Top10_RatebeerDataTable() {
+                this.TableName = "Top10_Ratebeer";
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2314,7 +2595,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             internal RacunDataTable(global::System.Data.DataTable table) {
+=======
+            internal Top10_RatebeerDataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2331,14 +2616,62 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             protected RacunDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected Top10_RatebeerDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn ID_racunColumn {
+=======
+            public global::System.Data.DataColumn ID_pivoColumn {
+                get {
+                    return this.columnID_pivo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Ime_pivaColumn {
+                get {
+                    return this.columnIme_piva;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn OcjenaRBColumn {
+                get {
+                    return this.columnOcjenaRB;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CijenaColumn {
+                get {
+                    return this.columnCijena;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VrstaColumn {
+                get {
+                    return this.columnVrsta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Drzava_podrijetlaColumn {
+>>>>>>> parent of df26571... Dorada aplikacije
                 get {
                     return this.columnID_racun;
                 }
@@ -2370,6 +2703,14 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Udio_alkColumn {
+                get {
+                    return this.columnUdio_alk;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2379,13 +2720,20 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RacunRow this[int index] {
                 get {
                     return ((RacunRow)(this.Rows[index]));
+=======
+            public Top10_RatebeerRow this[int index] {
+                get {
+                    return ((Top10_RatebeerRow)(this.Rows[index]));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public event RacunRowChangeEventHandler RacunRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2400,11 +2748,28 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddRacunRow(RacunRow row) {
+=======
+            public event Top10_RatebeerRowChangeEventHandler Top10_RatebeerRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Top10_RatebeerRowChangeEventHandler Top10_RatebeerRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Top10_RatebeerRowChangeEventHandler Top10_RatebeerRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Top10_RatebeerRowChangeEventHandler Top10_RatebeerRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddTop10_RatebeerRow(Top10_RatebeerRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RacunRow AddRacunRow(KosaricaRow parentKosaricaRowByFK_Racun_Kosarica, string Izdao, byte[] Vrijeme) {
                 RacunRow rowRacunRow = ((RacunRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -2418,19 +2783,44 @@ namespace PickBeer_User {
                 rowRacunRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRacunRow);
                 return rowRacunRow;
+=======
+            public Top10_RatebeerRow AddTop10_RatebeerRow(string Ime_piva, double OcjenaRB, decimal Cijena, string Vrsta, string Drzava_podrijetla, double Udio_alk) {
+                Top10_RatebeerRow rowTop10_RatebeerRow = ((Top10_RatebeerRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Ime_piva,
+                        OcjenaRB,
+                        Cijena,
+                        Vrsta,
+                        Drzava_podrijetla,
+                        Udio_alk};
+                rowTop10_RatebeerRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTop10_RatebeerRow);
+                return rowTop10_RatebeerRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RacunRow FindByID_racun(int ID_racun) {
                 return ((RacunRow)(this.Rows.Find(new object[] {
                             ID_racun})));
+=======
+            public Top10_RatebeerRow FindByID_pivo(int ID_pivo) {
+                return ((Top10_RatebeerRow)(this.Rows.Find(new object[] {
+                            ID_pivo})));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 RacunDataTable cln = ((RacunDataTable)(base.Clone()));
+=======
+                Top10_RatebeerDataTable cln = ((Top10_RatebeerDataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
                 cln.InitVars();
                 return cln;
             }
@@ -2438,21 +2828,36 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new RacunDataTable();
+=======
+                return new Top10_RatebeerDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+<<<<<<< HEAD
                 this.columnID_racun = base.Columns["ID_racun"];
                 this.columnID_kosarica = base.Columns["ID_kosarica"];
                 this.columnIzdao = base.Columns["Izdao"];
                 this.columnVrijeme = base.Columns["Vrijeme"];
+=======
+                this.columnID_pivo = base.Columns["ID_pivo"];
+                this.columnIme_piva = base.Columns["Ime_piva"];
+                this.columnOcjenaRB = base.Columns["OcjenaRB"];
+                this.columnCijena = base.Columns["Cijena"];
+                this.columnVrsta = base.Columns["Vrsta"];
+                this.columnDrzava_podrijetla = base.Columns["Drzava_podrijetla"];
+                this.columnUdio_alk = base.Columns["Udio_alk"];
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+<<<<<<< HEAD
                 this.columnID_racun = new global::System.Data.DataColumn("ID_racun", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_racun);
                 this.columnID_kosarica = new global::System.Data.DataColumn("ID_kosarica", typeof(int), null, global::System.Data.MappingType.Element);
@@ -2473,32 +2878,79 @@ namespace PickBeer_User {
                 this.columnIzdao.AllowDBNull = false;
                 this.columnIzdao.MaxLength = 50;
                 this.columnVrijeme.ReadOnly = true;
+=======
+                this.columnID_pivo = new global::System.Data.DataColumn("ID_pivo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_pivo);
+                this.columnIme_piva = new global::System.Data.DataColumn("Ime_piva", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIme_piva);
+                this.columnOcjenaRB = new global::System.Data.DataColumn("OcjenaRB", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOcjenaRB);
+                this.columnCijena = new global::System.Data.DataColumn("Cijena", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCijena);
+                this.columnVrsta = new global::System.Data.DataColumn("Vrsta", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVrsta);
+                this.columnDrzava_podrijetla = new global::System.Data.DataColumn("Drzava_podrijetla", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDrzava_podrijetla);
+                this.columnUdio_alk = new global::System.Data.DataColumn("Udio_alk", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUdio_alk);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID_pivo}, true));
+                this.columnID_pivo.AutoIncrement = true;
+                this.columnID_pivo.AutoIncrementSeed = -1;
+                this.columnID_pivo.AutoIncrementStep = -1;
+                this.columnID_pivo.AllowDBNull = false;
+                this.columnID_pivo.ReadOnly = true;
+                this.columnID_pivo.Unique = true;
+                this.columnIme_piva.AllowDBNull = false;
+                this.columnIme_piva.MaxLength = 30;
+                this.columnCijena.AllowDBNull = false;
+                this.columnVrsta.MaxLength = 50;
+                this.columnDrzava_podrijetla.MaxLength = 30;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RacunRow NewRacunRow() {
                 return ((RacunRow)(this.NewRow()));
+=======
+            public Top10_RatebeerRow NewTop10_RatebeerRow() {
+                return ((Top10_RatebeerRow)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new RacunRow(builder);
+=======
+                return new Top10_RatebeerRow(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(RacunRow);
+=======
+                return typeof(Top10_RatebeerRow);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.RacunRowChanged != null)) {
                     this.RacunRowChanged(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+=======
+                if ((this.Top10_RatebeerRowChanged != null)) {
+                    this.Top10_RatebeerRowChanged(this, new Top10_RatebeerRowChangeEvent(((Top10_RatebeerRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2506,8 +2958,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.RacunRowChanging != null)) {
                     this.RacunRowChanging(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+=======
+                if ((this.Top10_RatebeerRowChanging != null)) {
+                    this.Top10_RatebeerRowChanging(this, new Top10_RatebeerRowChangeEvent(((Top10_RatebeerRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2515,8 +2972,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.RacunRowDeleted != null)) {
                     this.RacunRowDeleted(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+=======
+                if ((this.Top10_RatebeerRowDeleted != null)) {
+                    this.Top10_RatebeerRowDeleted(this, new Top10_RatebeerRowChangeEvent(((Top10_RatebeerRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2524,14 +2986,23 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.RacunRowDeleting != null)) {
                     this.RacunRowDeleting(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+=======
+                if ((this.Top10_RatebeerRowDeleting != null)) {
+                    this.Top10_RatebeerRowDeleting(this, new Top10_RatebeerRowChangeEvent(((Top10_RatebeerRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void RemoveRacunRow(RacunRow row) {
+=======
+            public void RemoveTop10_RatebeerRow(Top10_RatebeerRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Remove(row);
             }
             
@@ -2558,7 +3029,11 @@ namespace PickBeer_User {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "RacunDataTable";
+=======
+                attribute2.FixedValue = "Top10_RatebeerDataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2604,6 +3079,7 @@ namespace PickBeer_User {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class Pregled_narudbeDataTable : global::System.Data.TypedTableBase<Pregled_narudbeRow> {
             
             private global::System.Data.DataColumn columnID_pivo;
@@ -2622,6 +3098,16 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public Pregled_narudbeDataTable() {
                 this.TableName = "Pregled_narudbe";
+=======
+        public partial class Drzava_SelectDataTable : global::System.Data.TypedTableBase<Drzava_SelectRow> {
+            
+            private global::System.Data.DataColumn columnDrzava_podrijetla;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Drzava_SelectDataTable() {
+                this.TableName = "Drzava_Select";
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2629,7 +3115,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             internal Pregled_narudbeDataTable(global::System.Data.DataTable table) {
+=======
+            internal Drzava_SelectDataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2646,13 +3136,18 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             protected Pregled_narudbeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected Drzava_SelectDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn ID_pivoColumn {
                 get {
                     return this.columnID_pivo;
@@ -2696,6 +3191,11 @@ namespace PickBeer_User {
             public global::System.Data.DataColumn ID_kosaricaColumn {
                 get {
                     return this.columnID_kosarica;
+=======
+            public global::System.Data.DataColumn Drzava_podrijetlaColumn {
+                get {
+                    return this.columnDrzava_podrijetla;
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2710,13 +3210,20 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Pregled_narudbeRow this[int index] {
                 get {
                     return ((Pregled_narudbeRow)(this.Rows[index]));
+=======
+            public Drzava_SelectRow this[int index] {
+                get {
+                    return ((Drzava_SelectRow)(this.Rows[index]));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public event Pregled_narudbeRowChangeEventHandler Pregled_narudbeRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2731,11 +3238,28 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddPregled_narudbeRow(Pregled_narudbeRow row) {
+=======
+            public event Drzava_SelectRowChangeEventHandler Drzava_SelectRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Drzava_SelectRowChangeEventHandler Drzava_SelectRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Drzava_SelectRowChangeEventHandler Drzava_SelectRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Drzava_SelectRowChangeEventHandler Drzava_SelectRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddDrzava_SelectRow(Drzava_SelectRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Pregled_narudbeRow AddPregled_narudbeRow(int ID_pivo, int Kolicina, string Ime_piva, double Cijena, double Ukupno, int ID_kosarica) {
                 Pregled_narudbeRow rowPregled_narudbeRow = ((Pregled_narudbeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -2748,12 +3272,25 @@ namespace PickBeer_User {
                 rowPregled_narudbeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPregled_narudbeRow);
                 return rowPregled_narudbeRow;
+=======
+            public Drzava_SelectRow AddDrzava_SelectRow(string Drzava_podrijetla) {
+                Drzava_SelectRow rowDrzava_SelectRow = ((Drzava_SelectRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Drzava_podrijetla};
+                rowDrzava_SelectRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDrzava_SelectRow);
+                return rowDrzava_SelectRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 Pregled_narudbeDataTable cln = ((Pregled_narudbeDataTable)(base.Clone()));
+=======
+                Drzava_SelectDataTable cln = ((Drzava_SelectDataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
                 cln.InitVars();
                 return cln;
             }
@@ -2761,23 +3298,32 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new Pregled_narudbeDataTable();
+=======
+                return new Drzava_SelectDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+<<<<<<< HEAD
                 this.columnID_pivo = base.Columns["ID_pivo"];
                 this.columnKolicina = base.Columns["Kolicina"];
                 this.columnIme_piva = base.Columns["Ime_piva"];
                 this.columnCijena = base.Columns["Cijena"];
                 this.columnUkupno = base.Columns["Ukupno"];
                 this.columnID_kosarica = base.Columns["ID_kosarica"];
+=======
+                this.columnDrzava_podrijetla = base.Columns["Drzava_podrijetla"];
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+<<<<<<< HEAD
                 this.columnID_pivo = new global::System.Data.DataColumn("ID_pivo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_pivo);
                 this.columnKolicina = new global::System.Data.DataColumn("Kolicina", typeof(int), null, global::System.Data.MappingType.Element);
@@ -2795,32 +3341,55 @@ namespace PickBeer_User {
                 this.columnIme_piva.MaxLength = 30;
                 this.columnUkupno.ReadOnly = true;
                 this.columnID_kosarica.AllowDBNull = false;
+=======
+                this.columnDrzava_podrijetla = new global::System.Data.DataColumn("Drzava_podrijetla", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDrzava_podrijetla);
+                this.columnDrzava_podrijetla.MaxLength = 30;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Pregled_narudbeRow NewPregled_narudbeRow() {
                 return ((Pregled_narudbeRow)(this.NewRow()));
+=======
+            public Drzava_SelectRow NewDrzava_SelectRow() {
+                return ((Drzava_SelectRow)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new Pregled_narudbeRow(builder);
+=======
+                return new Drzava_SelectRow(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(Pregled_narudbeRow);
+=======
+                return typeof(Drzava_SelectRow);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.Pregled_narudbeRowChanged != null)) {
                     this.Pregled_narudbeRowChanged(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+=======
+                if ((this.Drzava_SelectRowChanged != null)) {
+                    this.Drzava_SelectRowChanged(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2828,8 +3397,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.Pregled_narudbeRowChanging != null)) {
                     this.Pregled_narudbeRowChanging(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+=======
+                if ((this.Drzava_SelectRowChanging != null)) {
+                    this.Drzava_SelectRowChanging(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2837,8 +3411,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.Pregled_narudbeRowDeleted != null)) {
                     this.Pregled_narudbeRowDeleted(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+=======
+                if ((this.Drzava_SelectRowDeleted != null)) {
+                    this.Drzava_SelectRowDeleted(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2846,14 +3425,23 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.Pregled_narudbeRowDeleting != null)) {
                     this.Pregled_narudbeRowDeleting(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+=======
+                if ((this.Drzava_SelectRowDeleting != null)) {
+                    this.Drzava_SelectRowDeleting(this, new Drzava_SelectRowChangeEvent(((Drzava_SelectRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void RemovePregled_narudbeRow(Pregled_narudbeRow row) {
+=======
+            public void RemoveDrzava_SelectRow(Drzava_SelectRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Remove(row);
             }
             
@@ -2880,7 +3468,11 @@ namespace PickBeer_User {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "Pregled_narudbeDataTable";
+=======
+                attribute2.FixedValue = "Drzava_SelectDataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2926,6 +3518,7 @@ namespace PickBeer_User {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class MAX_ID_KosaricaDataTable : global::System.Data.TypedTableBase<MAX_ID_KosaricaRow> {
             
             private global::System.Data.DataColumn columnExpr1;
@@ -2934,6 +3527,18 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public MAX_ID_KosaricaDataTable() {
                 this.TableName = "MAX ID_Kosarica";
+=======
+        public partial class KosaricaDataTable : global::System.Data.TypedTableBase<KosaricaRow> {
+            
+            private global::System.Data.DataColumn columnID_kosarica;
+            
+            private global::System.Data.DataColumn columnVrijeme;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public KosaricaDataTable() {
+                this.TableName = "Kosarica";
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2941,7 +3546,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             internal MAX_ID_KosaricaDataTable(global::System.Data.DataTable table) {
+=======
+            internal KosaricaDataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2958,16 +3567,34 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             protected MAX_ID_KosaricaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected KosaricaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn Expr1Column {
                 get {
                     return this.columnExpr1;
+=======
+            public global::System.Data.DataColumn ID_kosaricaColumn {
+                get {
+                    return this.columnID_kosarica;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VrijemeColumn {
+                get {
+                    return this.columnVrijeme;
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -2982,13 +3609,20 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public MAX_ID_KosaricaRow this[int index] {
                 get {
                     return ((MAX_ID_KosaricaRow)(this.Rows[index]));
+=======
+            public KosaricaRow this[int index] {
+                get {
+                    return ((KosaricaRow)(this.Rows[index]));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public event MAX_ID_KosaricaRowChangeEventHandler MAX_ID_KosaricaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -3003,259 +3637,7 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddMAX_ID_KosaricaRow(MAX_ID_KosaricaRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public MAX_ID_KosaricaRow AddMAX_ID_KosaricaRow(int Expr1) {
-                MAX_ID_KosaricaRow rowMAX_ID_KosaricaRow = ((MAX_ID_KosaricaRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        Expr1};
-                rowMAX_ID_KosaricaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowMAX_ID_KosaricaRow);
-                return rowMAX_ID_KosaricaRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                MAX_ID_KosaricaDataTable cln = ((MAX_ID_KosaricaDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new MAX_ID_KosaricaDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal void InitVars() {
-                this.columnExpr1 = base.Columns["Expr1"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            private void InitClass() {
-                this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExpr1);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public MAX_ID_KosaricaRow NewMAX_ID_KosaricaRow() {
-                return ((MAX_ID_KosaricaRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new MAX_ID_KosaricaRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(MAX_ID_KosaricaRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.MAX_ID_KosaricaRowChanged != null)) {
-                    this.MAX_ID_KosaricaRowChanged(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.MAX_ID_KosaricaRowChanging != null)) {
-                    this.MAX_ID_KosaricaRowChanging(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.MAX_ID_KosaricaRowDeleted != null)) {
-                    this.MAX_ID_KosaricaRowDeleted(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.MAX_ID_KosaricaRowDeleting != null)) {
-                    this.MAX_ID_KosaricaRowDeleting(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveMAX_ID_KosaricaRow(MAX_ID_KosaricaRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                T07_DBDataSet ds = new T07_DBDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "MAX_ID_KosaricaDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class KosaricaDataTable : global::System.Data.TypedTableBase<KosaricaRow> {
-            
-            private global::System.Data.DataColumn columnID_kosarica;
-            
-            private global::System.Data.DataColumn columnVrijeme;
-            
-            private global::System.Data.DataColumn columnStatus;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public KosaricaDataTable() {
-                this.TableName = "Kosarica";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal KosaricaDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected KosaricaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ID_kosaricaColumn {
-                get {
-                    return this.columnID_kosarica;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn VrijemeColumn {
-                get {
-                    return this.columnVrijeme;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn StatusColumn {
-                get {
-                    return this.columnStatus;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public KosaricaRow this[int index] {
-                get {
-                    return ((KosaricaRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+=======
             public event KosaricaRowChangeEventHandler KosaricaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -3270,17 +3652,26 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddKosaricaRow(KosaricaRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public KosaricaRow AddKosaricaRow(System.DateTime Vrijeme, bool Status) {
+<<<<<<< HEAD
+            public MAX_ID_KosaricaRow AddMAX_ID_KosaricaRow(int Expr1) {
+                MAX_ID_KosaricaRow rowMAX_ID_KosaricaRow = ((MAX_ID_KosaricaRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Expr1};
+                rowMAX_ID_KosaricaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMAX_ID_KosaricaRow);
+                return rowMAX_ID_KosaricaRow;
+=======
+            public KosaricaRow AddKosaricaRow(byte[] Vrijeme) {
                 KosaricaRow rowKosaricaRow = ((KosaricaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Vrijeme,
-                        Status};
+                        Vrijeme};
                 rowKosaricaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowKosaricaRow);
                 return rowKosaricaRow;
@@ -3291,12 +3682,17 @@ namespace PickBeer_User {
             public KosaricaRow FindByID_kosarica(int ID_kosarica) {
                 return ((KosaricaRow)(this.Rows.Find(new object[] {
                             ID_kosarica})));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
+                MAX_ID_KosaricaDataTable cln = ((MAX_ID_KosaricaDataTable)(base.Clone()));
+=======
                 KosaricaDataTable cln = ((KosaricaDataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
                 cln.InitVars();
                 return cln;
             }
@@ -3304,60 +3700,88 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
+                return new MAX_ID_KosaricaDataTable();
+=======
                 return new KosaricaDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+<<<<<<< HEAD
+                this.columnExpr1 = base.Columns["Expr1"];
+=======
                 this.columnID_kosarica = base.Columns["ID_kosarica"];
                 this.columnVrijeme = base.Columns["Vrijeme"];
-                this.columnStatus = base.Columns["Status"];
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+<<<<<<< HEAD
+                this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExpr1);
+=======
                 this.columnID_kosarica = new global::System.Data.DataColumn("ID_kosarica", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_kosarica);
-                this.columnVrijeme = new global::System.Data.DataColumn("Vrijeme", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                this.columnVrijeme = new global::System.Data.DataColumn("Vrijeme", typeof(byte[]), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVrijeme);
-                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStatus);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_kosarica}, true));
                 this.columnID_kosarica.AutoIncrement = true;
-                this.columnID_kosarica.AutoIncrementSeed = -1;
-                this.columnID_kosarica.AutoIncrementStep = -1;
+                this.columnID_kosarica.AutoIncrementSeed = 1;
                 this.columnID_kosarica.AllowDBNull = false;
                 this.columnID_kosarica.ReadOnly = true;
                 this.columnID_kosarica.Unique = true;
+                this.columnVrijeme.ReadOnly = true;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public MAX_ID_KosaricaRow NewMAX_ID_KosaricaRow() {
+                return ((MAX_ID_KosaricaRow)(this.NewRow()));
+=======
             public KosaricaRow NewKosaricaRow() {
                 return ((KosaricaRow)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
+                return new MAX_ID_KosaricaRow(builder);
+=======
                 return new KosaricaRow(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
+                return typeof(MAX_ID_KosaricaRow);
+=======
                 return typeof(KosaricaRow);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
+                if ((this.MAX_ID_KosaricaRowChanged != null)) {
+                    this.MAX_ID_KosaricaRowChanged(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
+=======
                 if ((this.KosaricaRowChanged != null)) {
                     this.KosaricaRowChanged(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -3365,8 +3789,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
+                if ((this.MAX_ID_KosaricaRowChanging != null)) {
+                    this.MAX_ID_KosaricaRowChanging(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
+=======
                 if ((this.KosaricaRowChanging != null)) {
                     this.KosaricaRowChanging(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -3374,8 +3803,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
+                if ((this.MAX_ID_KosaricaRowDeleted != null)) {
+                    this.MAX_ID_KosaricaRowDeleted(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
+=======
                 if ((this.KosaricaRowDeleted != null)) {
                     this.KosaricaRowDeleted(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -3383,14 +3817,23 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
+                if ((this.MAX_ID_KosaricaRowDeleting != null)) {
+                    this.MAX_ID_KosaricaRowDeleting(this, new MAX_ID_KosaricaRowChangeEvent(((MAX_ID_KosaricaRow)(e.Row)), e.Action));
+=======
                 if ((this.KosaricaRowDeleting != null)) {
                     this.KosaricaRowDeleting(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public void RemoveMAX_ID_KosaricaRow(MAX_ID_KosaricaRow row) {
+=======
             public void RemoveKosaricaRow(KosaricaRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Remove(row);
             }
             
@@ -3417,7 +3860,11 @@ namespace PickBeer_User {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
+                attribute2.FixedValue = "MAX_ID_KosaricaDataTable";
+=======
                 attribute2.FixedValue = "KosaricaDataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3463,14 +3910,35 @@ namespace PickBeer_User {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Random_DrzavaDataTable : global::System.Data.TypedTableBase<Random_DrzavaRow> {
+<<<<<<< HEAD
+        public partial class KosaricaDataTable : global::System.Data.TypedTableBase<KosaricaRow> {
             
-            private global::System.Data.DataColumn columnDrzava_podrijetla;
+            private global::System.Data.DataColumn columnID_kosarica;
+            
+            private global::System.Data.DataColumn columnVrijeme;
+            
+            private global::System.Data.DataColumn columnStatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Random_DrzavaDataTable() {
-                this.TableName = "Random_Drzava";
+            public KosaricaDataTable() {
+                this.TableName = "Kosarica";
+=======
+        public partial class RacunDataTable : global::System.Data.TypedTableBase<RacunRow> {
+            
+            private global::System.Data.DataColumn columnID_racun;
+            
+            private global::System.Data.DataColumn columnID_kosarica;
+            
+            private global::System.Data.DataColumn columnIzdao;
+            
+            private global::System.Data.DataColumn columnVrijeme;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public RacunDataTable() {
+                this.TableName = "Racun";
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3478,7 +3946,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal Random_DrzavaDataTable(global::System.Data.DataTable table) {
+<<<<<<< HEAD
+            internal KosaricaDataTable(global::System.Data.DataTable table) {
+=======
+            internal RacunDataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3495,7 +3967,461 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            protected KosaricaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected RacunDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+=======
+            public global::System.Data.DataColumn ID_racunColumn {
+                get {
+                    return this.columnID_racun;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+>>>>>>> parent of df26571... Dorada aplikacije
+            public global::System.Data.DataColumn ID_kosaricaColumn {
+                get {
+                    return this.columnID_kosarica;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public global::System.Data.DataColumn VrijemeColumn {
+                get {
+                    return this.columnVrijeme;
+=======
+            public global::System.Data.DataColumn IzdaoColumn {
+                get {
+                    return this.columnIzdao;
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public global::System.Data.DataColumn StatusColumn {
+                get {
+                    return this.columnStatus;
+=======
+            public global::System.Data.DataColumn VrijemeColumn {
+                get {
+                    return this.columnVrijeme;
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public KosaricaRow this[int index] {
+                get {
+                    return ((KosaricaRow)(this.Rows[index]));
+=======
+            public RacunRow this[int index] {
+                get {
+                    return ((RacunRow)(this.Rows[index]));
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public event KosaricaRowChangeEventHandler KosaricaRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event KosaricaRowChangeEventHandler KosaricaRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event KosaricaRowChangeEventHandler KosaricaRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event KosaricaRowChangeEventHandler KosaricaRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddKosaricaRow(KosaricaRow row) {
+=======
+            public event RacunRowChangeEventHandler RacunRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event RacunRowChangeEventHandler RacunRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event RacunRowChangeEventHandler RacunRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event RacunRowChangeEventHandler RacunRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddRacunRow(RacunRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public KosaricaRow AddKosaricaRow(System.DateTime Vrijeme, bool Status) {
+                KosaricaRow rowKosaricaRow = ((KosaricaRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Vrijeme,
+                        Status};
+                rowKosaricaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowKosaricaRow);
+                return rowKosaricaRow;
+=======
+            public RacunRow AddRacunRow(KosaricaRow parentKosaricaRowByFK_Racun_Kosarica, string Izdao, byte[] Vrijeme) {
+                RacunRow rowRacunRow = ((RacunRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        null,
+                        Izdao,
+                        Vrijeme};
+                if ((parentKosaricaRowByFK_Racun_Kosarica != null)) {
+                    columnValuesArray[1] = parentKosaricaRowByFK_Racun_Kosarica[0];
+                }
+                rowRacunRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowRacunRow);
+                return rowRacunRow;
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public KosaricaRow FindByID_kosarica(int ID_kosarica) {
+                return ((KosaricaRow)(this.Rows.Find(new object[] {
+                            ID_kosarica})));
+=======
+            public RacunRow FindByID_racun(int ID_racun) {
+                return ((RacunRow)(this.Rows.Find(new object[] {
+                            ID_racun})));
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
+                KosaricaDataTable cln = ((KosaricaDataTable)(base.Clone()));
+=======
+                RacunDataTable cln = ((RacunDataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
+                return new KosaricaDataTable();
+=======
+                return new RacunDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+<<<<<<< HEAD
+                this.columnID_kosarica = base.Columns["ID_kosarica"];
+                this.columnVrijeme = base.Columns["Vrijeme"];
+                this.columnStatus = base.Columns["Status"];
+=======
+                this.columnID_racun = base.Columns["ID_racun"];
+                this.columnID_kosarica = base.Columns["ID_kosarica"];
+                this.columnIzdao = base.Columns["Izdao"];
+                this.columnVrijeme = base.Columns["Vrijeme"];
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+<<<<<<< HEAD
+                this.columnID_kosarica = new global::System.Data.DataColumn("ID_kosarica", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_kosarica);
+                this.columnVrijeme = new global::System.Data.DataColumn("Vrijeme", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVrijeme);
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID_kosarica}, true));
+                this.columnID_kosarica.AutoIncrement = true;
+                this.columnID_kosarica.AutoIncrementSeed = -1;
+                this.columnID_kosarica.AutoIncrementStep = -1;
+                this.columnID_kosarica.AllowDBNull = false;
+                this.columnID_kosarica.ReadOnly = true;
+                this.columnID_kosarica.Unique = true;
+=======
+                this.columnID_racun = new global::System.Data.DataColumn("ID_racun", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_racun);
+                this.columnID_kosarica = new global::System.Data.DataColumn("ID_kosarica", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_kosarica);
+                this.columnIzdao = new global::System.Data.DataColumn("Izdao", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIzdao);
+                this.columnVrijeme = new global::System.Data.DataColumn("Vrijeme", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVrijeme);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID_racun}, true));
+                this.columnID_racun.AutoIncrement = true;
+                this.columnID_racun.AutoIncrementSeed = -1;
+                this.columnID_racun.AutoIncrementStep = -1;
+                this.columnID_racun.AllowDBNull = false;
+                this.columnID_racun.ReadOnly = true;
+                this.columnID_racun.Unique = true;
+                this.columnID_kosarica.AllowDBNull = false;
+                this.columnIzdao.AllowDBNull = false;
+                this.columnIzdao.MaxLength = 50;
+                this.columnVrijeme.ReadOnly = true;
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public KosaricaRow NewKosaricaRow() {
+                return ((KosaricaRow)(this.NewRow()));
+=======
+            public RacunRow NewRacunRow() {
+                return ((RacunRow)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
+                return new KosaricaRow(builder);
+=======
+                return new RacunRow(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
+                return typeof(KosaricaRow);
+=======
+                return typeof(RacunRow);
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+<<<<<<< HEAD
+                if ((this.KosaricaRowChanged != null)) {
+                    this.KosaricaRowChanged(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+=======
+                if ((this.RacunRowChanged != null)) {
+                    this.RacunRowChanged(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+<<<<<<< HEAD
+                if ((this.KosaricaRowChanging != null)) {
+                    this.KosaricaRowChanging(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+=======
+                if ((this.RacunRowChanging != null)) {
+                    this.RacunRowChanging(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+<<<<<<< HEAD
+                if ((this.KosaricaRowDeleted != null)) {
+                    this.KosaricaRowDeleted(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+=======
+                if ((this.RacunRowDeleted != null)) {
+                    this.RacunRowDeleted(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+<<<<<<< HEAD
+                if ((this.KosaricaRowDeleting != null)) {
+                    this.KosaricaRowDeleting(this, new KosaricaRowChangeEvent(((KosaricaRow)(e.Row)), e.Action));
+=======
+                if ((this.RacunRowDeleting != null)) {
+                    this.RacunRowDeleting(this, new RacunRowChangeEvent(((RacunRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public void RemoveKosaricaRow(KosaricaRow row) {
+=======
+            public void RemoveRacunRow(RacunRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                T07_DBDataSet ds = new T07_DBDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
+                attribute2.FixedValue = "KosaricaDataTable";
+=======
+                attribute2.FixedValue = "RacunDataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
+        public partial class Random_DrzavaDataTable : global::System.Data.TypedTableBase<Random_DrzavaRow> {
+            
+            private global::System.Data.DataColumn columnDrzava_podrijetla;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Random_DrzavaDataTable() {
+                this.TableName = "Random_Drzava";
+=======
+        public partial class Table1DataTable : global::System.Data.TypedTableBase<Table1Row> {
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Table1DataTable() {
+                this.TableName = "Table1";
+>>>>>>> parent of df26571... Dorada aplikacije
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            internal Random_DrzavaDataTable(global::System.Data.DataTable table) {
+=======
+            internal Table1DataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             protected Random_DrzavaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected Table1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
                     base(info, context) {
                 this.InitVars();
             }
@@ -3519,13 +4445,20 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Random_DrzavaRow this[int index] {
                 get {
                     return ((Random_DrzavaRow)(this.Rows[index]));
+=======
+            public Table1Row this[int index] {
+                get {
+                    return ((Table1Row)(this.Rows[index]));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public event Random_DrzavaRowChangeEventHandler Random_DrzavaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -3540,11 +4473,28 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void AddRandom_DrzavaRow(Random_DrzavaRow row) {
+=======
+            public event Table1RowChangeEventHandler Table1RowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Table1RowChangeEventHandler Table1RowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Table1RowChangeEventHandler Table1RowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Table1RowChangeEventHandler Table1RowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddTable1Row(Table1Row row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Random_DrzavaRow AddRandom_DrzavaRow(string Drzava_podrijetla) {
                 Random_DrzavaRow rowRandom_DrzavaRow = ((Random_DrzavaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -3552,12 +4502,24 @@ namespace PickBeer_User {
                 rowRandom_DrzavaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRandom_DrzavaRow);
                 return rowRandom_DrzavaRow;
+=======
+            public Table1Row AddTable1Row() {
+                Table1Row rowTable1Row = ((Table1Row)(this.NewRow()));
+                object[] columnValuesArray = new object[0];
+                rowTable1Row.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTable1Row);
+                return rowTable1Row;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 Random_DrzavaDataTable cln = ((Random_DrzavaDataTable)(base.Clone()));
+=======
+                Table1DataTable cln = ((Table1DataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
                 cln.InitVars();
                 return cln;
             }
@@ -3565,7 +4527,11 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new Random_DrzavaDataTable();
+=======
+                return new Table1DataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3584,28 +4550,46 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Random_DrzavaRow NewRandom_DrzavaRow() {
                 return ((Random_DrzavaRow)(this.NewRow()));
+=======
+            public Table1Row NewTable1Row() {
+                return ((Table1Row)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new Random_DrzavaRow(builder);
+=======
+                return new Table1Row(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(Random_DrzavaRow);
+=======
+                return typeof(Table1Row);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.Random_DrzavaRowChanged != null)) {
                     this.Random_DrzavaRowChanged(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+=======
+                if ((this.Table1RowChanged != null)) {
+                    this.Table1RowChanged(this, new Table1RowChangeEvent(((Table1Row)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -3613,8 +4597,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.Random_DrzavaRowChanging != null)) {
                     this.Random_DrzavaRowChanging(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+=======
+                if ((this.Table1RowChanging != null)) {
+                    this.Table1RowChanging(this, new Table1RowChangeEvent(((Table1Row)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -3622,8 +4611,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.Random_DrzavaRowDeleted != null)) {
                     this.Random_DrzavaRowDeleted(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+=======
+                if ((this.Table1RowDeleted != null)) {
+                    this.Table1RowDeleted(this, new Table1RowChangeEvent(((Table1Row)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -3631,14 +4625,23 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.Random_DrzavaRowDeleting != null)) {
                     this.Random_DrzavaRowDeleting(this, new Random_DrzavaRowChangeEvent(((Random_DrzavaRow)(e.Row)), e.Action));
+=======
+                if ((this.Table1RowDeleting != null)) {
+                    this.Table1RowDeleting(this, new Table1RowChangeEvent(((Table1Row)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void RemoveRandom_DrzavaRow(Random_DrzavaRow row) {
+=======
+            public void RemoveTable1Row(Table1Row row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Remove(row);
             }
             
@@ -3665,7 +4668,11 @@ namespace PickBeer_User {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "Random_DrzavaDataTable";
+=======
+                attribute2.FixedValue = "Table1DataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -3711,14 +4718,24 @@ namespace PickBeer_User {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+<<<<<<< HEAD
         public partial class RouletteDataTable : global::System.Data.TypedTableBase<RouletteRow> {
             
             private global::System.Data.DataColumn columnID_pivo;
             
+=======
+        public partial class Pregled_narudbeDataTable : global::System.Data.TypedTableBase<Pregled_narudbeRow> {
+            
+            private global::System.Data.DataColumn columnID_pivo;
+            
+            private global::System.Data.DataColumn columnKolicina;
+            
+>>>>>>> parent of df26571... Dorada aplikacije
             private global::System.Data.DataColumn columnIme_piva;
             
             private global::System.Data.DataColumn columnCijena;
             
+<<<<<<< HEAD
             private global::System.Data.DataColumn columnStanje;
             
             private global::System.Data.DataColumn columnDrzava_podrijetla;
@@ -3743,6 +4760,14 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public RouletteDataTable() {
                 this.TableName = "Roulette";
+=======
+            private global::System.Data.DataColumn columnUkupno;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Pregled_narudbeDataTable() {
+                this.TableName = "Pregled_narudbe";
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3750,7 +4775,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             internal RouletteDataTable(global::System.Data.DataTable table) {
+=======
+            internal Pregled_narudbeDataTable(global::System.Data.DataTable table) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3767,7 +4796,11 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             protected RouletteDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+=======
+            protected Pregled_narudbeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+>>>>>>> parent of df26571... Dorada aplikacije
                     base(info, context) {
                 this.InitVars();
             }
@@ -3775,8 +4808,20 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn ID_pivoColumn {
+<<<<<<< HEAD
                 get {
                     return this.columnID_pivo;
+=======
+                get {
+                    return this.columnID_pivo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn KolicinaColumn {
+                get {
+                    return this.columnKolicina;
                 }
             }
             
@@ -3798,14 +4843,65 @@ namespace PickBeer_User {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn StanjeColumn {
+            public global::System.Data.DataColumn UkupnoColumn {
                 get {
-                    return this.columnStanje;
+                    return this.columnUkupno;
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Ime_pivaColumn {
+                get {
+                    return this.columnIme_piva;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public global::System.Data.DataColumn CijenaColumn {
+                get {
+                    return this.columnCijena;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StanjeColumn {
+                get {
+                    return this.columnStanje;
+                }
+=======
+            public Pregled_narudbeRow this[int index] {
+                get {
+                    return ((Pregled_narudbeRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Pregled_narudbeRowChangeEventHandler Pregled_narudbeRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Pregled_narudbeRowChangeEventHandler Pregled_narudbeRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Pregled_narudbeRowChangeEventHandler Pregled_narudbeRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event Pregled_narudbeRowChangeEventHandler Pregled_narudbeRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddPregled_narudbeRow(Pregled_narudbeRow row) {
+                this.Rows.Add(row);
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public global::System.Data.DataColumn Drzava_podrijetlaColumn {
                 get {
                     return this.columnDrzava_podrijetla;
@@ -3939,12 +5035,29 @@ namespace PickBeer_User {
             public RouletteRow FindByID_pivo(int ID_pivo) {
                 return ((RouletteRow)(this.Rows.Find(new object[] {
                             ID_pivo})));
+=======
+            public Pregled_narudbeRow AddPregled_narudbeRow(int ID_pivo, int Kolicina, string Ime_piva, double Cijena, double Ukupno) {
+                Pregled_narudbeRow rowPregled_narudbeRow = ((Pregled_narudbeRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        ID_pivo,
+                        Kolicina,
+                        Ime_piva,
+                        Cijena,
+                        Ukupno};
+                rowPregled_narudbeRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowPregled_narudbeRow);
+                return rowPregled_narudbeRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
+<<<<<<< HEAD
                 RouletteDataTable cln = ((RouletteDataTable)(base.Clone()));
+=======
+                Pregled_narudbeDataTable cln = ((Pregled_narudbeDataTable)(base.Clone()));
+>>>>>>> parent of df26571... Dorada aplikacije
                 cln.InitVars();
                 return cln;
             }
@@ -3952,13 +5065,18 @@ namespace PickBeer_User {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
+<<<<<<< HEAD
                 return new RouletteDataTable();
+=======
+                return new Pregled_narudbeDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnID_pivo = base.Columns["ID_pivo"];
+<<<<<<< HEAD
                 this.columnIme_piva = base.Columns["Ime_piva"];
                 this.columnCijena = base.Columns["Cijena"];
                 this.columnStanje = base.Columns["Stanje"];
@@ -3971,6 +5089,12 @@ namespace PickBeer_User {
                 this.columnProizvodac = base.Columns["Proizvodac"];
                 this.columnPuta_narucivano = base.Columns["Puta_narucivano"];
                 this.columnSlika = base.Columns["Slika"];
+=======
+                this.columnKolicina = base.Columns["Kolicina"];
+                this.columnIme_piva = base.Columns["Ime_piva"];
+                this.columnCijena = base.Columns["Cijena"];
+                this.columnUkupno = base.Columns["Ukupno"];
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3978,10 +5102,16 @@ namespace PickBeer_User {
             private void InitClass() {
                 this.columnID_pivo = new global::System.Data.DataColumn("ID_pivo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_pivo);
+<<<<<<< HEAD
+=======
+                this.columnKolicina = new global::System.Data.DataColumn("Kolicina", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnKolicina);
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.columnIme_piva = new global::System.Data.DataColumn("Ime_piva", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIme_piva);
                 this.columnCijena = new global::System.Data.DataColumn("Cijena", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCijena);
+<<<<<<< HEAD
                 this.columnStanje = new global::System.Data.DataColumn("Stanje", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStanje);
                 this.columnDrzava_podrijetla = new global::System.Data.DataColumn("Drzava_podrijetla", typeof(string), null, global::System.Data.MappingType.Element);
@@ -4015,32 +5145,58 @@ namespace PickBeer_User {
                 this.columnVrsta.MaxLength = 50;
                 this.columnProizvodac.MaxLength = 50;
                 this.columnSlika.MaxLength = 100;
+=======
+                this.columnUkupno = new global::System.Data.DataColumn("Ukupno", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUkupno);
+                this.columnID_pivo.AllowDBNull = false;
+                this.columnKolicina.AllowDBNull = false;
+                this.columnIme_piva.MaxLength = 30;
+                this.columnUkupno.ReadOnly = true;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RouletteRow NewRouletteRow() {
                 return ((RouletteRow)(this.NewRow()));
+=======
+            public Pregled_narudbeRow NewPregled_narudbeRow() {
+                return ((Pregled_narudbeRow)(this.NewRow()));
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+<<<<<<< HEAD
                 return new RouletteRow(builder);
+=======
+                return new Pregled_narudbeRow(builder);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
+<<<<<<< HEAD
                 return typeof(RouletteRow);
+=======
+                return typeof(Pregled_narudbeRow);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
+<<<<<<< HEAD
                 if ((this.RouletteRowChanged != null)) {
                     this.RouletteRowChanged(this, new RouletteRowChangeEvent(((RouletteRow)(e.Row)), e.Action));
+=======
+                if ((this.Pregled_narudbeRowChanged != null)) {
+                    this.Pregled_narudbeRowChanged(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -4048,8 +5204,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
+<<<<<<< HEAD
                 if ((this.RouletteRowChanging != null)) {
                     this.RouletteRowChanging(this, new RouletteRowChangeEvent(((RouletteRow)(e.Row)), e.Action));
+=======
+                if ((this.Pregled_narudbeRowChanging != null)) {
+                    this.Pregled_narudbeRowChanging(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -4057,8 +5218,13 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
+<<<<<<< HEAD
                 if ((this.RouletteRowDeleted != null)) {
                     this.RouletteRowDeleted(this, new RouletteRowChangeEvent(((RouletteRow)(e.Row)), e.Action));
+=======
+                if ((this.Pregled_narudbeRowDeleted != null)) {
+                    this.Pregled_narudbeRowDeleted(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -4066,14 +5232,23 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
+<<<<<<< HEAD
                 if ((this.RouletteRowDeleting != null)) {
                     this.RouletteRowDeleting(this, new RouletteRowChangeEvent(((RouletteRow)(e.Row)), e.Action));
+=======
+                if ((this.Pregled_narudbeRowDeleting != null)) {
+                    this.Pregled_narudbeRowDeleting(this, new Pregled_narudbeRowChangeEvent(((Pregled_narudbeRow)(e.Row)), e.Action));
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void RemoveRouletteRow(RouletteRow row) {
+=======
+            public void RemovePregled_narudbeRow(Pregled_narudbeRow row) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.Rows.Remove(row);
             }
             
@@ -4100,7 +5275,11 @@ namespace PickBeer_User {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
+<<<<<<< HEAD
                 attribute2.FixedValue = "RouletteDataTable";
+=======
+                attribute2.FixedValue = "Pregled_narudbeDataTable";
+>>>>>>> parent of df26571... Dorada aplikacije
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4163,6 +5342,7 @@ namespace PickBeer_User {
                 }
                 set {
                     this[this.tablePivo.ID_pivoColumn] = value;
+<<<<<<< HEAD
                 }
             }
             
@@ -4575,6 +5755,8 @@ namespace PickBeer_User {
                 }
                 set {
                     this[this.tableStavke_kosarica.ID_pivoColumn] = value;
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
             }
             
@@ -5151,7 +6333,54 @@ namespace PickBeer_User {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+<<<<<<< HEAD
         public partial class MAX_ID_KosaricaRow : global::System.Data.DataRow {
+=======
+        public partial class Random_DrzavaRow : global::System.Data.DataRow {
+            
+            private Random_DrzavaDataTable tableRandom_Drzava;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal Random_DrzavaRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableRandom_Drzava = ((Random_DrzavaDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Drzava_podrijetla {
+                get {
+                    try {
+                        return ((string)(this[this.tableRandom_Drzava.Drzava_podrijetlaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Drzava_podrijetla\' in table \'Random_Drzava\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRandom_Drzava.Drzava_podrijetlaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDrzava_podrijetlaNull() {
+                return this.IsNull(this.tableRandom_Drzava.Drzava_podrijetlaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDrzava_podrijetlaNull() {
+                this[this.tableRandom_Drzava.Drzava_podrijetlaColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class Top10_RatebeerRow : global::System.Data.DataRow {
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private MAX_ID_KosaricaDataTable tableMAX_ID_Kosarica;
             
@@ -5341,7 +6570,87 @@ namespace PickBeer_User {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+<<<<<<< HEAD
         public partial class RouletteRow : global::System.Data.DataRow {
+=======
+        public partial class KosaricaRow : global::System.Data.DataRow {
+            
+            private KosaricaDataTable tableKosarica;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal KosaricaRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableKosarica = ((KosaricaDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int ID_kosarica {
+                get {
+                    return ((int)(this[this.tableKosarica.ID_kosaricaColumn]));
+                }
+                set {
+                    this[this.tableKosarica.ID_kosaricaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public byte[] Vrijeme {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableKosarica.VrijemeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Vrijeme\' in table \'Kosarica\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableKosarica.VrijemeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVrijemeNull() {
+                return this.IsNull(this.tableKosarica.VrijemeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVrijemeNull() {
+                this[this.tableKosarica.VrijemeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Stavke_kosaricaRow[] GetStavke_kosaricaRows() {
+                if ((this.Table.ChildRelations["FK_Stavke_kosarica_Kosarica"] == null)) {
+                    return new Stavke_kosaricaRow[0];
+                }
+                else {
+                    return ((Stavke_kosaricaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Stavke_kosarica_Kosarica"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public RacunRow[] GetRacunRows() {
+                if ((this.Table.ChildRelations["FK_Racun_Kosarica"] == null)) {
+                    return new RacunRow[0];
+                }
+                else {
+                    return ((RacunRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Racun_Kosarica"])));
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class RacunRow : global::System.Data.DataRow {
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private RouletteDataTable tableRoulette;
             
@@ -5519,6 +6828,7 @@ namespace PickBeer_User {
                     }
                 }
                 set {
+<<<<<<< HEAD
                     this[this.tableRoulette.ProizvodacColumn] = value;
                 }
             }
@@ -5655,34 +6965,69 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsOcjenaKNull() {
                 return this.IsNull(this.tableRoulette.OcjenaKColumn);
+=======
+                    this[this.tablePregled_narudbe.CijenaColumn] = value;
+                }
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void SetOcjenaKNull() {
                 this[this.tableRoulette.OcjenaKColumn] = global::System.Convert.DBNull;
+=======
+            public double Ukupno {
+                get {
+                    try {
+                        return ((double)(this[this.tablePregled_narudbe.UkupnoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Ukupno\' in table \'Pregled_narudbe\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablePregled_narudbe.UkupnoColumn] = value;
+                }
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public bool IsProizvodacNull() {
                 return this.IsNull(this.tableRoulette.ProizvodacColumn);
+=======
+            public bool IsIme_pivaNull() {
+                return this.IsNull(this.tablePregled_narudbe.Ime_pivaColumn);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void SetProizvodacNull() {
                 this[this.tableRoulette.ProizvodacColumn] = global::System.Convert.DBNull;
+=======
+            public void SetIme_pivaNull() {
+                this[this.tablePregled_narudbe.Ime_pivaColumn] = global::System.Convert.DBNull;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public bool IsPuta_narucivanoNull() {
                 return this.IsNull(this.tableRoulette.Puta_narucivanoColumn);
+=======
+            public bool IsCijenaNull() {
+                return this.IsNull(this.tablePregled_narudbe.CijenaColumn);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public void SetPuta_narucivanoNull() {
                 this[this.tableRoulette.Puta_narucivanoColumn] = global::System.Convert.DBNull;
             }
@@ -5697,10 +7042,15 @@ namespace PickBeer_User {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetSlikaNull() {
                 this[this.tableRoulette.SlikaColumn] = global::System.Convert.DBNull;
+=======
+            public void SetCijenaNull() {
+                this[this.tablePregled_narudbe.CijenaColumn] = global::System.Convert.DBNull;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Stavke_kosaricaRow[] GetStavke_kosaricaRows() {
                 if ((this.Table.ChildRelations["FK_Stavke_kosarica_Pivo1"] == null)) {
                     return new Stavke_kosaricaRow[0];
@@ -5708,10 +7058,15 @@ namespace PickBeer_User {
                 else {
                     return ((Stavke_kosaricaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Stavke_kosarica_Pivo1"])));
                 }
+=======
+            public bool IsUkupnoNull() {
+                return this.IsNull(this.tablePregled_narudbe.UkupnoColumn);
+>>>>>>> parent of df26571... Dorada aplikacije
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Stavke_racunRow[] GetStavke_racunRows() {
                 if ((this.Table.ChildRelations["FK_Stavke_racun_Pivo1"] == null)) {
                     return new Stavke_racunRow[0];
@@ -5719,6 +7074,10 @@ namespace PickBeer_User {
                 else {
                     return ((Stavke_racunRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Stavke_racun_Pivo1"])));
                 }
+=======
+            public void SetUkupnoNull() {
+                this[this.tablePregled_narudbe.UkupnoColumn] = global::System.Convert.DBNull;
+>>>>>>> parent of df26571... Dorada aplikacije
             }
         }
         
@@ -5828,6 +7187,92 @@ namespace PickBeer_User {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        public class Top10_RatebeerRowChangeEvent : global::System.EventArgs {
+            
+            private Top10_RatebeerRow eventRow;
+=======
+        public class Beer_RouletteRowChangeEvent : global::System.EventArgs {
+            
+            private Beer_RouletteRow eventRow;
+>>>>>>> parent of df26571... Dorada aplikacije
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public Top10_RatebeerRowChangeEvent(Top10_RatebeerRow row, global::System.Data.DataRowAction action) {
+=======
+            public Beer_RouletteRowChangeEvent(Beer_RouletteRow row, global::System.Data.DataRowAction action) {
+>>>>>>> parent of df26571... Dorada aplikacije
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public Top10_RatebeerRow Row {
+=======
+            public Beer_RouletteRow Row {
+>>>>>>> parent of df26571... Dorada aplikacije
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        public class Drzava_SelectRowChangeEvent : global::System.EventArgs {
+=======
+        public class Random_DrzavaRowChangeEvent : global::System.EventArgs {
+>>>>>>> parent of df26571... Dorada aplikacije
+            
+            private Random_DrzavaRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Random_DrzavaRowChangeEvent(Random_DrzavaRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public Random_DrzavaRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class Top10_RatebeerRowChangeEvent : global::System.EventArgs {
             
             private Top10_RatebeerRow eventRow;
@@ -5862,90 +7307,36 @@ namespace PickBeer_User {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class Drzava_SelectRowChangeEvent : global::System.EventArgs {
-            
-            private Drzava_SelectRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Drzava_SelectRowChangeEvent(Drzava_SelectRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public Drzava_SelectRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class RacunRowChangeEvent : global::System.EventArgs {
-            
-            private RacunRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public RacunRowChangeEvent(RacunRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public RacunRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         public class Pregled_narudbeRowChangeEvent : global::System.EventArgs {
             
             private Pregled_narudbeRow eventRow;
+=======
+        public class Drzava_SelectRowChangeEvent : global::System.EventArgs {
+            
+            private Drzava_SelectRow eventRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Pregled_narudbeRowChangeEvent(Pregled_narudbeRow row, global::System.Data.DataRowAction action) {
+=======
+            public Drzava_SelectRowChangeEvent(Drzava_SelectRow row, global::System.Data.DataRowAction action) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Pregled_narudbeRow Row {
+=======
+            public Drzava_SelectRow Row {
+>>>>>>> parent of df26571... Dorada aplikacije
                 get {
                     return this.eventRow;
                 }
@@ -5964,56 +7355,36 @@ namespace PickBeer_User {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         public class MAX_ID_KosaricaRowChangeEvent : global::System.EventArgs {
             
             private MAX_ID_KosaricaRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public MAX_ID_KosaricaRowChangeEvent(MAX_ID_KosaricaRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public MAX_ID_KosaricaRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+=======
         public class KosaricaRowChangeEvent : global::System.EventArgs {
             
             private KosaricaRow eventRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public MAX_ID_KosaricaRowChangeEvent(MAX_ID_KosaricaRow row, global::System.Data.DataRowAction action) {
+=======
             public KosaricaRowChangeEvent(KosaricaRow row, global::System.Data.DataRowAction action) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public MAX_ID_KosaricaRow Row {
+=======
             public KosaricaRow Row {
+>>>>>>> parent of df26571... Dorada aplikacije
                 get {
                     return this.eventRow;
                 }
@@ -6032,22 +7403,84 @@ namespace PickBeer_User {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        public class KosaricaRowChangeEvent : global::System.EventArgs {
+            
+            private KosaricaRow eventRow;
+=======
+        public class RacunRowChangeEvent : global::System.EventArgs {
+            
+            private RacunRow eventRow;
+>>>>>>> parent of df26571... Dorada aplikacije
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public KosaricaRowChangeEvent(KosaricaRow row, global::System.Data.DataRowAction action) {
+=======
+            public RacunRowChangeEvent(RacunRow row, global::System.Data.DataRowAction action) {
+>>>>>>> parent of df26571... Dorada aplikacije
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+            public KosaricaRow Row {
+=======
+            public RacunRow Row {
+>>>>>>> parent of df26571... Dorada aplikacije
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         public class Random_DrzavaRowChangeEvent : global::System.EventArgs {
             
             private Random_DrzavaRow eventRow;
+=======
+        public class Table1RowChangeEvent : global::System.EventArgs {
+            
+            private Table1Row eventRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Random_DrzavaRowChangeEvent(Random_DrzavaRow row, global::System.Data.DataRowAction action) {
+=======
+            public Table1RowChangeEvent(Table1Row row, global::System.Data.DataRowAction action) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public Random_DrzavaRow Row {
+=======
+            public Table1Row Row {
+>>>>>>> parent of df26571... Dorada aplikacije
                 get {
                     return this.eventRow;
                 }
@@ -6066,22 +7499,36 @@ namespace PickBeer_User {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         public class RouletteRowChangeEvent : global::System.EventArgs {
             
             private RouletteRow eventRow;
+=======
+        public class Pregled_narudbeRowChangeEvent : global::System.EventArgs {
+            
+            private Pregled_narudbeRow eventRow;
+>>>>>>> parent of df26571... Dorada aplikacije
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RouletteRowChangeEvent(RouletteRow row, global::System.Data.DataRowAction action) {
+=======
+            public Pregled_narudbeRowChangeEvent(Pregled_narudbeRow row, global::System.Data.DataRowAction action) {
+>>>>>>> parent of df26571... Dorada aplikacije
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
             public RouletteRow Row {
+=======
+            public Pregled_narudbeRow Row {
+>>>>>>> parent of df26571... Dorada aplikacije
                 get {
                     return this.eventRow;
                 }
@@ -6813,6 +8260,7 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
                 this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             else {
+<<<<<<< HEAD
                 this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_Vrsta));
             }
@@ -6875,6 +8323,372 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
             this.Adapter.UpdateCommand.Parameters[37].Value = ((int)(ID_pivo));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+=======
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            if ((Original_OcjenaK.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[28].Value = ((double)(Original_OcjenaK.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Proizvodac == null)) {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[29].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((string)(Original_Proizvodac));
+            }
+            if ((Original_Puta_narucivano.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[32].Value = ((int)(Original_Puta_narucivano.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            if ((Original_Slika == null)) {
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[34].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[33].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[34].Value = ((string)(Original_Slika));
+            }
+            this.Adapter.UpdateCommand.Parameters[35].Value = ((int)(ID_pivo));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string Ime_piva, 
+                    global::System.Nullable<decimal> Cijena, 
+                    global::System.Nullable<int> Stanje, 
+                    string Drzava_podrijetla, 
+                    string Vrsta, 
+                    global::System.Nullable<double> Udio_alk, 
+                    global::System.Nullable<double> Volumen, 
+                    global::System.Nullable<double> OcjenaRB, 
+                    global::System.Nullable<double> OcjenaK, 
+                    string Proizvodac, 
+                    global::System.Nullable<int> Puta_narucivano, 
+                    string Slika, 
+                    int Original_ID_pivo, 
+                    string Original_Ime_piva, 
+                    global::System.Nullable<decimal> Original_Cijena, 
+                    global::System.Nullable<int> Original_Stanje, 
+                    string Original_Drzava_podrijetla, 
+                    string Original_Vrsta, 
+                    global::System.Nullable<double> Original_Udio_alk, 
+                    global::System.Nullable<double> Original_Volumen, 
+                    global::System.Nullable<double> Original_OcjenaRB, 
+                    global::System.Nullable<double> Original_OcjenaK, 
+                    string Original_Proizvodac, 
+                    global::System.Nullable<int> Original_Puta_narucivano, 
+                    string Original_Slika) {
+            return this.Update(Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika, Original_ID_pivo, Original_Ime_piva, Original_Cijena, Original_Stanje, Original_Drzava_podrijetla, Original_Vrsta, Original_Udio_alk, Original_Volumen, Original_OcjenaRB, Original_OcjenaK, Original_Proizvodac, Original_Puta_narucivano, Original_Slika, Original_ID_pivo);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class Stavke_kosaricaTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public Stavke_kosaricaTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Stavke_kosarica";
+            tableMapping.ColumnMappings.Add("ID_pivo", "ID_pivo");
+            tableMapping.ColumnMappings.Add("ID_kosarica", "ID_kosarica");
+            tableMapping.ColumnMappings.Add("Kolicina", "Kolicina");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Stavke_kosarica] ([ID_pivo], [ID_kosarica], [Kolicina]) VALUES" +
+                " (@ID_pivo, @ID_kosarica, @Kolicina)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_pivo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_pivo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_kosarica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_kosarica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Kolicina", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Kolicina", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::PickBeer_User.Properties.Settings.Default.T07_DBConnectionString_User;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT ID_pivo, ID_kosarica, Kolicina FROM dbo.Stavke_kosarica";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT ID_pivo, ID_kosarica, Kolicina FROM dbo.Stavke_kosarica";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT        ID_pivo, ID_kosarica, Kolicina\r\nFROM            Stavke_kosarica\r\nWH" +
+                "ERE        (ID_pivo = @ID) AND (Kolicina = @Kolicina)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_pivo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Kolicina", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Kolicina", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(T07_DBDataSet.Stavke_kosaricaDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual T07_DBDataSet.Stavke_kosaricaDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.Stavke_kosaricaDataTable dataTable = new T07_DBDataSet.Stavke_kosaricaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByID_Kolicina(T07_DBDataSet.Stavke_kosaricaDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual T07_DBDataSet.Stavke_kosaricaDataTable GetDataByID_Kolicina() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            T07_DBDataSet.Stavke_kosaricaDataTable dataTable = new T07_DBDataSet.Stavke_kosaricaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByID_Kosarica(T07_DBDataSet.Stavke_kosaricaDataTable dataTable, int ID, int Kolicina) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Kolicina));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual T07_DBDataSet.Stavke_kosaricaDataTable GetDataBy(int ID, int Kolicina) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID));
+            this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Kolicina));
+            T07_DBDataSet.Stavke_kosaricaDataTable dataTable = new T07_DBDataSet.Stavke_kosaricaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(T07_DBDataSet.Stavke_kosaricaDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(T07_DBDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Stavke_kosarica");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(int ID_pivo, int ID_kosarica, int Kolicina) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ID_pivo));
+            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(ID_kosarica));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Kolicina));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+>>>>>>> parent of df26571... Dorada aplikacije
                         != global::System.Data.ConnectionState.Open)) {
                 this.Adapter.UpdateCommand.Connection.Open();
             }
@@ -7459,6 +9273,173 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class Random_DrzavaTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public Random_DrzavaTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "Random_Drzava";
+            tableMapping.ColumnMappings.Add("Drzava_podrijetla", "Drzava_podrijetla");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::PickBeer_User.Properties.Settings.Default.T07_DBConnectionString_User;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT Drzava_podrijetla FROM dbo.Random_Drzava";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(T07_DBDataSet.Random_DrzavaDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual T07_DBDataSet.Random_DrzavaDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.Random_DrzavaDataTable dataTable = new T07_DBDataSet.Random_DrzavaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class Top10_RatebeerTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -7800,7 +9781,11 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class RacunTableAdapter : global::System.ComponentModel.Component {
+<<<<<<< HEAD
+    public partial class Pregled_narudbeTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class KosaricaTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> parent of df26571... Dorada aplikacije
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -7814,7 +9799,11 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public RacunTableAdapter() {
+<<<<<<< HEAD
+        public Pregled_narudbeTableAdapter() {
+=======
+        public KosaricaTableAdapter() {
+>>>>>>> parent of df26571... Dorada aplikacije
             this.ClearBeforeFill = true;
         }
         
@@ -7911,11 +9900,340 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
+<<<<<<< HEAD
+            tableMapping.DataSetTable = "Pregled_narudbe";
+            tableMapping.ColumnMappings.Add("ID_pivo", "ID_pivo");
+            tableMapping.ColumnMappings.Add("Kolicina", "Kolicina");
+            tableMapping.ColumnMappings.Add("Ime_piva", "Ime_piva");
+            tableMapping.ColumnMappings.Add("Cijena", "Cijena");
+            tableMapping.ColumnMappings.Add("Ukupno", "Ukupno");
+            tableMapping.ColumnMappings.Add("ID_kosarica", "ID_kosarica");
+            this._adapter.TableMappings.Add(tableMapping);
+=======
+            tableMapping.DataSetTable = "Kosarica";
+            tableMapping.ColumnMappings.Add("ID_kosarica", "ID_kosarica");
+            tableMapping.ColumnMappings.Add("Vrijeme", "Vrijeme");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Kosarica] WHERE (([ID_kosarica] = @Original_ID_kosarica) AND (" +
+                "[Vrijeme] = @Original_Vrijeme))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_kosarica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_kosarica", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Vrijeme", global::System.Data.SqlDbType.Timestamp, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vrijeme", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Kosarica] DEFAULT VALUES;\r\nSELECT ID_kosarica, Vrijeme FROM Ko" +
+                "sarica WHERE (ID_kosarica = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+>>>>>>> parent of df26571... Dorada aplikacije
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::PickBeer_User.Properties.Settings.Default.T07_DBConnectionString_User;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+<<<<<<< HEAD
+            this._commandCollection[0].CommandText = "SELECT ID_pivo, Kolicina, Ime_piva, Cijena, Ukupno, ID_kosarica FROM Pregled_naru" +
+                "dbe";
+=======
+            this._commandCollection[0].CommandText = "SELECT ID_kosarica, Vrijeme FROM dbo.Kosarica";
+>>>>>>> parent of df26571... Dorada aplikacije
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        ID_pivo, Kolicina, Ime_piva, Cijena, Ukupno, ID_kosarica\r\nFROM     " +
+                "       Pregled_narudbe\r\nWHERE        (ID_kosarica = @ID_kosarica)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_kosarica", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_kosarica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< HEAD
+        public virtual int Fill(T07_DBDataSet.Pregled_narudbeDataTable dataTable) {
+=======
+        public virtual int Fill(T07_DBDataSet.KosaricaDataTable dataTable) {
+>>>>>>> parent of df26571... Dorada aplikacije
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< HEAD
+        public virtual T07_DBDataSet.Pregled_narudbeDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.Pregled_narudbeDataTable dataTable = new T07_DBDataSet.Pregled_narudbeDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillByID(T07_DBDataSet.Pregled_narudbeDataTable dataTable, int ID_kosarica) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID_kosarica));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual T07_DBDataSet.Pregled_narudbeDataTable GetDataByID(int ID_kosarica) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID_kosarica));
+            T07_DBDataSet.Pregled_narudbeDataTable dataTable = new T07_DBDataSet.Pregled_narudbeDataTable();
+=======
+        public virtual T07_DBDataSet.KosaricaDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.KosaricaDataTable dataTable = new T07_DBDataSet.KosaricaDataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(T07_DBDataSet.KosaricaDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(T07_DBDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "Kosarica");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_ID_kosarica, byte[] Original_Vrijeme) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID_kosarica));
+            if ((Original_Vrijeme == null)) {
+                throw new global::System.ArgumentNullException("Original_Vrijeme");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((byte[])(Original_Vrijeme));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert() {
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
+    public partial class MAX_ID_KosaricaTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class RacunTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> parent of df26571... Dorada aplikacije
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
+        public MAX_ID_KosaricaTableAdapter() {
+=======
+        public RacunTableAdapter() {
+>>>>>>> parent of df26571... Dorada aplikacije
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+<<<<<<< HEAD
+            tableMapping.DataSetTable = "MAX ID_Kosarica";
+            tableMapping.ColumnMappings.Add("Expr1", "Expr1");
+=======
             tableMapping.DataSetTable = "Racun";
             tableMapping.ColumnMappings.Add("ID_racun", "ID_racun");
             tableMapping.ColumnMappings.Add("ID_kosarica", "ID_kosarica");
             tableMapping.ColumnMappings.Add("Izdao", "Izdao");
             tableMapping.ColumnMappings.Add("Vrijeme", "Vrijeme");
+>>>>>>> parent of df26571... Dorada aplikacije
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -7958,7 +10276,11 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< HEAD
+            this._commandCollection[0].CommandText = "SELECT Expr1 FROM dbo.[MAX ID_Kosarica]";
+=======
             this._commandCollection[0].CommandText = "SELECT ID_racun, ID_kosarica, Izdao, Vrijeme FROM dbo.Racun";
+>>>>>>> parent of df26571... Dorada aplikacije
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7966,6 +10288,15 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< HEAD
+        public virtual int Fill(T07_DBDataSet.MAX_ID_KosaricaDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+=======
         public virtual int Fill(T07_DBDataSet.RacunDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
@@ -7991,11 +10322,48 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(T07_DBDataSet.RacunDataTable dataTable) {
             return this.Adapter.Update(dataTable);
+>>>>>>> parent of df26571... Dorada aplikacije
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual T07_DBDataSet.MAX_ID_KosaricaDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.MAX_ID_KosaricaDataTable dataTable = new T07_DBDataSet.MAX_ID_KosaricaDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class KosaricaTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public KosaricaTableAdapter() {
+            this.ClearBeforeFill = true;
+=======
         public virtual int Update(T07_DBDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Racun");
         }
@@ -8006,6 +10374,7 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
         public virtual int Update(global::System.Data.DataRow dataRow) {
             return this.Adapter.Update(new global::System.Data.DataRow[] {
                         dataRow});
+>>>>>>> parent of df26571... Dorada aplikacije
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8069,537 +10438,7 @@ SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vo
                     this.Adapter.InsertCommand.Connection.Close();
                 }
             }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ID_kosarica, string Izdao, int Original_ID_racun, byte[] Original_Vrijeme, int ID_racun) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID_kosarica));
-            if ((Izdao == null)) {
-                throw new global::System.ArgumentNullException("Izdao");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Izdao));
-            }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_ID_racun));
-            if ((Original_Vrijeme == null)) {
-                throw new global::System.ArgumentNullException("Original_Vrijeme");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((byte[])(Original_Vrijeme));
-            }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(ID_racun));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ID_kosarica, string Izdao, int Original_ID_racun, byte[] Original_Vrijeme) {
-            return this.Update(ID_kosarica, Izdao, Original_ID_racun, Original_Vrijeme, Original_ID_racun);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Pregled_narudbeTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Pregled_narudbeTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Pregled_narudbe";
-            tableMapping.ColumnMappings.Add("ID_pivo", "ID_pivo");
-            tableMapping.ColumnMappings.Add("Kolicina", "Kolicina");
-            tableMapping.ColumnMappings.Add("Ime_piva", "Ime_piva");
-            tableMapping.ColumnMappings.Add("Cijena", "Cijena");
-            tableMapping.ColumnMappings.Add("Ukupno", "Ukupno");
-            tableMapping.ColumnMappings.Add("ID_kosarica", "ID_kosarica");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PickBeer_User.Properties.Settings.Default.T07_DBConnectionString_User;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID_pivo, Kolicina, Ime_piva, Cijena, Ukupno, ID_kosarica FROM Pregled_naru" +
-                "dbe";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        ID_pivo, Kolicina, Ime_piva, Cijena, Ukupno, ID_kosarica\r\nFROM     " +
-                "       Pregled_narudbe\r\nWHERE        (ID_kosarica = @ID_kosarica)";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_kosarica", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_kosarica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(T07_DBDataSet.Pregled_narudbeDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual T07_DBDataSet.Pregled_narudbeDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            T07_DBDataSet.Pregled_narudbeDataTable dataTable = new T07_DBDataSet.Pregled_narudbeDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByID(T07_DBDataSet.Pregled_narudbeDataTable dataTable, int ID_kosarica) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID_kosarica));
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual T07_DBDataSet.Pregled_narudbeDataTable GetDataByID(int ID_kosarica) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(ID_kosarica));
-            T07_DBDataSet.Pregled_narudbeDataTable dataTable = new T07_DBDataSet.Pregled_narudbeDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class MAX_ID_KosaricaTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public MAX_ID_KosaricaTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "MAX ID_Kosarica";
-            tableMapping.ColumnMappings.Add("Expr1", "Expr1");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PickBeer_User.Properties.Settings.Default.T07_DBConnectionString_User;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Expr1 FROM dbo.[MAX ID_Kosarica]";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(T07_DBDataSet.MAX_ID_KosaricaDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual T07_DBDataSet.MAX_ID_KosaricaDataTable GetData() {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            T07_DBDataSet.MAX_ID_KosaricaDataTable dataTable = new T07_DBDataSet.MAX_ID_KosaricaDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class KosaricaTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public KosaricaTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
+<<<<<<< HEAD
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8663,30 +10502,69 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID_kosarica, Vrijeme, Status FROM dbo.Kosarica";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
         public virtual int Fill(T07_DBDataSet.KosaricaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
+=======
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int ID_kosarica, string Izdao, int Original_ID_racun, byte[] Original_Vrijeme, int ID_racun) {
+            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID_kosarica));
+            if ((Izdao == null)) {
+                throw new global::System.ArgumentNullException("Izdao");
             }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Izdao));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Original_ID_racun));
+            if ((Original_Vrijeme == null)) {
+                throw new global::System.ArgumentNullException("Original_Vrijeme");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((byte[])(Original_Vrijeme));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(ID_racun));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+>>>>>>> parent of df26571... Dorada aplikacije
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual T07_DBDataSet.KosaricaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             T07_DBDataSet.KosaricaDataTable dataTable = new T07_DBDataSet.KosaricaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+=======
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(int ID_kosarica, string Izdao, int Original_ID_racun, byte[] Original_Vrijeme) {
+            return this.Update(ID_kosarica, Izdao, Original_ID_racun, Original_Vrijeme, Original_ID_racun);
+>>>>>>> parent of df26571... Dorada aplikacije
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8858,7 +10736,11 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
     public partial class Random_DrzavaTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class Table1TableAdapter : global::System.ComponentModel.Component {
+>>>>>>> parent of df26571... Dorada aplikacije
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -8872,7 +10754,11 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         public Random_DrzavaTableAdapter() {
+=======
+        public Table1TableAdapter() {
+>>>>>>> parent of df26571... Dorada aplikacije
             this.ClearBeforeFill = true;
         }
         
@@ -8967,11 +10853,14 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitAdapter() {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+<<<<<<< HEAD
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Random_Drzava";
             tableMapping.ColumnMappings.Add("Drzava_podrijetla", "Drzava_podrijetla");
             this._adapter.TableMappings.Add(tableMapping);
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8987,7 +10876,12 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< HEAD
             this._commandCollection[0].CommandText = "SELECT Drzava_podrijetla FROM dbo.Random_Drzava";
+=======
+            this._commandCollection[0].CommandText = "SELECT ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Vol" +
+                "umen, OcjenaPB, OcjenaK, Proizvodac, Boja, Slika FROM dbo.Beer_Roulette";
+>>>>>>> parent of df26571... Dorada aplikacije
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -8995,7 +10889,11 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< HEAD
         public virtual int Fill(T07_DBDataSet.Random_DrzavaDataTable dataTable) {
+=======
+        public virtual int Fill(T07_DBDataSet.Table1DataTable dataTable) {
+>>>>>>> parent of df26571... Dorada aplikacije
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9008,9 +10906,15 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< HEAD
         public virtual T07_DBDataSet.Random_DrzavaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             T07_DBDataSet.Random_DrzavaDataTable dataTable = new T07_DBDataSet.Random_DrzavaDataTable();
+=======
+        public virtual T07_DBDataSet.Table1DataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.Table1DataTable dataTable = new T07_DBDataSet.Table1DataTable();
+>>>>>>> parent of df26571... Dorada aplikacije
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9025,7 +10929,11 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+<<<<<<< HEAD
     public partial class RouletteTableAdapter : global::System.ComponentModel.Component {
+=======
+    public partial class Pregled_narudbeTableAdapter : global::System.ComponentModel.Component {
+>>>>>>> parent of df26571... Dorada aplikacije
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -9039,7 +10947,11 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+<<<<<<< HEAD
         public RouletteTableAdapter() {
+=======
+        public Pregled_narudbeTableAdapter() {
+>>>>>>> parent of df26571... Dorada aplikacije
             this.ClearBeforeFill = true;
         }
         
@@ -9136,6 +11048,7 @@ SELECT ID_kosarica, Vrijeme, Status FROM Kosarica WHERE (ID_kosarica = @ID_kosar
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
+<<<<<<< HEAD
             tableMapping.DataSetTable = "Roulette";
             tableMapping.ColumnMappings.Add("ID_pivo", "ID_pivo");
             tableMapping.ColumnMappings.Add("Ime_piva", "Ime_piva");
@@ -9259,6 +11172,15 @@ SELECT TOP (1) ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Slika", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Slika", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Slika", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Slika", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_pivo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_pivo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+=======
+            tableMapping.DataSetTable = "Pregled_narudbe";
+            tableMapping.ColumnMappings.Add("ID_pivo", "ID_pivo");
+            tableMapping.ColumnMappings.Add("Kolicina", "Kolicina");
+            tableMapping.ColumnMappings.Add("Ime_piva", "Ime_piva");
+            tableMapping.ColumnMappings.Add("Cijena", "Cijena");
+            tableMapping.ColumnMappings.Add("Ukupno", "Ukupno");
+            this._adapter.TableMappings.Add(tableMapping);
+>>>>>>> parent of df26571... Dorada aplikacije
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9274,9 +11196,13 @@ SELECT TOP (1) ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
+<<<<<<< HEAD
             this._commandCollection[0].CommandText = "SELECT        TOP (1) ID_pivo, Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta" +
                 ", Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika\r\nFROM" +
                 "            Pivo\r\nWHERE        (ID_pivo IS NOT NULL)\r\nORDER BY NEWID()";
+=======
+            this._commandCollection[0].CommandText = "SELECT ID_pivo, Kolicina, Ime_piva, Cijena, Ukupno FROM dbo.Pregled_narudbe";
+>>>>>>> parent of df26571... Dorada aplikacije
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -9292,7 +11218,11 @@ ORDER BY NEWID()";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+<<<<<<< HEAD
         public virtual int Fill(T07_DBDataSet.RouletteDataTable dataTable) {
+=======
+        public virtual int Fill(T07_DBDataSet.Pregled_narudbeDataTable dataTable) {
+>>>>>>> parent of df26571... Dorada aplikacije
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9305,6 +11235,7 @@ ORDER BY NEWID()";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+<<<<<<< HEAD
         public virtual T07_DBDataSet.RouletteDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             T07_DBDataSet.RouletteDataTable dataTable = new T07_DBDataSet.RouletteDataTable();
@@ -9837,6 +11768,14 @@ ORDER BY NEWID()";
                     string Original_Slika) {
             return this.Update(Ime_piva, Cijena, Stanje, Drzava_podrijetla, Vrsta, Udio_alk, Volumen, OcjenaRB, OcjenaK, Proizvodac, Puta_narucivano, Slika, Original_ID_pivo, Original_Ime_piva, Original_Cijena, Original_Stanje, Original_Drzava_podrijetla, Original_Vrsta, Original_Udio_alk, Original_Volumen, Original_OcjenaRB, Original_OcjenaK, Original_Proizvodac, Original_Puta_narucivano, Original_Slika, Original_ID_pivo);
         }
+=======
+        public virtual T07_DBDataSet.Pregled_narudbeDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            T07_DBDataSet.Pregled_narudbeDataTable dataTable = new T07_DBDataSet.Pregled_narudbeDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+>>>>>>> parent of df26571... Dorada aplikacije
     }
     
     /// <summary>
@@ -9857,11 +11796,13 @@ ORDER BY NEWID()";
         
         private Stavke_racunTableAdapter _stavke_racunTableAdapter;
         
-        private RacunTableAdapter _racunTableAdapter;
-        
         private KosaricaTableAdapter _kosaricaTableAdapter;
         
+<<<<<<< HEAD
         private RouletteTableAdapter _rouletteTableAdapter;
+=======
+        private RacunTableAdapter _racunTableAdapter;
+>>>>>>> parent of df26571... Dorada aplikacije
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -9925,12 +11866,12 @@ ORDER BY NEWID()";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public RacunTableAdapter RacunTableAdapter {
+        public KosaricaTableAdapter KosaricaTableAdapter {
             get {
-                return this._racunTableAdapter;
+                return this._kosaricaTableAdapter;
             }
             set {
-                this._racunTableAdapter = value;
+                this._kosaricaTableAdapter = value;
             }
         }
         
@@ -9939,12 +11880,12 @@ ORDER BY NEWID()";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public KosaricaTableAdapter KosaricaTableAdapter {
+        public RacunTableAdapter RacunTableAdapter {
             get {
-                return this._kosaricaTableAdapter;
+                return this._racunTableAdapter;
             }
             set {
-                this._kosaricaTableAdapter = value;
+                this._racunTableAdapter = value;
             }
         }
         
@@ -9993,17 +11934,19 @@ ORDER BY NEWID()";
                             && (this._stavke_racunTableAdapter.Connection != null))) {
                     return this._stavke_racunTableAdapter.Connection;
                 }
-                if (((this._racunTableAdapter != null) 
-                            && (this._racunTableAdapter.Connection != null))) {
-                    return this._racunTableAdapter.Connection;
-                }
                 if (((this._kosaricaTableAdapter != null) 
                             && (this._kosaricaTableAdapter.Connection != null))) {
                     return this._kosaricaTableAdapter.Connection;
                 }
+<<<<<<< HEAD
                 if (((this._rouletteTableAdapter != null) 
                             && (this._rouletteTableAdapter.Connection != null))) {
                     return this._rouletteTableAdapter.Connection;
+=======
+                if (((this._racunTableAdapter != null) 
+                            && (this._racunTableAdapter.Connection != null))) {
+                    return this._racunTableAdapter.Connection;
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
                 return null;
             }
@@ -10027,10 +11970,10 @@ ORDER BY NEWID()";
                 if ((this._stavke_racunTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._racunTableAdapter != null)) {
+                if ((this._kosaricaTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._kosaricaTableAdapter != null)) {
+                if ((this._racunTableAdapter != null)) {
                     count = (count + 1);
                 }
                 if ((this._rouletteTableAdapter != null)) {
@@ -10271,13 +12214,13 @@ ORDER BY NEWID()";
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._racunTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._racunTableAdapter.Connection) == false))) {
+            if (((this._kosaricaTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._kosaricaTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._kosaricaTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._kosaricaTableAdapter.Connection) == false))) {
+            if (((this._racunTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._racunTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -10345,15 +12288,6 @@ ORDER BY NEWID()";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._stavke_racunTableAdapter.Adapter);
                     }
                 }
-                if ((this._racunTableAdapter != null)) {
-                    revertConnections.Add(this._racunTableAdapter, this._racunTableAdapter.Connection);
-                    this._racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._racunTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._racunTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._racunTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._racunTableAdapter.Adapter);
-                    }
-                }
                 if ((this._kosaricaTableAdapter != null)) {
                     revertConnections.Add(this._kosaricaTableAdapter, this._kosaricaTableAdapter.Connection);
                     this._kosaricaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -10363,6 +12297,7 @@ ORDER BY NEWID()";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._kosaricaTableAdapter.Adapter);
                     }
                 }
+<<<<<<< HEAD
                 if ((this._rouletteTableAdapter != null)) {
                     revertConnections.Add(this._rouletteTableAdapter, this._rouletteTableAdapter.Connection);
                     this._rouletteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
@@ -10370,6 +12305,15 @@ ORDER BY NEWID()";
                     if (this._rouletteTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._rouletteTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._rouletteTableAdapter.Adapter);
+=======
+                if ((this._racunTableAdapter != null)) {
+                    revertConnections.Add(this._racunTableAdapter, this._racunTableAdapter.Connection);
+                    this._racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._racunTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._racunTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._racunTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._racunTableAdapter.Adapter);
+>>>>>>> parent of df26571... Dorada aplikacije
                     }
                 }
                 // 
@@ -10442,17 +12386,19 @@ ORDER BY NEWID()";
                     this._stavke_racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._stavke_racunTableAdapter]));
                     this._stavke_racunTableAdapter.Transaction = null;
                 }
-                if ((this._racunTableAdapter != null)) {
-                    this._racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._racunTableAdapter]));
-                    this._racunTableAdapter.Transaction = null;
-                }
                 if ((this._kosaricaTableAdapter != null)) {
                     this._kosaricaTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._kosaricaTableAdapter]));
                     this._kosaricaTableAdapter.Transaction = null;
                 }
+<<<<<<< HEAD
                 if ((this._rouletteTableAdapter != null)) {
                     this._rouletteTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._rouletteTableAdapter]));
                     this._rouletteTableAdapter.Transaction = null;
+=======
+                if ((this._racunTableAdapter != null)) {
+                    this._racunTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._racunTableAdapter]));
+                    this._racunTableAdapter.Transaction = null;
+>>>>>>> parent of df26571... Dorada aplikacije
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

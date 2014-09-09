@@ -81,6 +81,7 @@
             this.stavke_kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stavke_kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter();
             this.kolicinaTextBox = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.KosaricaTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -96,6 +97,8 @@
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             drzava_podrijetlaLabel = new System.Windows.Forms.Label();
             ime_pivaLabel = new System.Windows.Forms.Label();
             cijenaLabel = new System.Windows.Forms.Label();
@@ -116,7 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.drzava_SelectBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCjenik)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_kosaricaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // drzava_podrijetlaLabel
@@ -585,6 +587,7 @@
             this.kolicinaTextBox.Size = new System.Drawing.Size(77, 20);
             this.kolicinaTextBox.TabIndex = 31;
             // 
+<<<<<<< HEAD
             // kosaricaBindingSource
             // 
             this.kosaricaBindingSource.DataMember = "Kosarica";
@@ -701,11 +704,13 @@
             this.dataGridViewTextBoxColumn13.ReadOnly = true;
             this.dataGridViewTextBoxColumn13.Visible = false;
             // 
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
             // FormCjenik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 689);
+            this.ClientSize = new System.Drawing.Size(825, 689);
             this.Controls.Add(kolicinaLabel);
             this.Controls.Add(this.kolicinaTextBox);
             this.Controls.Add(this.buttonDodajuK);
@@ -750,7 +755,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.drzava_SelectBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCjenik)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stavke_kosaricaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kosaricaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -798,6 +802,7 @@
         private System.Windows.Forms.BindingSource stavke_kosaricaBindingSource;
         private T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter stavke_kosaricaTableAdapter;
         private System.Windows.Forms.TextBox kolicinaTextBox;
+<<<<<<< HEAD
         private System.Windows.Forms.BindingSource kosaricaBindingSource;
         private T07_DBDataSetTableAdapters.KosaricaTableAdapter kosaricaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -813,5 +818,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
     }
 }

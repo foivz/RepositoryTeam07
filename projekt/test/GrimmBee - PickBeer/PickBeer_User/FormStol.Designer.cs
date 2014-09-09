@@ -34,6 +34,7 @@
             this.txtBrojStola = new System.Windows.Forms.TextBox();
             this.kosaricaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.t07_DBDataSet = new PickBeer_User.T07_DBDataSet();
+            this.label1 = new System.Windows.Forms.Label();
             this.t07DBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kosaricaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kosaricaTableAdapter = new PickBeer_User.T07_DBDataSetTableAdapters.KosaricaTableAdapter();
@@ -87,6 +88,15 @@
             // 
             this.t07_DBDataSet.DataSetName = "T07_DBDataSet";
             this.t07_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(82, 90);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Broj stola:";
             // 
             // t07DBDataSetBindingSource
             // 
@@ -236,6 +246,7 @@
             this.ClientSize = new System.Drawing.Size(464, 361);
             this.Controls.Add(this.txtVrijeme);
             this.Controls.Add(this.bindingNavigator1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBrojStola);
             this.Controls.Add(this.button1);
             this.Name = "FormStol";
@@ -258,6 +269,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtBrojStola;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.BindingSource t07DBDataSetBindingSource;
         private T07_DBDataSet t07_DBDataSet;
         private System.Windows.Forms.BindingSource kosaricaBindingSource;

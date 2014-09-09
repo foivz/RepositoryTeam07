@@ -27,8 +27,6 @@ namespace PickBeer_User
 
         private void FormCjenik_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 't07_DBDataSet.Kosarica' table. You can move, or remove it, as needed.
-            this.kosaricaTableAdapter.Fill(this.t07_DBDataSet.Kosarica);
             // TODO: This line of code loads data into the 't07_DBDataSet.Stavke_kosarica' table. You can move, or remove it, as needed.
             this.stavke_kosaricaTableAdapter.Fill(this.t07_DBDataSet.Stavke_kosarica);
             // TODO: This line of code loads data into the 't07_DBDataSet.Drzava_Select' table. You can move, or remove it, as needed.
@@ -65,12 +63,8 @@ namespace PickBeer_User
 
             
 
-            //int zadnjaKosarica = zadnji.ID_kosarica;
-
-
-
            T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter dodavanjeNovogArtikla = new T07_DBDataSetTableAdapters.Stavke_kosaricaTableAdapter();
-           dodavanjeNovogArtikla.Insert(Cjenik_ID, BrojNarudbe.brojNarudbe, a.Kolicina);
+           dodavanjeNovogArtikla.Insert(Cjenik_ID, BrojStola.brojStola, a.Kolicina);
 
             
            

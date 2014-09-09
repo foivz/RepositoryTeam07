@@ -485,6 +485,7 @@
         wGhCqJjb5fd8f8n/2Q==
 </value>
   </data>
+<<<<<<< HEAD
   <metadata name="mAX_ID_KosaricaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>665, 17</value>
   </metadata>
@@ -506,4 +507,6 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>148</value>
   </metadata>
+=======
+>>>>>>> parent of df26571... Dorada aplikacije
 </root>
