@@ -66,6 +66,7 @@
       <DependentUpon>FormKosarica.cs</DependentUpon>
     </Compile>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="FormRoulette.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +79,13 @@
     <Compile Include="FormStol.Designer.cs">
       <DependentUpon>FormStol.cs</DependentUpon>
 >>>>>>> parent of df26571... Dorada aplikacije
+=======
+    <Compile Include="FormRulet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRulet.Designer.cs">
+      <DependentUpon>FormRulet.cs</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,12 +108,17 @@
       <DependentUpon>FormKosarica.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <EmbeddedResource Include="FormRoulette.resx">
       <DependentUpon>FormRoulette.cs</DependentUpon>
 =======
     <EmbeddedResource Include="FormStol.resx">
       <DependentUpon>FormStol.cs</DependentUpon>
 >>>>>>> parent of df26571... Dorada aplikacije
+=======
+    <EmbeddedResource Include="FormRulet.resx">
+      <DependentUpon>FormRulet.cs</DependentUpon>
+>>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
